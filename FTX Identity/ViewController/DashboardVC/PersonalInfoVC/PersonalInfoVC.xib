@@ -20,6 +20,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalInfoVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
                 <outlet property="img_profile" destination="OVi-IG-qHC" id="Xyb-Pa-tTb"/>
+                <outlet property="lbl_dob" destination="TW4-W2-8ZA" id="dHJ-w7-Wnd"/>
+                <outlet property="lbl_email" destination="YoE-0u-s8F" id="aH9-f4-cBw"/>
+                <outlet property="lbl_fname" destination="xY1-by-KEY" id="URH-lX-tA2"/>
+                <outlet property="lbl_lname" destination="hJ7-sS-63g" id="eF3-x8-Rro"/>
+                <outlet property="lbl_mobile" destination="X7y-L9-ORz" id="v5o-LJ-TpJ"/>
+                <outlet property="lbl_pwd" destination="P3p-l9-YqA" id="0W7-Wp-YEK"/>
+                <outlet property="lbl_ssn" destination="F52-aO-0cD" id="goH-j9-Gon"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -130,6 +137,9 @@
                                                         <constraint firstAttribute="height" constant="34" id="tlG-ks-OLf"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_firstName_edit:" destination="-1" eventType="touchUpInside" id="SaT-lu-p5r"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -167,6 +177,9 @@
                                                         <constraint firstAttribute="width" constant="34" id="Dwg-v5-i5S"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_lastName_edit:" destination="-1" eventType="touchUpInside" id="3jE-PZ-zEn"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -204,6 +217,9 @@
                                                         <constraint firstAttribute="height" constant="34" id="hAV-pX-8pH"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_bday_edit:" destination="-1" eventType="touchUpInside" id="pM9-Jd-kXl"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-wq-xi4">
                                                     <rect key="frame" x="262" y="18" width="34" height="34"/>
@@ -212,6 +228,9 @@
                                                         <constraint firstAttribute="width" constant="34" id="6Yt-Jp-sHF"/>
                                                     </constraints>
                                                     <state key="normal" image="delete"/>
+                                                    <connections>
+                                                        <action selector="btn_dlt_bday:" destination="-1" eventType="touchUpInside" id="SXn-Cs-g6c"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -251,6 +270,9 @@
                                                         <constraint firstAttribute="width" constant="34" id="JfU-RL-MJF"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_ssn_edit:" destination="-1" eventType="touchUpInside" id="Idr-Gc-Gzw"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ER-dB-fj8">
                                                     <rect key="frame" x="262" y="18" width="34" height="34"/>
@@ -259,6 +281,9 @@
                                                         <constraint firstAttribute="height" constant="34" id="vWb-eW-667"/>
                                                     </constraints>
                                                     <state key="normal" image="delete"/>
+                                                    <connections>
+                                                        <action selector="btn_ssn_dlt:" destination="-1" eventType="touchUpInside" id="Iel-fe-Xct"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -330,6 +355,9 @@
                                                         <constraint firstAttribute="width" constant="34" id="uon-XC-e8T"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_email_edit:" destination="-1" eventType="touchUpInside" id="XAq-p5-UC6"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -367,6 +395,9 @@
                                                         <constraint firstAttribute="height" constant="34" id="f3W-iB-1Vn"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_mobile_edit:" destination="-1" eventType="touchUpInside" id="PjU-hS-rjb"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -404,6 +435,9 @@
                                                         <constraint firstAttribute="width" constant="34" id="iki-1w-Ney"/>
                                                     </constraints>
                                                     <state key="normal" image="add"/>
+                                                    <connections>
+                                                        <action selector="btn_pwd_edit:" destination="-1" eventType="touchUpInside" id="G9a-OE-lER"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

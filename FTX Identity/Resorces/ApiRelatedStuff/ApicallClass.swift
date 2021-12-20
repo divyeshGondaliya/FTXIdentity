@@ -46,6 +46,34 @@ class AFWrapper: NSObject {
             }
         }
     }
+    
+    func requestPut(_ strURL: String, parma:[String : AnyObject]? = [String : AnyObject](),success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void)
+    {
+        AuthLoginClass.shared.gettingFreshToken { (result) in
+        }
+        
+        let headers:HTTPHeaders = [APIConstant.contentType: APIHeader.contentType,
+                       APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
+        
+        print("-----------")
+        print("calling url - \(APIEnvironment.mainURL+strURL)")
+        print("header = \(headers.dictionary)")
+        print("Param - \(parma ?? [String : AnyObject]())")
+        print("-----------")
+        
+        AF.request(APIEnvironment.mainURL+strURL, method: .put,parameters: parma, headers: headers).responseJSON { (responseObject) in
+            switch responseObject.result {
+            case .success(let value):
+                let resJson = JSON(value)
+                //let title = resJson["title"].string
+                //print(title!)
+                success(resJson)
+            case .failure(let error):
+                let error : Error = responseObject.error ?? error
+                failure(error)
+            }
+        }
+    }
 
     func requestGETURL(_ strURL: String, parma:[String : AnyObject]? = [String : AnyObject](),success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void)
     {

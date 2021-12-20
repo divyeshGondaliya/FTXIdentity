@@ -50,6 +50,9 @@
 		1863BB262768AAE900CBCEDF /* DashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863BB242768AAE900CBCEDF /* DashboardVC.xib */; };
 		187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CE8AD276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift */; };
 		187F9C262770503700D1451A /* RetailerDetailsVC+HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */; };
+		188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188949C52770AB1F00CB563E /* PersonalnfoChangePopupVC.swift */; };
+		188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188949C62770AB1F00CB563E /* PersonalnfoChangePopupVC.xib */; };
+		188949CB2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188949CA2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift */; };
 		188CD1502770A00F0034F431 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */; };
 		188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */; };
 		188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */; };
@@ -123,6 +126,9 @@
 		1863BB242768AAE900CBCEDF /* DashboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardVC.xib; sourceTree = "<group>"; };
 		187CE8AD276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+LoadingAnnimation.swift"; sourceTree = "<group>"; };
 		187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RetailerDetailsVC+HelperFunction.swift"; sourceTree = "<group>"; };
+		188949C52770AB1F00CB563E /* PersonalnfoChangePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalnfoChangePopupVC.swift; sourceTree = "<group>"; };
+		188949C62770AB1F00CB563E /* PersonalnfoChangePopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalnfoChangePopupVC.xib; sourceTree = "<group>"; };
+		188949CA2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalInfoVC+PopupEditCode.swift"; sourceTree = "<group>"; };
 		188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
 		188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalInfoVC.xib; sourceTree = "<group>"; };
 		188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalInfoVC+ApiCall.swift"; sourceTree = "<group>"; };
@@ -344,12 +350,23 @@
 			path = DashboardVC;
 			sourceTree = "<group>";
 		};
+		188949C42770AAFE00CB563E /* PersonalnfoChangePopupVC */ = {
+			isa = PBXGroup;
+			children = (
+				188949C52770AB1F00CB563E /* PersonalnfoChangePopupVC.swift */,
+				188949C62770AB1F00CB563E /* PersonalnfoChangePopupVC.xib */,
+			);
+			path = PersonalnfoChangePopupVC;
+			sourceTree = "<group>";
+		};
 		188CD14D27709FF50034F431 /* PersonalInfoVC */ = {
 			isa = PBXGroup;
 			children = (
+				188949C42770AAFE00CB563E /* PersonalnfoChangePopupVC */,
 				188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */,
 				188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */,
 				188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */,
+				188949CA2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift */,
 			);
 			path = PersonalInfoVC;
 			sourceTree = "<group>";
@@ -567,6 +584,7 @@
 				18A84D6F276A315A00B8991D /* VideoRecordingVC.xib in Resources */,
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
 				18100BCF27705D7900E961D9 /* ShareUnshareIdentityVC.xib in Resources */,
+				188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */,
 				1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */,
 				188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */,
 			);
@@ -652,6 +670,7 @@
 				184633F927686E15007229A3 /* ChooseOprtionVC+CollectionViewDatasource.swift in Sources */,
 				184633ED2768662D007229A3 /* ChooseOprtionVC.swift in Sources */,
 				18BBA9A7276C7A7A0010222A /* RetailerTableViewCell.swift in Sources */,
+				188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */,
 				1847525A276B494F00F9F739 /* Banner.swift in Sources */,
 				18BBA9AE276C8AC70010222A /* SearchRetailerVC+ApiCall.swift in Sources */,
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
@@ -671,6 +690,7 @@
 				18100BDD27706A0800E961D9 /* ShareUnshareIdentityVC+ApiCall.swift in Sources */,
 				18475257276B482A00F9F739 /* AppUtills.swift in Sources */,
 				18475260276B4CD800F9F739 /* CreateAccountStep2VC+ApiCall.swift in Sources */,
+				188949CB2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift in Sources */,
 				18CB92F627677C1F008A89C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

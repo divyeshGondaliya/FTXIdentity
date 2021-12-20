@@ -33,6 +33,8 @@ class ApiURls{
     static let allow_Identity       = "/api/v1/Profile/Identity"
     static let delete_shredIdentity = "/api/v1/Profile/Identity/"
     static let personalInfo         = "/api/v1/Profile/PersonalInfo"
+    static let firstNameUpdate      = "/api/v1/Profile/FirstName"
+    static let lastNameUpdate       = "/api/v1/Profile/LastName"
 }
 
 struct APIHeader {
