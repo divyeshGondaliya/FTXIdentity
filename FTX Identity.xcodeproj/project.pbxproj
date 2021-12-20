@@ -50,6 +50,8 @@
 		1863BB262768AAE900CBCEDF /* DashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863BB242768AAE900CBCEDF /* DashboardVC.xib */; };
 		187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CE8AD276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift */; };
 		187F9C262770503700D1451A /* RetailerDetailsVC+HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */; };
+		188CD1502770A00F0034F431 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */; };
+		188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */; };
 		188D40012769FAB800043FAB /* CreateAccountStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D40002769FAB800043FAB /* CreateAccountStep2VC.swift */; };
 		18A84D51276A10D600B8991D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D50276A10D600B8991D /* LoadingView.swift */; };
 		18A84D66276A2CA400B8991D /* AllPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D65276A2CA400B8991D /* AllPopupView.swift */; };
@@ -120,6 +122,8 @@
 		1863BB242768AAE900CBCEDF /* DashboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardVC.xib; sourceTree = "<group>"; };
 		187CE8AD276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+LoadingAnnimation.swift"; sourceTree = "<group>"; };
 		187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RetailerDetailsVC+HelperFunction.swift"; sourceTree = "<group>"; };
+		188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
+		188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalInfoVC.xib; sourceTree = "<group>"; };
 		188D40002769FAB800043FAB /* CreateAccountStep2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep2VC.swift; sourceTree = "<group>"; };
 		18A84D50276A10D600B8991D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		18A84D65276A2CA400B8991D /* AllPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPopupView.swift; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 		1863BB222768AAC600CBCEDF /* DashboardVC */ = {
 			isa = PBXGroup;
 			children = (
+				188CD14D27709FF50034F431 /* PersonalInfoVC */,
 				18BBA99E276C79A10010222A /* SearchRetailerVC */,
 				183A1B362769C79F00464652 /* Cell */,
 				1863BB232768AAE900CBCEDF /* DashboardVC.swift */,
@@ -335,6 +340,15 @@
 				183A1B3D2769CA6100464652 /* DashboardVC+CollectionView.swift */,
 			);
 			path = DashboardVC;
+			sourceTree = "<group>";
+		};
+		188CD14D27709FF50034F431 /* PersonalInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */,
+				188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */,
+			);
+			path = PersonalInfoVC;
 			sourceTree = "<group>";
 		};
 		18A84D68276A30C500B8991D /* VideoRecordingVC */ = {
@@ -551,6 +565,7 @@
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
 				18100BCF27705D7900E961D9 /* ShareUnshareIdentityVC.xib in Resources */,
 				1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */,
+				188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +644,7 @@
 				184633CD27686263007229A3 /* UIViewExtension.swift in Sources */,
 				18100BD9277066B100E961D9 /* ShareUnshareIdentityVC+UiTableViewDatasourceDelegate.swift in Sources */,
 				18475266276B656D00F9F739 /* CreateAccountStep4VC+ApiCall.swift in Sources */,
+				188CD1502770A00F0034F431 /* PersonalInfoVC.swift in Sources */,
 				1836F158276A029000219340 /* CreateAccountStep4VC.swift in Sources */,
 				184633F927686E15007229A3 /* ChooseOprtionVC+CollectionViewDatasource.swift in Sources */,
 				184633ED2768662D007229A3 /* ChooseOprtionVC.swift in Sources */,
