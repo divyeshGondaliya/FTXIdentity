@@ -52,6 +52,7 @@
 		187F9C262770503700D1451A /* RetailerDetailsVC+HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */; };
 		188CD1502770A00F0034F431 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */; };
 		188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */; };
+		188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */; };
 		188D40012769FAB800043FAB /* CreateAccountStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D40002769FAB800043FAB /* CreateAccountStep2VC.swift */; };
 		18A84D51276A10D600B8991D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D50276A10D600B8991D /* LoadingView.swift */; };
 		18A84D66276A2CA400B8991D /* AllPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D65276A2CA400B8991D /* AllPopupView.swift */; };
@@ -124,6 +125,7 @@
 		187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RetailerDetailsVC+HelperFunction.swift"; sourceTree = "<group>"; };
 		188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
 		188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalInfoVC.xib; sourceTree = "<group>"; };
+		188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalInfoVC+ApiCall.swift"; sourceTree = "<group>"; };
 		188D40002769FAB800043FAB /* CreateAccountStep2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep2VC.swift; sourceTree = "<group>"; };
 		18A84D50276A10D600B8991D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		18A84D65276A2CA400B8991D /* AllPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPopupView.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			children = (
 				188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */,
 				188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */,
+				188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */,
 			);
 			path = PersonalInfoVC;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 				1847525A276B494F00F9F739 /* Banner.swift in Sources */,
 				18BBA9AE276C8AC70010222A /* SearchRetailerVC+ApiCall.swift in Sources */,
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
+				188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */,
 				18CB92FA27677C1F008A89C5 /* SplashViewController.swift in Sources */,
 				1836F1552769FF0100219340 /* CreateAccountStep3VC.swift in Sources */,
 				18A84D66276A2CA400B8991D /* AllPopupView.swift in Sources */,

@@ -22,16 +22,17 @@ class ApiKey
 class ApiURls{
     static let guestToken = "/connect/token"
     
-    static let userDetails = "/api/v1/Account"
-    static let SignupStep1 = "/api/v1/Signup/Availability"
-    static let SignupStep2 = "/api/v2/Signup/Otp"
-    static let SignupStep3 = "/api/v2/Signup/Otp/Verify"
-    static let SignupStep4 = "/api/v2/Signup/Biometric"
-    static let SignupStep5 = "/api/v2/Signup"
-    static let Memberships = "/api/v1/Profile/Memberships"
-    static let ClaimType = "/api/v1/ClaimType"
-    static let allow_Identity = "/api/v1/Profile/Identity"
+    static let userDetails          = "/api/v1/Account"
+    static let SignupStep1          = "/api/v1/Signup/Availability"
+    static let SignupStep2          = "/api/v2/Signup/Otp"
+    static let SignupStep3          = "/api/v2/Signup/Otp/Verify"
+    static let SignupStep4          = "/api/v2/Signup/Biometric"
+    static let SignupStep5          = "/api/v2/Signup"
+    static let Memberships          = "/api/v1/Profile/Memberships"
+    static let ClaimType            = "/api/v1/ClaimType"
+    static let allow_Identity       = "/api/v1/Profile/Identity"
     static let delete_shredIdentity = "/api/v1/Profile/Identity/"
+    static let personalInfo         = "/api/v1/Profile/PersonalInfo"
 }
 
 struct APIHeader {
