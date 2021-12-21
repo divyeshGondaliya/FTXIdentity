@@ -60,8 +60,8 @@ class AFWrapper: NSObject {
         print("header = \(headers.dictionary)")
         print("Param - \(parma ?? [String : AnyObject]())")
         print("-----------")
-        
-        AF.request(APIEnvironment.mainURL+strURL, method: .put,parameters: parma, headers: headers).responseJSON { (responseObject) in
+
+        AF.request(APIEnvironment.mainURL+strURL, method: .put,parameters: parma,encoding: JSONEncoding.default, headers: headers).responseJSON { (responseObject) in
             switch responseObject.result {
             case .success(let value):
                 let resJson = JSON(value)

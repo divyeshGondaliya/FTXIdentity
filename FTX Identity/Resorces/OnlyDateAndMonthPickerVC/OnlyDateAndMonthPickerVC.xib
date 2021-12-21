@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnlyDateAndMonthPickerVC" customModule="FTX_Identity" customModuleProvider="target">
+            <connections>
+                <outlet property="MonthPicker" destination="5Sr-Pb-2ps" id="hCD-En-dbr"/>
+                <outlet property="datePicker" destination="d1r-Bp-qHo" id="CUf-6l-hMb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A59-Se-Rj3">
+                    <rect key="frame" x="62" y="333" width="290" height="240"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sr-Pb-2ps">
+                            <rect key="frame" x="0.0" y="40" width="145" height="160"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="E6D-kF-pYH"/>
+                                <outlet property="delegate" destination="-1" id="dTp-nu-ICG"/>
+                            </connections>
+                        </pickerView>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1r-Bp-qHo">
+                            <rect key="frame" x="145" y="40" width="145" height="160"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="cOf-6q-3gj"/>
+                                <outlet property="delegate" destination="-1" id="AKE-ol-S0A"/>
+                            </connections>
+                        </pickerView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIb-8Y-yxF">
+                            <rect key="frame" x="0.0" y="196" width="290" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hj5-Qv-Qgw">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="44"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btn_cancel_press:" destination="-1" eventType="touchUpInside" id="tR2-Zh-vW8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUd-ab-P9T">
+                                    <rect key="frame" x="145" y="0.0" width="145" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                    <state key="normal" title="SELECT">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btn_select_press:" destination="-1" eventType="touchUpInside" id="5OQ-iT-PBW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="hj5-Qv-Qgw" firstAttribute="width" secondItem="YIb-8Y-yxF" secondAttribute="width" multiplier="0.5" id="1lO-G7-ODZ"/>
+                                <constraint firstAttribute="bottom" secondItem="uUd-ab-P9T" secondAttribute="bottom" id="54g-2G-Gqb"/>
+                                <constraint firstAttribute="trailing" secondItem="uUd-ab-P9T" secondAttribute="trailing" id="7jx-GK-pj3"/>
+                                <constraint firstItem="uUd-ab-P9T" firstAttribute="top" secondItem="YIb-8Y-yxF" secondAttribute="top" id="LYj-pS-v6K"/>
+                                <constraint firstItem="hj5-Qv-Qgw" firstAttribute="top" secondItem="YIb-8Y-yxF" secondAttribute="top" id="Myp-qM-Jr0"/>
+                                <constraint firstAttribute="bottom" secondItem="hj5-Qv-Qgw" secondAttribute="bottom" id="V0d-hF-zoB"/>
+                                <constraint firstItem="hj5-Qv-Qgw" firstAttribute="leading" secondItem="YIb-8Y-yxF" secondAttribute="leading" id="bUY-Oq-vgh"/>
+                                <constraint firstAttribute="height" constant="44" id="doZ-9I-DQ6"/>
+                                <constraint firstItem="uUd-ab-P9T" firstAttribute="leading" secondItem="hj5-Qv-Qgw" secondAttribute="trailing" id="iXO-Ne-7Hi"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6j-3j-Z4P">
+                            <rect key="frame" x="0.0" y="0.0" width="145" height="40"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnF-xh-uar">
+                            <rect key="frame" x="145" y="0.0" width="145" height="40"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="J6j-3j-Z4P" firstAttribute="width" secondItem="5Sr-Pb-2ps" secondAttribute="width" id="178-hd-vxe"/>
+                        <constraint firstAttribute="height" constant="240" id="3d4-HU-TUN"/>
+                        <constraint firstItem="d1r-Bp-qHo" firstAttribute="bottom" secondItem="5Sr-Pb-2ps" secondAttribute="bottom" id="4mX-cT-cFO"/>
+                        <constraint firstItem="gnF-xh-uar" firstAttribute="leading" secondItem="J6j-3j-Z4P" secondAttribute="trailing" id="4zz-cY-SvH"/>
+                        <constraint firstItem="d1r-Bp-qHo" firstAttribute="top" secondItem="gnF-xh-uar" secondAttribute="bottom" id="7M4-Hs-TJ5"/>
+                        <constraint firstItem="5Sr-Pb-2ps" firstAttribute="top" secondItem="J6j-3j-Z4P" secondAttribute="bottom" id="Ahq-WC-Lqa"/>
+                        <constraint firstAttribute="trailing" secondItem="gnF-xh-uar" secondAttribute="trailing" id="EAU-pu-BYw"/>
+                        <constraint firstItem="J6j-3j-Z4P" firstAttribute="leading" secondItem="A59-Se-Rj3" secondAttribute="leading" id="Kpp-Yx-Bmr"/>
+                        <constraint firstItem="d1r-Bp-qHo" firstAttribute="top" secondItem="5Sr-Pb-2ps" secondAttribute="top" id="Lpz-cz-5nl"/>
+                        <constraint firstAttribute="bottom" secondItem="YIb-8Y-yxF" secondAttribute="bottom" id="Lwl-Rz-Q4I"/>
+                        <constraint firstAttribute="trailing" secondItem="d1r-Bp-qHo" secondAttribute="trailing" id="OAb-ok-0Ci"/>
+                        <constraint firstItem="d1r-Bp-qHo" firstAttribute="leading" secondItem="5Sr-Pb-2ps" secondAttribute="trailing" id="V7O-zr-dDA"/>
+                        <constraint firstAttribute="trailing" secondItem="YIb-8Y-yxF" secondAttribute="trailing" id="VI7-jM-FKB"/>
+                        <constraint firstAttribute="bottom" secondItem="5Sr-Pb-2ps" secondAttribute="bottom" constant="40" id="Zlz-CE-Euw"/>
+                        <constraint firstItem="YIb-8Y-yxF" firstAttribute="leading" secondItem="A59-Se-Rj3" secondAttribute="leading" id="cfl-fs-1Ku"/>
+                        <constraint firstItem="5Sr-Pb-2ps" firstAttribute="top" secondItem="A59-Se-Rj3" secondAttribute="top" constant="40" id="cuK-mj-HJg"/>
+                        <constraint firstItem="5Sr-Pb-2ps" firstAttribute="width" secondItem="A59-Se-Rj3" secondAttribute="width" multiplier="0.5" id="i75-7S-LBE"/>
+                        <constraint firstItem="gnF-xh-uar" firstAttribute="top" secondItem="A59-Se-Rj3" secondAttribute="top" id="khp-Xl-QKS"/>
+                        <constraint firstItem="J6j-3j-Z4P" firstAttribute="top" secondItem="A59-Se-Rj3" secondAttribute="top" id="lYl-HC-yaW"/>
+                        <constraint firstItem="5Sr-Pb-2ps" firstAttribute="leading" secondItem="A59-Se-Rj3" secondAttribute="leading" id="tkl-6d-g3K"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="A59-Se-Rj3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SbY-8W-w7M"/>
+                <constraint firstItem="A59-Se-Rj3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="XGG-uY-Yjp"/>
+                <constraint firstItem="A59-Se-Rj3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="aeT-ud-SlD"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

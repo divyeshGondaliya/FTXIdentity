@@ -14,6 +14,7 @@ enum EditFor {
     case SSN
     case Email
     case Mobile
+    case DateOfBirth
 }
 
 extension PersonalInfoVC:PersonalnfoChangePopupDelegate
@@ -26,15 +27,34 @@ extension PersonalInfoVC:PersonalnfoChangePopupDelegate
             case .LastName:
                 self.updateUserInfo(txtToUpdate: stringValueOfTextField)
             case .SSN:
-                print("SSN \(stringValueOfTextField)")
+                self.updateUserInfo(txtToUpdate: stringValueOfTextField)
             case .Email:
                 print("Email \(stringValueOfTextField)")
+                self.getUserDetails()
             case .Mobile:
                 print("Mobile \(stringValueOfTextField)")
+            case .DateOfBirth:
+                self.updateUserInfo(txtToUpdate: stringValueOfTextField)
         }
     }
     
     func cancelButtonPress(stringValueOfTextField: String) {
         print(stringValueOfTextField)
+    }
+}
+
+extension PersonalInfoVC:ChangePwdDelegate
+{
+    func pwdChange(responce: Bool) {
+        if responce
+        {
+            CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: "Password successfully changed", andAlertType: 1)
+        }else{
+            CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: "Password not successfully changed please try again.", andAlertType: 1)
+        }
+    }
+    
+    func cancelPwdChange() {
+        print("cancel pwd changes")
     }
 }

@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Alamofire
+import SwiftyJSON
 
 extension PersonalInfoVC
 {
@@ -18,17 +20,8 @@ extension PersonalInfoVC
             {
                 if let data = dic["data"]?.dictionary
                 {
-                    print(data)
-                    if let basicInfo = data["basicInfo"]?.dictionary
-                    {
-                        if let profileImageUrl = basicInfo["profileImageUrl"]?.string
-                        {
-                            if let url = URL(string: profileImageUrl)
-                            {
-                                self.img_profile.kf.setImage(with: url)
-                            }
-                        }
-                    }
+                    self.userData = data
+                    self.setupDataToView()
                 }
             }else{
                 
@@ -40,6 +33,7 @@ extension PersonalInfoVC
     
     func updateUserInfo(txtToUpdate:String)
     {
+        LoadingOverlay.shared.showOverlay(view: self.view)
         var dic = [:] as [String:AnyObject]
         switch self.editFor
         {
@@ -48,11 +42,18 @@ extension PersonalInfoVC
             case .LastName:
                 dic["lastName"] = txtToUpdate as AnyObject
             case .SSN:
-                dic["ssn"] = txtToUpdate as AnyObject
+                if txtToUpdate.count > 0
+                {
+                    dic["ssn"] = txtToUpdate as AnyObject
+                    dic["confirmSSN"] = txtToUpdate as AnyObject
+                }
             case .Email:
                 dic["firstName"] = txtToUpdate as AnyObject
             case .Mobile:
                 dic["firstName"] = txtToUpdate as AnyObject
+            case .DateOfBirth:
+                dic["dob"] = txtToUpdate as AnyObject
+                dic["confirmDOB"] = txtToUpdate as AnyObject
         }
         var apiCallFor = ApiURls.firstNameUpdate
         
@@ -63,11 +64,13 @@ extension PersonalInfoVC
             case .LastName:
                 apiCallFor = ApiURls.lastNameUpdate
             case .SSN:
-                apiCallFor = ApiURls.firstNameUpdate
+                apiCallFor = ApiURls.SSNUpdate
             case .Email:
                 apiCallFor = ApiURls.firstNameUpdate
             case .Mobile:
                 apiCallFor = ApiURls.firstNameUpdate
+            case .DateOfBirth:
+                apiCallFor = ApiURls.DOBUpdate
         }
         
         AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
@@ -75,10 +78,65 @@ extension PersonalInfoVC
             if let dic = jsonResponce.dictionary
             {
                 print(dic)
+                let succeeded = dic["succeeded"]?.bool ?? false
+                if succeeded
+                {
+                    self.getUserDetails()
+                }
             }
         } failure: { (error) in
             print(error)
         }
 
+    }
+    
+}
+
+extension PersonalInfoVC
+{
+    func uploadProfilePic(imgData:Data,fileName:String)
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        print("Image Size :- \(imgData.count)")
+        print("Image Name :- tmpFile.\(fileName)")
+        var headers:HTTPHeaders  = []
+        headers.add(name: APIConstant.authorization, value: "Bearer " + AuthLoginClass.shared.FreshToken)
+        headers.add(name: APIConstant.contentType, value: APIHeader.formData)
+        
+//        let parameters = [:]
+        
+        let finalUrl = APIEnvironment.mainURL + ApiURls.updateProfileImage
+        print(finalUrl)
+//        print(parameters)
+        print(headers)
+        
+        AF.upload(multipartFormData: { (multipartFormData) in
+//            for (key, value) in parameters {
+//                multipartFormData.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
+//            }
+//            multipartFormData.append(imgData, withName: "Image", fileName: "tmpFile.\(fileName)")
+//            multipartFormData.append(imgData, withName: "Image")
+            multipartFormData.append(imgData, withName: "Image", fileName: "tmp.\(fileName)", mimeType: "image/\(fileName)")
+        }, to: finalUrl, usingThreshold: UInt64.init(), method: .put,headers: headers).responseJSON { (responseObject) in
+            LoadingOverlay.shared.hideOverlayView()
+            switch responseObject.result {
+            case .success(let value):
+                let resJson = JSON(value)
+                let succeeded = resJson["succeeded"].bool ?? false
+                if succeeded
+                {
+                    self.getUserDetails()
+                }else{
+                    if let message = resJson["message"].string
+                    {
+                        CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: message, andAlertType: 3)
+                    }
+                }
+                print("Responce :- \(resJson)")
+            case .failure(let error):
+                let error : Error = responseObject.error ?? error
+                print(error)
+            }
+        }
     }
 }

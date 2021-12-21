@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180C63452771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C63432771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift */; };
+		180C63462771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180C63442771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib */; };
 		18100BCE27705D7900E961D9 /* ShareUnshareIdentityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18100BCC27705D7900E961D9 /* ShareUnshareIdentityVC.swift */; };
 		18100BCF27705D7900E961D9 /* ShareUnshareIdentityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18100BCD27705D7900E961D9 /* ShareUnshareIdentityVC.xib */; };
 		18100BD52770652E00E961D9 /* ListOfShareOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18100BD32770652E00E961D9 /* ListOfShareOptionCell.swift */; };
@@ -57,6 +59,12 @@
 		188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */; };
 		188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */; };
 		188D40012769FAB800043FAB /* CreateAccountStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D40002769FAB800043FAB /* CreateAccountStep2VC.swift */; };
+		189519702771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895196F2771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift */; };
+		189519742771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189519732771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift */; };
+		189519792771E8BF0098A38C /* ChangePwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189519772771E8BF0098A38C /* ChangePwdVC.swift */; };
+		1895197A2771E8BF0098A38C /* ChangePwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189519782771E8BF0098A38C /* ChangePwdVC.xib */; };
+		1895197D2771F2410098A38C /* PersonalInfoVC+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895197C2771F2410098A38C /* PersonalInfoVC+Helper.swift */; };
+		18951981277204A00098A38C /* UIIMageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18951980277204A00098A38C /* UIIMageExtension.swift */; };
 		18A84D51276A10D600B8991D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D50276A10D600B8991D /* LoadingView.swift */; };
 		18A84D66276A2CA400B8991D /* AllPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D65276A2CA400B8991D /* AllPopupView.swift */; };
 		18A84D6A276A30E800B8991D /* CameraConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D69276A30E800B8991D /* CameraConfiguration.swift */; };
@@ -83,6 +91,8 @@
 
 /* Begin PBXFileReference section */
 		11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTX_Identity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180C63432771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyDateAndMonthPickerVC.swift; sourceTree = "<group>"; };
+		180C63442771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyDateAndMonthPickerVC.xib; sourceTree = "<group>"; };
 		18100BCC27705D7900E961D9 /* ShareUnshareIdentityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareUnshareIdentityVC.swift; sourceTree = "<group>"; };
 		18100BCD27705D7900E961D9 /* ShareUnshareIdentityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareUnshareIdentityVC.xib; sourceTree = "<group>"; };
 		18100BD32770652E00E961D9 /* ListOfShareOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfShareOptionCell.swift; sourceTree = "<group>"; };
@@ -133,6 +143,12 @@
 		188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalInfoVC.xib; sourceTree = "<group>"; };
 		188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalInfoVC+ApiCall.swift"; sourceTree = "<group>"; };
 		188D40002769FAB800043FAB /* CreateAccountStep2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep2VC.swift; sourceTree = "<group>"; };
+		1895196F2771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalnfoChangePopupVC+Helper.swift"; sourceTree = "<group>"; };
+		189519732771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalnfoChangePopupVC+APICall.swift"; sourceTree = "<group>"; };
+		189519772771E8BF0098A38C /* ChangePwdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePwdVC.swift; sourceTree = "<group>"; };
+		189519782771E8BF0098A38C /* ChangePwdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePwdVC.xib; sourceTree = "<group>"; };
+		1895197C2771F2410098A38C /* PersonalInfoVC+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalInfoVC+Helper.swift"; sourceTree = "<group>"; };
+		18951980277204A00098A38C /* UIIMageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageExtension.swift; sourceTree = "<group>"; };
 		18A84D50276A10D600B8991D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		18A84D65276A2CA400B8991D /* AllPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPopupView.swift; sourceTree = "<group>"; };
 		18A84D69276A30E800B8991D /* CameraConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConfiguration.swift; sourceTree = "<group>"; };
@@ -172,6 +188,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180C63422771BEF1005D8669 /* OnlyDateAndMonthPickerVC */ = {
+			isa = PBXGroup;
+			children = (
+				180C63432771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift */,
+				180C63442771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib */,
+			);
+			path = OnlyDateAndMonthPickerVC;
+			sourceTree = "<group>";
+		};
 		18100BCB27705D5D00E961D9 /* ShareUnshareIdentityVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +259,7 @@
 		184633CA27685FC3007229A3 /* Resorces */ = {
 			isa = PBXGroup;
 			children = (
+				180C63422771BEF1005D8669 /* OnlyDateAndMonthPickerVC */,
 				18EB4D40276C554D00CAF8B4 /* Loader */,
 				1863BADA27688AD700CBCEDF /* ApiRelatedStuff */,
 				184633CF2768640F007229A3 /* Font */,
@@ -246,6 +272,7 @@
 				18475259276B494F00F9F739 /* Banner.swift */,
 				1847525C276B4B0B00F9F739 /* CustomAlertView.swift */,
 				184B4D62276CB36800937C11 /* MainStuffViewController.swift */,
+				18951980277204A00098A38C /* UIIMageExtension.swift */,
 			);
 			path = Resorces;
 			sourceTree = "<group>";
@@ -355,6 +382,8 @@
 			children = (
 				188949C52770AB1F00CB563E /* PersonalnfoChangePopupVC.swift */,
 				188949C62770AB1F00CB563E /* PersonalnfoChangePopupVC.xib */,
+				1895196F2771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift */,
+				189519732771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift */,
 			);
 			path = PersonalnfoChangePopupVC;
 			sourceTree = "<group>";
@@ -362,13 +391,24 @@
 		188CD14D27709FF50034F431 /* PersonalInfoVC */ = {
 			isa = PBXGroup;
 			children = (
+				189519762771E8AC0098A38C /* ChangePwdVC */,
 				188949C42770AAFE00CB563E /* PersonalnfoChangePopupVC */,
 				188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */,
 				188CD14F2770A00F0034F431 /* PersonalInfoVC.xib */,
 				188CD1532770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift */,
 				188949CA2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift */,
+				1895197C2771F2410098A38C /* PersonalInfoVC+Helper.swift */,
 			);
 			path = PersonalInfoVC;
+			sourceTree = "<group>";
+		};
+		189519762771E8AC0098A38C /* ChangePwdVC */ = {
+			isa = PBXGroup;
+			children = (
+				189519772771E8BF0098A38C /* ChangePwdVC.swift */,
+				189519782771E8BF0098A38C /* ChangePwdVC.xib */,
+			);
+			path = ChangePwdVC;
 			sourceTree = "<group>";
 		};
 		18A84D68276A30C500B8991D /* VideoRecordingVC */ = {
@@ -579,7 +619,9 @@
 				18100BD62770652E00E961D9 /* ListOfShareOptionCell.xib in Resources */,
 				184633DF2768641C007229A3 /* SourceSansPro-SemiBold.ttf in Resources */,
 				1836F15E276A0B3000219340 /* IDScanVC.xib in Resources */,
+				1895197A2771E8BF0098A38C /* ChangePwdVC.xib in Resources */,
 				18BBA9A8276C7A7A0010222A /* RetailerTableViewCell.xib in Resources */,
+				180C63462771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib in Resources */,
 				18BBA99A276C733D0010222A /* SuccessSignupVC.xib in Resources */,
 				18A84D6F276A315A00B8991D /* VideoRecordingVC.xib in Resources */,
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
@@ -639,6 +681,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189519702771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift in Sources */,
 				187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */,
 				18BBA994276C6E240010222A /* CreateAccountStep5VC+Apicall.swift in Sources */,
 				18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */,
@@ -650,6 +693,7 @@
 				18BBA9A1276C79BC0010222A /* SearchRetailerVC.swift in Sources */,
 				1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */,
 				183A1B412769D03300464652 /* Constant.swift in Sources */,
+				189519792771E8BF0098A38C /* ChangePwdVC.swift in Sources */,
 				1847525D276B4B0B00F9F739 /* CustomAlertView.swift in Sources */,
 				18475251276B3C7100F9F739 /* CreateAccountStep1VC+ApiCall.swift in Sources */,
 				1847524E276B186D00F9F739 /* ChooseOprtionVC+Apicall.swift in Sources */,
@@ -662,6 +706,7 @@
 				18BBA999276C733D0010222A /* SuccessSignupVC.swift in Sources */,
 				1863BB16276897D000CBCEDF /* ApicallClass.swift in Sources */,
 				1863BB252768AAE900CBCEDF /* DashboardVC.swift in Sources */,
+				18951981277204A00098A38C /* UIIMageExtension.swift in Sources */,
 				184633CD27686263007229A3 /* UIViewExtension.swift in Sources */,
 				18100BD9277066B100E961D9 /* ShareUnshareIdentityVC+UiTableViewDatasourceDelegate.swift in Sources */,
 				18475266276B656D00F9F739 /* CreateAccountStep4VC+ApiCall.swift in Sources */,
@@ -669,6 +714,7 @@
 				1836F158276A029000219340 /* CreateAccountStep4VC.swift in Sources */,
 				184633F927686E15007229A3 /* ChooseOprtionVC+CollectionViewDatasource.swift in Sources */,
 				184633ED2768662D007229A3 /* ChooseOprtionVC.swift in Sources */,
+				1895197D2771F2410098A38C /* PersonalInfoVC+Helper.swift in Sources */,
 				18BBA9A7276C7A7A0010222A /* RetailerTableViewCell.swift in Sources */,
 				188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */,
 				1847525A276B494F00F9F739 /* Banner.swift in Sources */,
@@ -676,6 +722,7 @@
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
 				188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */,
 				18CB92FA27677C1F008A89C5 /* SplashViewController.swift in Sources */,
+				180C63452771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift in Sources */,
 				1836F1552769FF0100219340 /* CreateAccountStep3VC.swift in Sources */,
 				18A84D66276A2CA400B8991D /* AllPopupView.swift in Sources */,
 				18A84D6A276A30E800B8991D /* CameraConfiguration.swift in Sources */,
@@ -689,6 +736,7 @@
 				18100BCE27705D7900E961D9 /* ShareUnshareIdentityVC.swift in Sources */,
 				18100BDD27706A0800E961D9 /* ShareUnshareIdentityVC+ApiCall.swift in Sources */,
 				18475257276B482A00F9F739 /* AppUtills.swift in Sources */,
+				189519742771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift in Sources */,
 				18475260276B4CD800F9F739 /* CreateAccountStep2VC+ApiCall.swift in Sources */,
 				188949CB2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift in Sources */,
 				18CB92F627677C1F008A89C5 /* AppDelegate.swift in Sources */,

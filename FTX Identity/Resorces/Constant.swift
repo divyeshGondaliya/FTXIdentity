@@ -35,6 +35,12 @@ class ApiURls{
     static let personalInfo         = "/api/v1/Profile/PersonalInfo"
     static let firstNameUpdate      = "/api/v1/Profile/FirstName"
     static let lastNameUpdate       = "/api/v1/Profile/LastName"
+    static let SSNUpdate            = "/api/v1/Profile/SSN"
+    static let DOBUpdate            = "/api/v1/Profile/DOB"
+    static let EmailUpdate          = "/api/v1/Profile/Email"
+    static let EmailVerify          = "/api/v1/Profile/Email/Verify"
+    static let PasswordUpdate       = "/api/v1/Profile/Password"
+    static let updateProfileImage   = "/api/v1/Profile/Image"
 }
 
 struct APIHeader {
