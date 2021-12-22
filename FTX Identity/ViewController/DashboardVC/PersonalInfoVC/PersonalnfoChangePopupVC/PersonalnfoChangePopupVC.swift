@@ -43,6 +43,7 @@ class PersonalnfoChangePopupVC: UIViewController {
     var confirmRequired = false
     var editFor = EditFor.FirstName
     var userCurrentEmail = ""
+    var isRecoverEmail = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -40,23 +40,7 @@ extension SignInSecurityVC
 extension SignInSecurityVC:PersonalnfoChangePopupDelegate
 {
     func updateButtonPress(stringValueOfTextField: String) {
-        switch self.editFor
-        {
-            case .FirstName:
-                print("Firstname")
-            case .LastName:
-                print("Last name")
-            case .SSN:
-                print("Update SSN")
-//                self.updateUserInfo(txtToUpdate: stringValueOfTextField)
-            case .Email:
-                print("Email \(stringValueOfTextField)")
-//                self.getUserDetails()
-            case .Mobile:
-                print("Mobile \(stringValueOfTextField)")
-            case .DateOfBirth:
-                print("DOB")
-        }
+        self.getSigninInfo()
     }
     
     func cancelButtonPress(stringValueOfTextField: String) {

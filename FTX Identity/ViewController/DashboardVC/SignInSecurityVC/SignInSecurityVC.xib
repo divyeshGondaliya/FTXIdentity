@@ -20,6 +20,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInSecurityVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
                 <outlet property="btn_dlt_mobile" destination="XMB-q0-hP1" id="9dp-af-aHH"/>
+                <outlet property="btn_dlt_recover_email" destination="SyC-j3-BWs" id="0u8-oS-EuK"/>
                 <outlet property="btn_edit_2fa" destination="LDS-c6-4VM" id="StF-dc-JF8"/>
                 <outlet property="btn_edit_email" destination="Xh9-SY-Smo" id="GHC-9S-9Q4"/>
                 <outlet property="btn_edit_mobile" destination="0Wm-2t-Af2" id="YS6-8s-d45"/>
@@ -294,13 +295,13 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             <rect key="frame" x="0.0" y="0.0" width="366" height="70"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-Za-7L5">
-                                                    <rect key="frame" x="16" y="14" width="288" height="17"/>
+                                                    <rect key="frame" x="16" y="14" width="238" height="17"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jack@peterson.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-cI-auc">
-                                                    <rect key="frame" x="16" y="35" width="288" height="22"/>
+                                                    <rect key="frame" x="16" y="35" width="238" height="22"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -316,18 +317,31 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                         <action selector="btn_edit_recover_email_press:" destination="-1" eventType="touchUpInside" id="Hpq-mA-l0T"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-j3-BWs">
+                                                    <rect key="frame" x="262" y="18" width="34" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="jcD-wR-npR"/>
+                                                        <constraint firstAttribute="width" constant="34" id="rbz-Zr-ERS"/>
+                                                    </constraints>
+                                                    <state key="normal" image="delete"/>
+                                                    <connections>
+                                                        <action selector="btn_dlt_recover_email:" destination="-1" eventType="touchUpInside" id="d1C-GF-KdB"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstItem="NPx-ro-CUo" firstAttribute="leading" secondItem="sg7-cI-auc" secondAttribute="trailing" constant="8" id="4xp-ep-rg9"/>
                                                 <constraint firstItem="sg7-cI-auc" firstAttribute="leading" secondItem="hao-tc-Zaf" secondAttribute="leading" constant="16" id="8In-Y7-Mts"/>
                                                 <constraint firstItem="2ux-Za-7L5" firstAttribute="top" secondItem="hao-tc-Zaf" secondAttribute="top" constant="14" id="D6J-E6-FFu"/>
+                                                <constraint firstItem="SyC-j3-BWs" firstAttribute="leading" secondItem="2ux-Za-7L5" secondAttribute="trailing" constant="8" id="DtM-H6-Gkm"/>
                                                 <constraint firstItem="sg7-cI-auc" firstAttribute="top" secondItem="2ux-Za-7L5" secondAttribute="bottom" constant="4" id="MDs-Rs-saL"/>
                                                 <constraint firstItem="NPx-ro-CUo" firstAttribute="centerY" secondItem="hao-tc-Zaf" secondAttribute="centerY" id="NOS-EN-h7a"/>
                                                 <constraint firstAttribute="trailing" secondItem="NPx-ro-CUo" secondAttribute="trailing" constant="20" id="Wyd-I2-2Zn"/>
                                                 <constraint firstItem="2ux-Za-7L5" firstAttribute="leading" secondItem="hao-tc-Zaf" secondAttribute="leading" constant="16" id="hw1-xU-GaG"/>
+                                                <constraint firstItem="SyC-j3-BWs" firstAttribute="centerY" secondItem="NPx-ro-CUo" secondAttribute="centerY" id="mSR-rJ-Odb"/>
                                                 <constraint firstAttribute="bottom" secondItem="sg7-cI-auc" secondAttribute="bottom" constant="13" id="rQN-nr-f0B"/>
-                                                <constraint firstItem="NPx-ro-CUo" firstAttribute="leading" secondItem="2ux-Za-7L5" secondAttribute="trailing" constant="8" id="vs0-5B-Qdt"/>
+                                                <constraint firstItem="NPx-ro-CUo" firstAttribute="leading" secondItem="SyC-j3-BWs" secondAttribute="trailing" constant="16" id="sMN-QS-VrT"/>
+                                                <constraint firstItem="SyC-j3-BWs" firstAttribute="leading" secondItem="sg7-cI-auc" secondAttribute="trailing" constant="8" id="u5I-Dk-bXM"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiY-9N-88z">

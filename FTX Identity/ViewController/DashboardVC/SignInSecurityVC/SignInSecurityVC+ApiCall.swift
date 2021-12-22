@@ -38,6 +38,22 @@ extension SignInSecurityVC
         } failure: { (error) in
             print(error)
         }
+    }
+    
+    func removeAlernateEmail()
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        let dic = ["email":nil] as [String:AnyObject]
+        AFWrapper.sharedInstance.requestPut(ApiURls.AlternateEmail,parma: dic) { (responceJson) in
+            LoadingOverlay.shared.hideOverlayView()
+            if let dic = responceJson.dictionary
+            {
+                print(dic)
+            }
+            self.getSigninInfo()
+        } failure: { (error) in
+            print(error)
+        }
 
     }
     

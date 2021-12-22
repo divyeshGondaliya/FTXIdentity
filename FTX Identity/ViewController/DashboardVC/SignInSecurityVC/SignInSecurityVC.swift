@@ -22,6 +22,7 @@ class SignInSecurityVC: UIViewController {
     @IBOutlet weak var btn_edit_mobile: UIButton!
     @IBOutlet weak var btn_edit_recover_email: UIButton!
     @IBOutlet weak var btn_edit_recover_mobile: UIButton!
+    @IBOutlet weak var btn_dlt_recover_email: UIButton!
     
     @IBOutlet weak var btn_dlt_mobile: UIButton!
     
@@ -50,7 +51,10 @@ class SignInSecurityVC: UIViewController {
     @IBAction func btn_2fa_edit(_ sender: Any) {
         if self.lbl_2fa.text?.lowercased() == "Enabled".lowercased()
         {
-            self.disable2FA()
+            showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.TwoFADisable) {
+                self.disable2FA()
+            } failure: {
+            }
         }else{
             let vc = TwoFactorAuthenticationVC(nibName: "TwoFactorAuthenticationVC", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
@@ -61,8 +65,28 @@ class SignInSecurityVC: UIViewController {
         self.editFor = .Email
         self.openPopupForEdit()
     }
+    
     @IBAction func btn_edit_recover_email_press(_ sender: Any) {
+        self.editFor = .Email
+        let vc = PersonalnfoChangePopupVC(nibName: "PersonalnfoChangePopupVC", bundle: nil)
+        vc.userCurrentEmail = self.lbl_recover_email.text ?? ""
+        vc.editFor = self.editFor
+        vc.delegate = self
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        vc.preFillString = ""
+        vc.isRecoverEmail = true
+        self.present(vc, animated: true, completion: nil)
     }
+    
+    @IBAction func btn_dlt_recover_email(_ sender: Any)
+    {
+        showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.dltRecoveryEmail) {
+            self.removeAlernateEmail()
+        } failure: {
+        }
+    }
+    
     @IBAction func btn_mobile_edit(_ sender: Any) {
 //        self.editFor = .Mobile
 //        self.openPopupForEdit()
@@ -137,8 +161,10 @@ extension SignInSecurityVC
         if self.lbl_recover_email.text ?? "" == "(Not Set)"
         {
             self.btn_edit_recover_email.setImage(self.add_img, for: .normal)
+            self.btn_dlt_recover_email.isHidden = true
         }else{
             self.btn_edit_recover_email.setImage(self.edit_img, for: .normal)
+            self.btn_dlt_recover_email.isHidden = false
         }
         
         if self.lbl_recover_mobile.text ?? "" == "(Not Set)"

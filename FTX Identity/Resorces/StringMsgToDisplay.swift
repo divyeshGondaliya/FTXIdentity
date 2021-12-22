@@ -33,6 +33,9 @@ class StringMsgToDisplay{
     static let enterLname = "Please enter lastname first."
     static let BDYSelect = "Please select date of birth first."
     static let enterSSN = "Please enter ssn number first."
+    
+    static let dltRecoveryEmail = "Are you sure you want to delete Email ?"
+    static let TwoFADisable = "Are you sure you want to Disable 2FA Authentication?"
 }
 
 class StaticArray

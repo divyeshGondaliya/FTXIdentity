@@ -13,7 +13,11 @@ extension PersonalnfoChangePopupVC
         LoadingOverlay.shared.showOverlay(view: self.view)
         var dic = [:] as [String:AnyObject]
         dic["email"] = (self.txt_fiels.text ?? "") as AnyObject
-        let apiCallFor = ApiURls.EmailUpdate
+        var apiCallFor = ApiURls.EmailUpdate
+        if isRecoverEmail
+        {
+            apiCallFor = ApiURls.AlternateEmail
+        }
         AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
             LoadingOverlay.shared.hideOverlayView()
             if let dic = jsonResponce.dictionary
@@ -28,6 +32,10 @@ extension PersonalnfoChangePopupVC
                         self.setupOtpView()
                     }
                 }else{
+                    if let message = dic["message"]?.string
+                    {
+                        CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: message, andAlertType: 3)
+                    }
                 }
             }
         } failure: { (error) in
@@ -40,7 +48,11 @@ extension PersonalnfoChangePopupVC
         LoadingOverlay.shared.showOverlay(view: self.view)
         var dic = [:] as [String:AnyObject]
         dic["otp"] = self.strOTP as AnyObject
-        let apiCallFor = ApiURls.EmailVerify
+        var apiCallFor = ApiURls.EmailVerify
+        if isRecoverEmail
+        {
+            apiCallFor = ApiURls.AlternateEmail_Verify
+        }
         AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
             LoadingOverlay.shared.hideOverlayView()
             if let dic = jsonResponce.dictionary
