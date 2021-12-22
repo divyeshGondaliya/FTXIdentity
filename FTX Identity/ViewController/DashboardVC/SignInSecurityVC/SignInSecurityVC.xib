@@ -83,7 +83,7 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                     <rect key="frame" x="0.0" y="164" width="414" height="698"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-pI-4DF">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="489.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIp-N6-GeY">
                                     <rect key="frame" x="24" y="26" width="366" height="283"/>
@@ -289,10 +289,10 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-DW-uEv">
-                                    <rect key="frame" x="24" y="329" width="366" height="141"/>
+                                    <rect key="frame" x="24" y="329" width="366" height="140.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hao-tc-Zaf">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="69.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-Za-7L5">
                                                     <rect key="frame" x="16" y="14" width="238" height="17"/>
@@ -300,8 +300,8 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jack@peterson.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-cI-auc">
-                                                    <rect key="frame" x="16" y="35" width="238" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jack@peterson.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-cI-auc">
+                                                    <rect key="frame" x="16" y="35" width="238" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -345,7 +345,7 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiY-9N-88z">
-                                            <rect key="frame" x="0.0" y="71" width="366" height="70"/>
+                                            <rect key="frame" x="0.0" y="70.5" width="366" height="70"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaS-VR-Vmc">
                                                     <rect key="frame" x="16" y="14" width="288" height="17"/>
