@@ -10,10 +10,7 @@ import UIKit
 import Lottie
 
 public class LoadingOverlay{
-
     var overlayView : UIView!
-//    var activityIndicator : UIActivityIndicatorView!
-//    "loading_animation"
     private var animationView: AnimationView?
     var mainView = UIView()
     class var shared: LoadingOverlay {
@@ -25,8 +22,6 @@ public class LoadingOverlay{
 
     init(){
         self.overlayView = UIView()
-//        self.activityIndicator = UIActivityIndicatorView()
-        
         overlayView.frame = CGRect(x: 0, y: 0, width: 250, height: 250)
         overlayView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         overlayView.clipsToBounds = true
@@ -42,18 +37,6 @@ public class LoadingOverlay{
         overlayView.layer.cornerRadius = 125
         overlayView.clipsToBounds = true
         overlayView.setshadow()
-//        overlayView.layer.shadowColor = UIColor.white.cgColor
-//        overlayView.layer.shadowOpacity = 1
-//        overlayView.layer.shadowOffset = CGSize.zero
-//        overlayView.layer.shadowRadius = 5
-        
-        
-//        activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-//
-//        activityIndicator.center = CGPoint(x: overlayView.bounds.width / 2, y: overlayView.bounds.height / 2)
-//        activityIndicator.style = .large
-//        activityIndicator.color = .white
-//        overlayView.addSubview(activityIndicator)
     }
 
     public func showOverlay(view: UIView) {
@@ -63,11 +46,9 @@ public class LoadingOverlay{
         mainView.addSubview(overlayView)
         view.addSubview(mainView)
         animationView!.play()
-//        activityIndicator.startAnimating()
     }
 
     public func hideOverlayView() {
-//        activityIndicator.stopAnimating()
         animationView?.pause()
         mainView.removeFromSuperview()
     }

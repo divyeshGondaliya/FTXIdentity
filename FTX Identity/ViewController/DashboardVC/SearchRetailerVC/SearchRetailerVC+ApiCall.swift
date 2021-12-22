@@ -48,6 +48,7 @@ extension SearchRetailerVC
                             int_id += 1
                         }
                     }
+                    
                     self.tbl_view.reloadData()
                 }
                 
@@ -60,6 +61,7 @@ extension SearchRetailerVC
     
     func getRetailer(search:String)
     {
+        self.img_no_data.isHidden = true
         self.dummy_tbl_view.isHidden = false
         var dic = ["membershipType":0,
                    "PageSize":self.pagesize,
@@ -98,6 +100,12 @@ extension SearchRetailerVC
                         }
                     }
                     self.dummy_tbl_view.isHidden = true
+                    if self.itemToDisplay.count == 0
+                    {
+                        self.img_no_data.isHidden = false
+                    }else{
+                        self.img_no_data.isHidden = true
+                    }
                     self.tbl_view.reloadData()
                 }
             }else{

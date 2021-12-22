@@ -46,7 +46,7 @@ extension CreateAccountStep3VC
                             }
                             
                         }else{
-                            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Invalid OTP enter.", andAlertType: 3)
+                            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.otpError, andAlertType: 3)
                         }
                     }
                 }
@@ -64,5 +64,28 @@ extension CreateAccountStep3VC
         {
             self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    func reSendOTP()
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        let dic = ["userTempId":SignUpData.shared.userTempId] as [String:AnyObject]
+        
+        AFWrapper.sharedInstance.requestPOSTURL(ApiURls.OtpResend, accessTokenSignup: SignUpData.shared.access_token, params: dic) { (jsonobj) in
+            hideOverlay()
+            if let dic = jsonobj.dictionary
+            {
+                print(dic)
+                let succeeded = dic["succeeded"]?.bool ?? false
+                if succeeded
+                {
+                    self.startOtpTimer()
+                }
+            }
+        } failure: { (error) in
+            print(error.localizedDescription)
+            hideOverlay()
+        }
+        
     }
 }

@@ -12,6 +12,12 @@ class CreateAccountStep3VC: MainStuffViewController {
 
     @IBOutlet weak var btnSendOTP: UIButton!
     @IBOutlet weak var otpTextFieldView: OTPFieldView!
+    @IBOutlet weak var lbl_resend_text: UILabel!
+    @IBOutlet weak var btn_resend: UIButton!
+    
+    var timer: Timer?
+    var totalTime = 60
+    
     var strOTP : String = "" {
         
         didSet{
@@ -29,7 +35,42 @@ class CreateAccountStep3VC: MainStuffViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.startOtpTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.stopOtpTimer()
+    }
+    
+    func startOtpTimer() {
+        self.totalTime = 60
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+    func stopOtpTimer(){
+        if let timer = self.timer {
+            self.btn_resend.isEnabled = true
+            timer.invalidate()
+            self.timer = nil
+            self.lbl_resend_text.text = "Resend code"
+        }
+    }
+    @objc func updateTimer() {
+//        print(self.totalTime)
+        self.lbl_resend_text.text = "Resend your code in \(self.totalTime)"
+        if totalTime != 0 {
+            self.btn_resend.isEnabled = false
+            totalTime -= 1  // decrease counter timer
+        } else {
+            if let timer = self.timer {
+                self.btn_resend.isEnabled = true
+                timer.invalidate()
+                self.timer = nil
+                self.lbl_resend_text.text = "Resend code"
+            }
+        }
+    }
+    
     @IBAction func btn_next_pres(_ sender: Any) {
         self.verifyOTP(otp: strOTP)
     }
@@ -43,6 +84,10 @@ class CreateAccountStep3VC: MainStuffViewController {
                 break
             }
         }
+    }
+    @IBAction func btn_resend_press(_ sender: Any) {
+        print("resend?")
+        self.reSendOTP()
     }
     @IBAction func btn_back_press(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

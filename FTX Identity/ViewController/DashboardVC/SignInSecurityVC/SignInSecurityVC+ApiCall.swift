@@ -29,6 +29,18 @@ extension SignInSecurityVC
         }
     }
     
+    func disable2FA()
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        AFWrapper.sharedInstance.requestPut(ApiURls.Disable2Fa) { (responceJson) in
+            LoadingOverlay.shared.hideOverlayView()
+            self.getSigninInfo()
+        } failure: { (error) in
+            print(error)
+        }
+
+    }
+    
     func updateUserInfo(txtToUpdate:String)
     {
         LoadingOverlay.shared.showOverlay(view: self.view)

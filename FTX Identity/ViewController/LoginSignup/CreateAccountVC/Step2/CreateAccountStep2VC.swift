@@ -17,24 +17,24 @@ class CreateAccountStep2VC: MainStuffViewController {
         super.viewDidLoad()
         self.designRelatedStuff()
         print("access_token - \(access_token)")
-        self.txt_pwd.text = "Divyesh@123"
-        self.txt_c_pwd.text = "Divyesh@123"
+//        self.txt_pwd.text = "Divyesh@123"
+//        self.txt_c_pwd.text = "Divyesh@123"
         // Do any additional setup after loading the view.
     }
     @IBAction func btn_next_pres(_ sender: Any) {
         if self.txt_pwd.text?.count == 0
         {
-            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please enter Password.", andAlertType: 3)
+            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.enterPassword, andAlertType: 3)
             return
         }
         if self.txt_c_pwd.text?.count == 0
         {
-            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please enter confirm password.", andAlertType: 3)
+            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.enterCPassword, andAlertType: 3)
             return
         }
         if self.txt_pwd.text != self.txt_c_pwd.text
         {
-            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Password and confirm password must be same.", andAlertType: 3)
+            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.pwdCpwdSame, andAlertType: 3)
             return
         }
         self.generateOTP()

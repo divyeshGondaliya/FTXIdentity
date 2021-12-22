@@ -21,10 +21,10 @@ class CreateAccountStep1VC: MainStuffViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.txt_email.text = "divyesh@yopmail.com"
+//        self.txt_email.text = "divyesh@yopmail.com"
         self.designRelatedStuff()
         self.view_phone_number.alpha = 0
-        self.btn_lbl.text = "Use Mobile Number instead"
+        self.btn_lbl.text = StringMsgToDisplay.instedMobile
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -43,18 +43,18 @@ class CreateAccountStep1VC: MainStuffViewController {
         {
             if !(self.txt_email.text ?? "").isValidEmail()
             {
-                CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please enter valid email.", andAlertType: 3)
+                CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.emailNotValid, andAlertType: 3)
                 return
             }
         }else{
             if self.txt_country_code.text?.count ?? 0 == 0
             {
-                CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: "Please select country code.", andAlertType: 3)
+                CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: StringMsgToDisplay.selectCountryCode, andAlertType: 3)
                 return
             }
             if self.txt_phone_number.text?.count ?? 0 != 10
             {
-                CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: "Please enter valid mobile number.", andAlertType: 3)
+                CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: StringMsgToDisplay.mobileNotValid, andAlertType: 3)
                 return
             }
         }
@@ -69,13 +69,13 @@ class CreateAccountStep1VC: MainStuffViewController {
     }
     
     @IBAction func btn_use_mobile_email_press(_ sender: Any) {
-        if btn_lbl.text?.lowercased() == "use mobile number instead"
+        if btn_lbl.text?.lowercased() == StringMsgToDisplay.instedMobile.lowercased()
         {
             self.view_phone_number.alpha = 1
-            self.btn_lbl.text = "Use Email Address instead"
+            self.btn_lbl.text = StringMsgToDisplay.instedEmail
         }else{
             self.view_phone_number.alpha = 0
-            self.btn_lbl.text = "Use Mobile Number instead"
+            self.btn_lbl.text = StringMsgToDisplay.instedMobile
         }
     }
 }
@@ -91,9 +91,9 @@ extension CreateAccountStep1VC
         txt_country_code.rowHeight = 50
         txt_country_code.placeholder = "Select"
         txt_country_code.textAlignment = .center
-        txt_country_code.optionArray = ["+1", "+91"]
+        txt_country_code.optionArray = StaticArray.countryCode
         txt_country_code.optionIds = [0,1]
-        txt_country_code.optionImageArray = ["usa","india"]
+        txt_country_code.optionImageArray = StaticArray.countryName
         txt_country_code.didSelect{(selectedText , index ,id) in
             self.txt_country_code.text = selectedText
         }

@@ -22,6 +22,8 @@
 		18317C4D2772E8B000C90A22 /* SignInSecurityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317C4B2772E8B000C90A22 /* SignInSecurityVC.xib */; };
 		18317C502772EB0100C90A22 /* SignInSecurityVC+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317C4F2772EB0100C90A22 /* SignInSecurityVC+Helper.swift */; };
 		18317C542772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317C532772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift */; };
+		18317C5A2772F91700C90A22 /* TakeSelfieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317C582772F91700C90A22 /* TakeSelfieVC.swift */; };
+		18317C5B2772F91700C90A22 /* TakeSelfieVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317C592772F91700C90A22 /* TakeSelfieVC.xib */; };
 		1836F1552769FF0100219340 /* CreateAccountStep3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F1542769FF0100219340 /* CreateAccountStep3VC.swift */; };
 		1836F158276A029000219340 /* CreateAccountStep4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F157276A029000219340 /* CreateAccountStep4VC.swift */; };
 		1836F15D276A0B3000219340 /* IDScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F15B276A0B3000219340 /* IDScanVC.swift */; };
@@ -74,6 +76,14 @@
 		18A84D6A276A30E800B8991D /* CameraConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D69276A30E800B8991D /* CameraConfiguration.swift */; };
 		18A84D6E276A315A00B8991D /* VideoRecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84D6C276A315A00B8991D /* VideoRecordingVC.swift */; };
 		18A84D6F276A315A00B8991D /* VideoRecordingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A84D6D276A315A00B8991D /* VideoRecordingVC.xib */; };
+		18B14FDF27732A47007A6277 /* StringMsgToDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B14FDE27732A47007A6277 /* StringMsgToDisplay.swift */; };
+		18B14FE4277335FA007A6277 /* TwoFactorAuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B14FE2277335FA007A6277 /* TwoFactorAuthenticationVC.swift */; };
+		18B14FE5277335FA007A6277 /* TwoFactorAuthenticationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B14FE3277335FA007A6277 /* TwoFactorAuthenticationVC.xib */; };
+		18B14FE927733CD3007A6277 /* TwoFactorAuthenticationVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B14FE827733CD3007A6277 /* TwoFactorAuthenticationVC+ApiCall.swift */; };
+		18B14FEE2773434C007A6277 /* TwoFASuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B14FEC2773434C007A6277 /* TwoFASuccessVC.swift */; };
+		18B14FEF2773434C007A6277 /* TwoFASuccessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B14FED2773434C007A6277 /* TwoFASuccessVC.xib */; };
+		18B14FF427734612007A6277 /* TwoFASuccessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B14FF227734612007A6277 /* TwoFASuccessCell.swift */; };
+		18B14FF527734612007A6277 /* TwoFASuccessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B14FF327734612007A6277 /* TwoFASuccessCell.xib */; };
 		18BBA994276C6E240010222A /* CreateAccountStep5VC+Apicall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA993276C6E240010222A /* CreateAccountStep5VC+Apicall.swift */; };
 		18BBA999276C733D0010222A /* SuccessSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBA997276C733D0010222A /* SuccessSignupVC.swift */; };
 		18BBA99A276C733D0010222A /* SuccessSignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BBA998276C733D0010222A /* SuccessSignupVC.xib */; };
@@ -110,6 +120,8 @@
 		18317C4B2772E8B000C90A22 /* SignInSecurityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInSecurityVC.xib; sourceTree = "<group>"; };
 		18317C4F2772EB0100C90A22 /* SignInSecurityVC+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInSecurityVC+Helper.swift"; sourceTree = "<group>"; };
 		18317C532772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInSecurityVC+ApiCall.swift"; sourceTree = "<group>"; };
+		18317C582772F91700C90A22 /* TakeSelfieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeSelfieVC.swift; sourceTree = "<group>"; };
+		18317C592772F91700C90A22 /* TakeSelfieVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeSelfieVC.xib; sourceTree = "<group>"; };
 		1836F1542769FF0100219340 /* CreateAccountStep3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep3VC.swift; sourceTree = "<group>"; };
 		1836F157276A029000219340 /* CreateAccountStep4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep4VC.swift; sourceTree = "<group>"; };
 		1836F15B276A0B3000219340 /* IDScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDScanVC.swift; sourceTree = "<group>"; };
@@ -162,6 +174,14 @@
 		18A84D69276A30E800B8991D /* CameraConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConfiguration.swift; sourceTree = "<group>"; };
 		18A84D6C276A315A00B8991D /* VideoRecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordingVC.swift; sourceTree = "<group>"; };
 		18A84D6D276A315A00B8991D /* VideoRecordingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoRecordingVC.xib; sourceTree = "<group>"; };
+		18B14FDE27732A47007A6277 /* StringMsgToDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMsgToDisplay.swift; sourceTree = "<group>"; };
+		18B14FE2277335FA007A6277 /* TwoFactorAuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorAuthenticationVC.swift; sourceTree = "<group>"; };
+		18B14FE3277335FA007A6277 /* TwoFactorAuthenticationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoFactorAuthenticationVC.xib; sourceTree = "<group>"; };
+		18B14FE827733CD3007A6277 /* TwoFactorAuthenticationVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TwoFactorAuthenticationVC+ApiCall.swift"; sourceTree = "<group>"; };
+		18B14FEC2773434C007A6277 /* TwoFASuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFASuccessVC.swift; sourceTree = "<group>"; };
+		18B14FED2773434C007A6277 /* TwoFASuccessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoFASuccessVC.xib; sourceTree = "<group>"; };
+		18B14FF227734612007A6277 /* TwoFASuccessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFASuccessCell.swift; sourceTree = "<group>"; };
+		18B14FF327734612007A6277 /* TwoFASuccessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoFASuccessCell.xib; sourceTree = "<group>"; };
 		18BBA993276C6E240010222A /* CreateAccountStep5VC+Apicall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep5VC+Apicall.swift"; sourceTree = "<group>"; };
 		18BBA997276C733D0010222A /* SuccessSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessSignupVC.swift; sourceTree = "<group>"; };
 		18BBA998276C733D0010222A /* SuccessSignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessSignupVC.xib; sourceTree = "<group>"; };
@@ -240,12 +260,32 @@
 		18317C452772E88800C90A22 /* SignInSecurityVC */ = {
 			isa = PBXGroup;
 			children = (
+				18B14FE1277335DE007A6277 /* TwoFactorAuthenticationVC */,
 				18317C4A2772E8B000C90A22 /* SignInSecurityVC.swift */,
 				18317C4B2772E8B000C90A22 /* SignInSecurityVC.xib */,
 				18317C4F2772EB0100C90A22 /* SignInSecurityVC+Helper.swift */,
 				18317C532772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift */,
 			);
 			path = SignInSecurityVC;
+			sourceTree = "<group>";
+		};
+		18317C562772F8BB00C90A22 /* HelperAllCameraVC */ = {
+			isa = PBXGroup;
+			children = (
+				18317C572772F8D300C90A22 /* TakeSelfieVC */,
+				1836F15A276A0B1C00219340 /* IDScanVC */,
+				18A84D68276A30C500B8991D /* VideoRecordingVC */,
+			);
+			path = HelperAllCameraVC;
+			sourceTree = "<group>";
+		};
+		18317C572772F8D300C90A22 /* TakeSelfieVC */ = {
+			isa = PBXGroup;
+			children = (
+				18317C582772F91700C90A22 /* TakeSelfieVC.swift */,
+				18317C592772F91700C90A22 /* TakeSelfieVC.xib */,
+			);
+			path = TakeSelfieVC;
 			sourceTree = "<group>";
 		};
 		1836F15A276A0B1C00219340 /* IDScanVC */ = {
@@ -292,6 +332,7 @@
 				1847525C276B4B0B00F9F739 /* CustomAlertView.swift */,
 				184B4D62276CB36800937C11 /* MainStuffViewController.swift */,
 				18951980277204A00098A38C /* UIIMageExtension.swift */,
+				18B14FDE27732A47007A6277 /* StringMsgToDisplay.swift */,
 			);
 			path = Resorces;
 			sourceTree = "<group>";
@@ -371,14 +412,13 @@
 		1863BB1E2768A53100CBCEDF /* CreateAccountVC */ = {
 			isa = PBXGroup;
 			children = (
+				18317C562772F8BB00C90A22 /* HelperAllCameraVC */,
 				18BBA996276C73290010222A /* SuccessSignupVC */,
 				18F9A2AE276B112B00D0F9AC /* Step1 */,
 				18F9A2AF276B113100D0F9AC /* Step2 */,
 				18F9A2B0276B113700D0F9AC /* Step3 */,
 				18F9A2B2276B114200D0F9AC /* Step4 */,
 				18475248276B149C00F9F739 /* Step5 */,
-				18A84D68276A30C500B8991D /* VideoRecordingVC */,
-				1836F15A276A0B1C00219340 /* IDScanVC */,
 			);
 			path = CreateAccountVC;
 			sourceTree = "<group>";
@@ -439,6 +479,36 @@
 				18A84D6D276A315A00B8991D /* VideoRecordingVC.xib */,
 			);
 			path = VideoRecordingVC;
+			sourceTree = "<group>";
+		};
+		18B14FE1277335DE007A6277 /* TwoFactorAuthenticationVC */ = {
+			isa = PBXGroup;
+			children = (
+				18B14FEB2773432F007A6277 /* TwoFASuccessVC */,
+				18B14FE2277335FA007A6277 /* TwoFactorAuthenticationVC.swift */,
+				18B14FE3277335FA007A6277 /* TwoFactorAuthenticationVC.xib */,
+				18B14FE827733CD3007A6277 /* TwoFactorAuthenticationVC+ApiCall.swift */,
+			);
+			path = TwoFactorAuthenticationVC;
+			sourceTree = "<group>";
+		};
+		18B14FEB2773432F007A6277 /* TwoFASuccessVC */ = {
+			isa = PBXGroup;
+			children = (
+				18B14FF1277345F4007A6277 /* TwoFASuccessCell */,
+				18B14FEC2773434C007A6277 /* TwoFASuccessVC.swift */,
+				18B14FED2773434C007A6277 /* TwoFASuccessVC.xib */,
+			);
+			path = TwoFASuccessVC;
+			sourceTree = "<group>";
+		};
+		18B14FF1277345F4007A6277 /* TwoFASuccessCell */ = {
+			isa = PBXGroup;
+			children = (
+				18B14FF227734612007A6277 /* TwoFASuccessCell.swift */,
+				18B14FF327734612007A6277 /* TwoFASuccessCell.xib */,
+			);
+			path = TwoFASuccessCell;
 			sourceTree = "<group>";
 		};
 		18BBA996276C73290010222A /* SuccessSignupVC */ = {
@@ -633,6 +703,7 @@
 				18CB930227677C20008A89C5 /* LaunchScreen.storyboard in Resources */,
 				18CB92FF27677C20008A89C5 /* Assets.xcassets in Resources */,
 				18EB4D42276C555F00CAF8B4 /* loading_animation.json in Resources */,
+				18B14FE5277335FA007A6277 /* TwoFactorAuthenticationVC.xib in Resources */,
 				18BBA9A2276C79BC0010222A /* SearchRetailerVC.xib in Resources */,
 				18CB92FD27677C1F008A89C5 /* Main.storyboard in Resources */,
 				184633DE2768641C007229A3 /* SourceSansPro-Regular.ttf in Resources */,
@@ -640,7 +711,9 @@
 				184633DF2768641C007229A3 /* SourceSansPro-SemiBold.ttf in Resources */,
 				1836F15E276A0B3000219340 /* IDScanVC.xib in Resources */,
 				1895197A2771E8BF0098A38C /* ChangePwdVC.xib in Resources */,
+				18317C5B2772F91700C90A22 /* TakeSelfieVC.xib in Resources */,
 				18BBA9A8276C7A7A0010222A /* RetailerTableViewCell.xib in Resources */,
+				18B14FEF2773434C007A6277 /* TwoFASuccessVC.xib in Resources */,
 				180C63462771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib in Resources */,
 				18317C4D2772E8B000C90A22 /* SignInSecurityVC.xib in Resources */,
 				18BBA99A276C733D0010222A /* SuccessSignupVC.xib in Resources */,
@@ -648,6 +721,7 @@
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
 				18100BCF27705D7900E961D9 /* ShareUnshareIdentityVC.xib in Resources */,
 				188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */,
+				18B14FF527734612007A6277 /* TwoFASuccessCell.xib in Resources */,
 				1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */,
 				188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */,
 			);
@@ -705,11 +779,13 @@
 				189519702771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift in Sources */,
 				187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */,
 				18BBA994276C6E240010222A /* CreateAccountStep5VC+Apicall.swift in Sources */,
+				18B14FF427734612007A6277 /* TwoFASuccessCell.swift in Sources */,
 				18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */,
 				184633FC27687390007229A3 /* SigninViewController.swift in Sources */,
 				184B4D63276CB36800937C11 /* MainStuffViewController.swift in Sources */,
 				18100BD52770652E00E961D9 /* ListOfShareOptionCell.swift in Sources */,
 				1846340127688254007229A3 /* UITextFieldExtension.swift in Sources */,
+				18B14FEE2773434C007A6277 /* TwoFASuccessVC.swift in Sources */,
 				18475263276B55E200F9F739 /* CreateAccountStep3VC+ApiCall.swift in Sources */,
 				18BBA9A1276C79BC0010222A /* SearchRetailerVC.swift in Sources */,
 				1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */,
@@ -722,13 +798,16 @@
 				1847524A276B14DD00F9F739 /* CreateAccountStep5VC.swift in Sources */,
 				1836F15D276A0B3000219340 /* IDScanVC.swift in Sources */,
 				18BBA9AB276C82500010222A /* SearchRetailerVC+TableViewDataSource.swift in Sources */,
+				18317C5A2772F91700C90A22 /* TakeSelfieVC.swift in Sources */,
 				183A1B392769C7C200464652 /* DashboardOptionCell.swift in Sources */,
 				18317C502772EB0100C90A22 /* SignInSecurityVC+Helper.swift in Sources */,
 				183A1B342769C09700464652 /* AuthLoginClass.swift in Sources */,
 				1863BB202768A58300CBCEDF /* CreateAccountStep1VC.swift in Sources */,
+				18B14FE4277335FA007A6277 /* TwoFactorAuthenticationVC.swift in Sources */,
 				18BBA999276C733D0010222A /* SuccessSignupVC.swift in Sources */,
 				1863BB16276897D000CBCEDF /* ApicallClass.swift in Sources */,
 				1863BB252768AAE900CBCEDF /* DashboardVC.swift in Sources */,
+				18B14FE927733CD3007A6277 /* TwoFactorAuthenticationVC+ApiCall.swift in Sources */,
 				18951981277204A00098A38C /* UIIMageExtension.swift in Sources */,
 				18317C4C2772E8B000C90A22 /* SignInSecurityVC.swift in Sources */,
 				184633CD27686263007229A3 /* UIViewExtension.swift in Sources */,
@@ -743,6 +822,7 @@
 				188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */,
 				1847525A276B494F00F9F739 /* Banner.swift in Sources */,
 				18BBA9AE276C8AC70010222A /* SearchRetailerVC+ApiCall.swift in Sources */,
+				18B14FDF27732A47007A6277 /* StringMsgToDisplay.swift in Sources */,
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
 				188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */,
 				18CB92FA27677C1F008A89C5 /* SplashViewController.swift in Sources */,

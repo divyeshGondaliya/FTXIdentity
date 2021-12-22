@@ -21,7 +21,7 @@ class CreateAccountStep4VC: MainStuffViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.videoSelfie != nil
+        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.selfieImage != nil
         {
             self.btn_next.backgroundColor = #colorLiteral(red: 0, green: 0.4588235294, blue: 1, alpha: 1)
         }else{
@@ -35,20 +35,22 @@ class CreateAccountStep4VC: MainStuffViewController {
     }
     
     @IBAction func btn_next_pres(_ sender: Any) {
-        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.videoSelfie != nil
+        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImage != nil
         {
             if let frontIDImg = SignUpData.shared.frontIDImg.pngData(){
                 if let backIDImg = SignUpData.shared.backIDImg.pngData(){
-                    self.hideanimation = false
-                    self.loadingView.isHidden = false
-                    self.showanimationTopBottomAndBottomTop()
-                    DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
-                        self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg)
+                    if let selfieData = SignUpData.shared.selfieImage.pngData(){
+                        self.hideanimation = false
+                        self.loadingView.isHidden = false
+                        self.showanimationTopBottomAndBottomTop()
+                        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+                            self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg,selfieData: selfieData)
+                        }
                     }
                 }
             }
         }else{
-            showalert(vc: self, title: "FTX Identity", subTitle: "Please first scan your ID Document and record your video for verification.")
+            showalert(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.takeAllBiometricsFirst)
         }
     }
     
@@ -56,7 +58,7 @@ class CreateAccountStep4VC: MainStuffViewController {
        
         if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil
         {
-            showalertYesNo(vc: self, title: "FTX Identity", subTitle: "Are you sure you want to scan again? Your ID Document last ID Document will be deleted.") {
+            showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.idAlreadyScaned) {
                 SignUpData.shared.frontIDImg = nil
                 SignUpData.shared.backIDImg = nil
                 self.goingnToIDScan()
@@ -70,20 +72,20 @@ class CreateAccountStep4VC: MainStuffViewController {
     
     
     @IBAction func btn_selfie_press(_ sender: Any) {
-        if SignUpData.shared.videoSelfie != nil
+        if SignUpData.shared.selfieImage != nil
         {
-            showalertYesNo(vc: self, title: "FTX Identity", subTitle: "Are you sure you want to record again? Last video will be deleted.") {
-                let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-                let fileUrl = paths[0].appendingPathComponent("output.mp4")
-                try? FileManager.default.removeItem(at: fileUrl)
-                SignUpData.shared.videoSelfie = nil
+            showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.selfieAlreadyTaken) {
+//                let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+//                let fileUrl = paths[0].appendingPathComponent("output.mp4")
+//                try? FileManager.default.removeItem(at: fileUrl)
+                SignUpData.shared.selfieImage = nil
                 self.goingToVideoRecord()
             } failure: {
             }
         }else{
-            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-            let fileUrl = paths[0].appendingPathComponent("output.mp4")
-            try? FileManager.default.removeItem(at: fileUrl)
+//            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+//            let fileUrl = paths[0].appendingPathComponent("output.mp4")
+//            try? FileManager.default.removeItem(at: fileUrl)
             self.goingToVideoRecord()
         }
     }    

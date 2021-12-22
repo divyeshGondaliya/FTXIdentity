@@ -11,9 +11,10 @@ import SwiftyJSON
 
 extension CreateAccountStep4VC
 {
-    func uploadAllData(FrontImage:Data,BackImage:Data)
+    func uploadAllData(FrontImage:Data,BackImage:Data,selfieData:Data)
     {
-        print("Video Size :- \(SignUpData.shared.videoSelfie.count)")
+//        print("Video Size :- \(SignUpData.shared.videoSelfie.count)")
+        print("selfie size :- \(selfieData.count)")
         print("FrontImage Size :- \(FrontImage.count)")
         print("BackImage Size :- \(BackImage.count)")
 //        LoadingOverlay.shared.showOverlay(view: self.view)        
@@ -31,15 +32,16 @@ extension CreateAccountStep4VC
             for (key, value) in parameters {
                 multipartFormData.append("\(value)".data(using: String.Encoding.utf8)!, withName: key as String)
             }
-            if let data = SignUpData.shared.videoSelfie
-            {
-                multipartFormData.append(data, withName: "SelfVideo", fileName: "output.mp4")
-            }
+//            if let data = SignUpData.shared.videoSelfie
+//            {
+//                multipartFormData.append(data, withName: "SelfVideo", fileName: "output.mp4")
+//            }
 //            if let data = SignUpData.shared.frontIDImg.pngData(){
                 multipartFormData.append(FrontImage, withName: "FrontImage", fileName: "image.png")
 //            }
 //            if let data = SignUpData.shared.backIDImg.pngData(){
                 multipartFormData.append(BackImage, withName: "BackImage", fileName: "image2.png")
+                multipartFormData.append(selfieData, withName: "SelfImage", fileName: "selfieData.png")
 //            }
         }, to: finalUrl, usingThreshold: UInt64.init(), method: .post,headers: headers).responseJSON { (responseObject) in
             self.loadingView.isHidden = true
@@ -74,7 +76,7 @@ extension CreateAccountStep4VC
                         }
                     }
                 }else{
-                    CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please make sure that your id proof photos clear and selfie video with audio is loud and clear.", andAlertType: 3)
+                    CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.biometricsError, andAlertType: 3)
                 }
                 print("Responce :- \(resJson)")
             case .failure(let error):

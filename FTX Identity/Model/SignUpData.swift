@@ -14,6 +14,7 @@ class SignUpData
     
     var access_token = ""
     var videoSelfie:Data!
+    var selfieImage:UIImage!
     var frontIDImg:UIImage!
     var backIDImg:UIImage!
     
@@ -41,6 +42,7 @@ class SignUpData
     {
         self.access_token = ""
         self.videoSelfie = nil
+        self.selfieImage = nil
         self.frontIDImg = nil
         self.backIDImg = nil
         self.signUpBy = -1

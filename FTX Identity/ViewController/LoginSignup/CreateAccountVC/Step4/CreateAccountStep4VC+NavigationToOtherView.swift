@@ -18,7 +18,9 @@ extension CreateAccountStep4VC
     
     func goingToVideoRecord()
     {
-        let vc = VideoRecordingVC(nibName: "VideoRecordingVC", bundle: nil)
+//        let vc = VideoRecordingVC(nibName: "VideoRecordingVC", bundle: nil)
+//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = TakeSelfieVC(nibName: "TakeSelfieVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

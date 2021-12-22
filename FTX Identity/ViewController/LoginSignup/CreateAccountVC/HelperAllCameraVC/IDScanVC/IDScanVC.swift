@@ -18,6 +18,7 @@ class IDScanVC: UIViewController,AVCapturePhotoCaptureDelegate {
     var stillImageOutput: AVCapturePhotoOutput!
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     
+    @IBOutlet weak var lbl_instruction: UILabel!
     @IBOutlet weak var btn_retake: UIButton!
     @IBOutlet weak var btn_takephoto: UIButton!
     @IBOutlet weak var btn_next: UIButton!
@@ -41,6 +42,7 @@ class IDScanVC: UIViewController,AVCapturePhotoCaptureDelegate {
     let unselectedcolor = #colorLiteral(red: 0.4666666667, green: 0.4666666667, blue: 0.4666666667, alpha: 1)
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.lbl_instruction.text = "Take the photo of front side of your ID Card"
         self.selected_img.isHidden = true
 //        navigationController?.setNavigationBarHidden(false, animated: true)
         self.btn_next.isHidden = true
@@ -79,13 +81,15 @@ class IDScanVC: UIViewController,AVCapturePhotoCaptureDelegate {
             self.forimg = .BACK
             self.setupviewFrontBack()
         case .BACK:
+            self.lbl_instruction.text = "Turn the back side of your ID Card and capture the photo"
             SignUpData.shared.backIDImg = self.captureImageView.image
-            if SignUpData.shared.videoSelfie != nil
+            if SignUpData.shared.selfieImage != nil
             {
                 self.navigationController?.popViewController(animated: true)
             }else{
                 self.navigationController?.popViewController(animated: true)
-                let vc = VideoRecordingVC(nibName: "VideoRecordingVC", bundle: nil)
+//                let vc = VideoRecordingVC(nibName: "VideoRecordingVC", bundle: nil)
+                let vc = TakeSelfieVC(nibName: "TakeSelfieVC", bundle: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -243,9 +247,11 @@ extension IDScanVC
         
         switch self.forimg {
         case .FRONT:
+            self.lbl_instruction.text = "Take the photo of front side of your ID Card"
             self.lbl_front_side.textColor = self.selectedcolor
             self.img_front_side.tintColor = self.selectedcolor
         case .BACK:
+            self.lbl_instruction.text = "Turn the back side of your ID Card and capture the photo"
             self.lbl_back_side.textColor = self.selectedcolor
             self.img_back_side.tintColor = self.selectedcolor
         }

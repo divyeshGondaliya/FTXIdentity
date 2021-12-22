@@ -19,7 +19,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInSecurityVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
-                <outlet property="btn_dlt_2fa" destination="MXj-DL-yOY" id="uJd-HU-p48"/>
                 <outlet property="btn_dlt_mobile" destination="XMB-q0-hP1" id="9dp-af-aHH"/>
                 <outlet property="btn_edit_2fa" destination="LDS-c6-4VM" id="StF-dc-JF8"/>
                 <outlet property="btn_edit_email" destination="Xh9-SY-Smo" id="GHC-9S-9Q4"/>
@@ -225,13 +224,13 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             <rect key="frame" x="0.0" y="213" width="366" height="70"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2FA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEO-W6-Ltc">
-                                                    <rect key="frame" x="16" y="14" width="238" height="17"/>
+                                                    <rect key="frame" x="16" y="14" width="19.5" height="17"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-Hm-vJc">
-                                                    <rect key="frame" x="16" y="35" width="238" height="0.0"/>
+                                                    <rect key="frame" x="16" y="35" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -247,21 +246,9 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                         <action selector="btn_2fa_edit:" destination="-1" eventType="touchUpInside" id="Nd4-Lz-jdc"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXj-DL-yOY">
-                                                    <rect key="frame" x="262" y="18" width="34" height="34"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="34" id="MIo-IS-chu"/>
-                                                        <constraint firstAttribute="height" constant="34" id="WfX-kA-hpu"/>
-                                                    </constraints>
-                                                    <state key="normal" image="delete"/>
-                                                    <connections>
-                                                        <action selector="btn_2fa_dlt:" destination="-1" eventType="touchUpInside" id="8Dw-56-sXH"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstItem="LDS-c6-4VM" firstAttribute="leading" secondItem="MXj-DL-yOY" secondAttribute="trailing" constant="16" id="3Xu-Df-1wY"/>
                                                 <constraint firstAttribute="height" constant="70" id="65g-xW-LLY"/>
                                                 <constraint firstAttribute="trailing" secondItem="LDS-c6-4VM" secondAttribute="trailing" constant="20" id="73o-7L-v9v"/>
                                                 <constraint firstItem="GGx-Hm-vJc" firstAttribute="leading" secondItem="che-wo-BuS" secondAttribute="leading" constant="16" id="WKN-Y1-t5U"/>
@@ -269,9 +256,6 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                 <constraint firstItem="rEO-W6-Ltc" firstAttribute="top" secondItem="che-wo-BuS" secondAttribute="top" constant="14" id="dFN-Mc-PGI"/>
                                                 <constraint firstItem="rEO-W6-Ltc" firstAttribute="leading" secondItem="che-wo-BuS" secondAttribute="leading" constant="16" id="f9o-ae-vSd"/>
                                                 <constraint firstItem="GGx-Hm-vJc" firstAttribute="top" secondItem="rEO-W6-Ltc" secondAttribute="bottom" constant="4" id="gau-q5-7HY"/>
-                                                <constraint firstItem="MXj-DL-yOY" firstAttribute="leading" secondItem="rEO-W6-Ltc" secondAttribute="trailing" constant="8" id="hVK-Vc-cRE"/>
-                                                <constraint firstItem="MXj-DL-yOY" firstAttribute="leading" secondItem="GGx-Hm-vJc" secondAttribute="trailing" constant="8" id="jfJ-wO-YYW"/>
-                                                <constraint firstItem="MXj-DL-yOY" firstAttribute="centerY" secondItem="che-wo-BuS" secondAttribute="centerY" id="x3r-nb-tCp"/>
                                             </constraints>
                                         </view>
                                     </subviews>

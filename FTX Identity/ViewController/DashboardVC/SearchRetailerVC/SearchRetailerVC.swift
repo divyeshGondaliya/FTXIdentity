@@ -10,6 +10,7 @@ import SwiftyJSON
 
 class SearchRetailerVC: MainStuffViewController {
 
+    @IBOutlet weak var img_no_data: UIImageView!
     @IBOutlet weak var tbl_view: UITableView!
     @IBOutlet weak var txt_search_retailer: UITextField!
     @IBOutlet weak var leading_search: NSLayoutConstraint!
@@ -24,6 +25,7 @@ class SearchRetailerVC: MainStuffViewController {
     var vcForMemberShip = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.img_no_data.isHidden = true
         if vcForMemberShip
         {
             self.lbl_search_retailer.text = "Membership"

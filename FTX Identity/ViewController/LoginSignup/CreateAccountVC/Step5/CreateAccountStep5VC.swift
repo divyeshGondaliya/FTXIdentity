@@ -15,6 +15,7 @@ class CreateAccountStep5VC: MainStuffViewController {
     @IBOutlet weak var txt_fname: UITextField!
     @IBOutlet weak var txt_lname: UITextField!
     @IBOutlet weak var txt_bdate: UITextField!
+    @IBOutlet weak var btn_bdate: UIButton!
     @IBOutlet weak var txt_ssn: UITextField!
     @IBOutlet weak var lbl_ssn_bdy: UILabel!
     @IBOutlet weak var btn_dob_ssn: UIButton!
@@ -28,7 +29,7 @@ class CreateAccountStep5VC: MainStuffViewController {
         DatePickerDialog().show("Birthday", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) { date in
             if let dt = date {
                 let formatter = DateFormatter()
-                formatter.dateFormat = "dd/MM/yyyy"
+                formatter.dateFormat = "MM/dd/yyyy"
                 self.txt_bdate.text = formatter.string(from: dt)
             }
         }
@@ -40,13 +41,13 @@ class CreateAccountStep5VC: MainStuffViewController {
         
         if self.txt_fname.text ?? "" == ""
         {
-            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please enter firstname first.", andAlertType: 3)
+            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.enterFname, andAlertType: 3)
             return
         }
         
         if self.txt_lname.text ?? "" == ""
         {
-            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please enter lastname first.", andAlertType: 3)
+            CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.enterLname, andAlertType: 3)
             return
         }
         
@@ -54,13 +55,13 @@ class CreateAccountStep5VC: MainStuffViewController {
         {
             if self.txt_bdate.text ?? "" == ""
             {
-                CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: "Please select date of birth first.", andAlertType: 3)
+                CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: StringMsgToDisplay.BDYSelect, andAlertType: 3)
                 return
             }
         }else{
             if self.txt_ssn.text?.count ?? 0 == 0
             {
-                CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: "Please enter ssn number first.", andAlertType: 3)
+                CustomAlertView.display(activeViewController:self,withTitle: nil, andMessage: StringMsgToDisplay.enterSSN, andAlertType: 3)
                 return
             }
         }
@@ -89,7 +90,7 @@ extension CreateAccountStep5VC
 {
     func designRelatedStuff()
     {
-        self.lbl_ssn_bdy.text = "Use SSN instead"
+        self.lbl_ssn_bdy.text = StringMsgToDisplay.SSNinstead
         self.view_ssn.alpha = 0
         self.txt_ssn.delegate = self
         self.txt_ssn.keyboardType = .numberPad
@@ -105,6 +106,7 @@ extension CreateAccountStep5VC
             self.txt_fname.isUserInteractionEnabled = false
             self.txt_lname.isUserInteractionEnabled = false
             self.txt_bdate.isUserInteractionEnabled = false
+            self.btn_bdate.isUserInteractionEnabled = false
             self.lbl_ssn_bdy.text = ""
             self.btn_dob_ssn.isEnabled = false
         }
@@ -113,23 +115,38 @@ extension CreateAccountStep5VC
             self.txt_fname.isUserInteractionEnabled = false
             self.txt_lname.isUserInteractionEnabled = false
             self.txt_bdate.isUserInteractionEnabled = false
+            self.btn_bdate.isUserInteractionEnabled = false
             self.lbl_ssn_bdy.text = ""
             self.btn_dob_ssn.isEnabled = false
         }
         self.txt_fname.text = SignUpData.shared.firstName
         self.txt_lname.text = SignUpData.shared.lastName
-        self.txt_bdate.text = SignUpData.shared.dateOfBirth       
+//        2021-12-22T06:33:33.687Z
+        let arr = SignUpData.shared.dateOfBirth.components(separatedBy: "T")
+        if arr.count > 0
+        {
+            let dateStr = arr[0]
+            let mainDateArr = dateStr.components(separatedBy: "-")
+            if mainDateArr.count == 3
+            {
+                self.txt_bdate.text = "\(mainDateArr[1])/\(mainDateArr[2])/\(mainDateArr[0])"
+            }
+        }
+        if self.txt_bdate.text?.count ?? 0 == 0
+        {
+            self.txt_bdate.text = SignUpData.shared.dateOfBirth
+        }
     }
     
     func toggle_SSN_BDay_setup()
     {
-        if self.lbl_ssn_bdy.text == "Use SSN instead"
+        if self.lbl_ssn_bdy.text == StringMsgToDisplay.SSNinstead
         {
             self.view_ssn.alpha = 1
-            self.lbl_ssn_bdy.text = "Use Birth Date instead"
+            self.lbl_ssn_bdy.text = StringMsgToDisplay.BDYinsted
         }else{
             self.view_ssn.alpha = 0
-            self.lbl_ssn_bdy.text = "Use SSN instead"
+            self.lbl_ssn_bdy.text = StringMsgToDisplay.SSNinstead
         }
     }
 }

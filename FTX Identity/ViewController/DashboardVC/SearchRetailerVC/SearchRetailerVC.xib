@@ -20,6 +20,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchRetailerVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
                 <outlet property="dummy_tbl_view" destination="jLb-0D-mBP" id="Wo7-oL-kdA"/>
+                <outlet property="img_no_data" destination="fBE-LR-ggX" id="OGi-a3-DpL"/>
                 <outlet property="lbl_search_retailer" destination="UqR-ep-jzL" id="mTp-MN-EfT"/>
                 <outlet property="leading_search" destination="r61-Cj-eIS" id="isX-4Y-VuE"/>
                 <outlet property="tbl_view" destination="drZ-j3-PNx" id="RKk-Om-guF"/>
@@ -149,6 +150,9 @@
                         <outlet property="delegate" destination="-1" id="fv1-9S-t5f"/>
                     </connections>
                 </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-data-found-img" translatesAutoresizingMaskIntoConstraints="NO" id="fBE-LR-ggX">
+                    <rect key="frame" x="87" y="268.5" width="240" height="369"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -158,7 +162,9 @@
                 <constraint firstItem="jLb-0D-mBP" firstAttribute="top" secondItem="z8s-Ze-zLv" secondAttribute="bottom" id="DT5-Yp-cbw"/>
                 <constraint firstItem="jLb-0D-mBP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HBz-uJ-N0A"/>
                 <constraint firstItem="z8s-Ze-zLv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MAC-O6-UtZ"/>
+                <constraint firstItem="fBE-LR-ggX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="MSb-8B-j7s"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="drZ-j3-PNx" secondAttribute="trailing" id="Sds-k9-mvu"/>
+                <constraint firstItem="fBE-LR-ggX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="UEw-7k-kFH"/>
                 <constraint firstAttribute="trailing" secondItem="z8s-Ze-zLv" secondAttribute="trailing" id="VCt-fz-Jmz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="drZ-j3-PNx" secondAttribute="bottom" id="e9h-Rc-jsf"/>
                 <constraint firstItem="z8s-Ze-zLv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jMI-8x-pqr"/>
@@ -171,6 +177,7 @@
     <resources>
         <image name="btnback" width="12" height="20.5"/>
         <image name="close" width="512" height="512"/>
+        <image name="no-data-found-img" width="240" height="369"/>
         <image name="searchicon" width="21" height="20.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

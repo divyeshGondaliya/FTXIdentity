@@ -26,6 +26,7 @@ class ApiURls{
     static let SignupStep1          = "/api/v1/Signup/Availability"
     static let SignupStep2          = "/api/v2/Signup/Otp"
     static let SignupStep3          = "/api/v2/Signup/Otp/Verify"
+    static let OtpResend            = "/api/v2/Signup/Otp/Resend"
     static let SignupStep4          = "/api/v2/Signup/Biometric"
     static let SignupStep5          = "/api/v2/Signup"
     static let Memberships          = "/api/v1/Profile/Memberships"
@@ -42,6 +43,9 @@ class ApiURls{
     static let PasswordUpdate       = "/api/v1/Profile/Password"
     static let updateProfileImage   = "/api/v1/Profile/Image"
     static let SigninInfo           = "/api/v1/Profile/SigninInfo"
+    static let Profile_Enable2Fa    = "/api/v1/Profile/Enable2Fa"
+    static let Save2Fa              = "/api/v1/Profile/Save2Fa"
+    static let Disable2Fa           = "/api/v1/Profile/Disable2Fa"
 }
 
 struct APIHeader {
