@@ -41,6 +41,7 @@ class ApiURls{
     static let EmailVerify          = "/api/v1/Profile/Email/Verify"
     static let PasswordUpdate       = "/api/v1/Profile/Password"
     static let updateProfileImage   = "/api/v1/Profile/Image"
+    static let SigninInfo           = "/api/v1/Profile/SigninInfo"
 }
 
 struct APIHeader {

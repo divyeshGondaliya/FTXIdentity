@@ -57,6 +57,9 @@ extension DashboardVC:UICollectionViewDelegate
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
+        case "Sign-in Security":
+            let vc = SignInSecurityVC(nibName: "SignInSecurityVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
         case "Personal Info":
             let vc = PersonalInfoVC(nibName: "PersonalInfoVC", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)

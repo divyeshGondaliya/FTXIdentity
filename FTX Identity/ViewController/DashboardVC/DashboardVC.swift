@@ -21,8 +21,11 @@ class DashboardVC: MainStuffViewController {
         super.viewDidLoad()
         self.collection_view.register(UINib(nibName: "DashboardOptionCell", bundle: nil), forCellWithReuseIdentifier: "DashboardOptionCell")
         // Do any additional setup after loading the view.
-        self.getUserDetails()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.getUserDetails()
     }
 }
 

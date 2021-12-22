@@ -18,6 +18,10 @@
 		18100BE027708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18100BDF27708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift */; };
 		1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815DD4B277042DE0038BD9B /* RetailerDetailsVC.swift */; };
 		1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1815DD4C277042DE0038BD9B /* RetailerDetailsVC.xib */; };
+		18317C4C2772E8B000C90A22 /* SignInSecurityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317C4A2772E8B000C90A22 /* SignInSecurityVC.swift */; };
+		18317C4D2772E8B000C90A22 /* SignInSecurityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317C4B2772E8B000C90A22 /* SignInSecurityVC.xib */; };
+		18317C502772EB0100C90A22 /* SignInSecurityVC+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317C4F2772EB0100C90A22 /* SignInSecurityVC+Helper.swift */; };
+		18317C542772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317C532772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift */; };
 		1836F1552769FF0100219340 /* CreateAccountStep3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F1542769FF0100219340 /* CreateAccountStep3VC.swift */; };
 		1836F158276A029000219340 /* CreateAccountStep4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F157276A029000219340 /* CreateAccountStep4VC.swift */; };
 		1836F15D276A0B3000219340 /* IDScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F15B276A0B3000219340 /* IDScanVC.swift */; };
@@ -102,6 +106,10 @@
 		18100BDF27708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RetailerDetailsVC+ApiCall.swift"; sourceTree = "<group>"; };
 		1815DD4B277042DE0038BD9B /* RetailerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailerDetailsVC.swift; sourceTree = "<group>"; };
 		1815DD4C277042DE0038BD9B /* RetailerDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RetailerDetailsVC.xib; sourceTree = "<group>"; };
+		18317C4A2772E8B000C90A22 /* SignInSecurityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSecurityVC.swift; sourceTree = "<group>"; };
+		18317C4B2772E8B000C90A22 /* SignInSecurityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInSecurityVC.xib; sourceTree = "<group>"; };
+		18317C4F2772EB0100C90A22 /* SignInSecurityVC+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInSecurityVC+Helper.swift"; sourceTree = "<group>"; };
+		18317C532772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInSecurityVC+ApiCall.swift"; sourceTree = "<group>"; };
 		1836F1542769FF0100219340 /* CreateAccountStep3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep3VC.swift; sourceTree = "<group>"; };
 		1836F157276A029000219340 /* CreateAccountStep4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep4VC.swift; sourceTree = "<group>"; };
 		1836F15B276A0B3000219340 /* IDScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDScanVC.swift; sourceTree = "<group>"; };
@@ -227,6 +235,17 @@
 				18100BDF27708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift */,
 			);
 			path = RetailerDetailsVC;
+			sourceTree = "<group>";
+		};
+		18317C452772E88800C90A22 /* SignInSecurityVC */ = {
+			isa = PBXGroup;
+			children = (
+				18317C4A2772E8B000C90A22 /* SignInSecurityVC.swift */,
+				18317C4B2772E8B000C90A22 /* SignInSecurityVC.xib */,
+				18317C4F2772EB0100C90A22 /* SignInSecurityVC+Helper.swift */,
+				18317C532772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift */,
+			);
+			path = SignInSecurityVC;
 			sourceTree = "<group>";
 		};
 		1836F15A276A0B1C00219340 /* IDScanVC */ = {
@@ -367,6 +386,7 @@
 		1863BB222768AAC600CBCEDF /* DashboardVC */ = {
 			isa = PBXGroup;
 			children = (
+				18317C452772E88800C90A22 /* SignInSecurityVC */,
 				188CD14D27709FF50034F431 /* PersonalInfoVC */,
 				18BBA99E276C79A10010222A /* SearchRetailerVC */,
 				183A1B362769C79F00464652 /* Cell */,
@@ -622,6 +642,7 @@
 				1895197A2771E8BF0098A38C /* ChangePwdVC.xib in Resources */,
 				18BBA9A8276C7A7A0010222A /* RetailerTableViewCell.xib in Resources */,
 				180C63462771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib in Resources */,
+				18317C4D2772E8B000C90A22 /* SignInSecurityVC.xib in Resources */,
 				18BBA99A276C733D0010222A /* SuccessSignupVC.xib in Resources */,
 				18A84D6F276A315A00B8991D /* VideoRecordingVC.xib in Resources */,
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
@@ -692,6 +713,7 @@
 				18475263276B55E200F9F739 /* CreateAccountStep3VC+ApiCall.swift in Sources */,
 				18BBA9A1276C79BC0010222A /* SearchRetailerVC.swift in Sources */,
 				1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */,
+				18317C542772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift in Sources */,
 				183A1B412769D03300464652 /* Constant.swift in Sources */,
 				189519792771E8BF0098A38C /* ChangePwdVC.swift in Sources */,
 				1847525D276B4B0B00F9F739 /* CustomAlertView.swift in Sources */,
@@ -701,12 +723,14 @@
 				1836F15D276A0B3000219340 /* IDScanVC.swift in Sources */,
 				18BBA9AB276C82500010222A /* SearchRetailerVC+TableViewDataSource.swift in Sources */,
 				183A1B392769C7C200464652 /* DashboardOptionCell.swift in Sources */,
+				18317C502772EB0100C90A22 /* SignInSecurityVC+Helper.swift in Sources */,
 				183A1B342769C09700464652 /* AuthLoginClass.swift in Sources */,
 				1863BB202768A58300CBCEDF /* CreateAccountStep1VC.swift in Sources */,
 				18BBA999276C733D0010222A /* SuccessSignupVC.swift in Sources */,
 				1863BB16276897D000CBCEDF /* ApicallClass.swift in Sources */,
 				1863BB252768AAE900CBCEDF /* DashboardVC.swift in Sources */,
 				18951981277204A00098A38C /* UIIMageExtension.swift in Sources */,
+				18317C4C2772E8B000C90A22 /* SignInSecurityVC.swift in Sources */,
 				184633CD27686263007229A3 /* UIViewExtension.swift in Sources */,
 				18100BD9277066B100E961D9 /* ShareUnshareIdentityVC+UiTableViewDatasourceDelegate.swift in Sources */,
 				18475266276B656D00F9F739 /* CreateAccountStep4VC+ApiCall.swift in Sources */,

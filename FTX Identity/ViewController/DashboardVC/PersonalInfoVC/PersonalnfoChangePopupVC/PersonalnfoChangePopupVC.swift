@@ -53,6 +53,7 @@ class PersonalnfoChangePopupVC: UIViewController {
     
     @IBAction func btn_cancel_email_press(_ sender: Any) {
         self.delegate?.cancelButtonPress(stringValueOfTextField: "")
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func btn_update_email_press(_ sender: Any) {
         if self.strOTP.count == 6
