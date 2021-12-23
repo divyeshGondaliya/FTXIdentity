@@ -15,13 +15,18 @@ class DashboardVC: MainStuffViewController {
     
     let arr_img = [UIImage(named: "personal-info-icon"),UIImage(named: "biometric-info-icon"),UIImage(named: "sign-in-security-icon"),UIImage(named: "icon-membership"),UIImage(named: "icon-search"),UIImage(named: "Icon metro-settings-power")]
     let arr_title = ["Personal Info","Biometric Info","Sign-in Security","Membership","Search Retailer","Logout"]
-    
+    var profileimg = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collection_view.register(UINib(nibName: "DashboardOptionCell", bundle: nil), forCellWithReuseIdentifier: "DashboardOptionCell")
         // Do any additional setup after loading the view.
         
+    }
+    @IBAction func btn_profile_qr_press(_ sender: Any) {
+        let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
+        vc.imgurlStr = self.profileimg
+        self.present(vc, animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +56,7 @@ extension DashboardVC
                     mutableAttrString1.append(NSMutableAttributedString(string: "\(data["firstName"]?.string ?? "") \(data["lastName"]?.string ?? "")", attributes: myAttribute2))
                     
                     self.lbl_greeting.attributedText = mutableAttrString1
+                    self.profileimg = data["profileImageUrl"]?.string ?? ""
                     self.profile_img.kf.setImage(with: URL(string: data["profileImageUrl"]?.string ?? ""))
                 }
             }else{

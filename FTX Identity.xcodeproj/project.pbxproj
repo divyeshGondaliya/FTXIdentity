@@ -98,6 +98,13 @@
 		18CB92FD27677C1F008A89C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CB92FB27677C1F008A89C5 /* Main.storyboard */; };
 		18CB92FF27677C20008A89C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CB92FE27677C20008A89C5 /* Assets.xcassets */; };
 		18CB930227677C20008A89C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CB930027677C20008A89C5 /* LaunchScreen.storyboard */; };
+		18E1A79A277439FE00B90EF7 /* QrCodeDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A798277439FE00B90EF7 /* QrCodeDisplayVC.swift */; };
+		18E1A79B277439FE00B90EF7 /* QrCodeDisplayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A799277439FE00B90EF7 /* QrCodeDisplayVC.xib */; };
+		18E1A7A0277443E600B90EF7 /* BiometricInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A79E277443E600B90EF7 /* BiometricInfoVC.swift */; };
+		18E1A7A1277443E600B90EF7 /* BiometricInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A79F277443E600B90EF7 /* BiometricInfoVC.xib */; };
+		18E1A7A6277445D400B90EF7 /* BiometricInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A7A4277445D400B90EF7 /* BiometricInfoTableViewCell.swift */; };
+		18E1A7A7277445D400B90EF7 /* BiometricInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A7A5277445D400B90EF7 /* BiometricInfoTableViewCell.xib */; };
+		18E1A7AA277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A7A9277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift */; };
 		18EB4D42276C555F00CAF8B4 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 18EB4D41276C555F00CAF8B4 /* loading_animation.json */; };
 		18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */; };
 		8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */; };
@@ -198,6 +205,13 @@
 		18CB92FE27677C20008A89C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CB930127677C20008A89C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CB930327677C20008A89C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E1A798277439FE00B90EF7 /* QrCodeDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeDisplayVC.swift; sourceTree = "<group>"; };
+		18E1A799277439FE00B90EF7 /* QrCodeDisplayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrCodeDisplayVC.xib; sourceTree = "<group>"; };
+		18E1A79E277443E600B90EF7 /* BiometricInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricInfoVC.swift; sourceTree = "<group>"; };
+		18E1A79F277443E600B90EF7 /* BiometricInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiometricInfoVC.xib; sourceTree = "<group>"; };
+		18E1A7A4277445D400B90EF7 /* BiometricInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricInfoTableViewCell.swift; sourceTree = "<group>"; };
+		18E1A7A5277445D400B90EF7 /* BiometricInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiometricInfoTableViewCell.xib; sourceTree = "<group>"; };
+		18E1A7A9277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricInfoVC+Tableview.swift"; sourceTree = "<group>"; };
 		18EB4D41276C555F00CAF8B4 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
 		18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+NavigationToOtherView.swift"; sourceTree = "<group>"; };
 		5D4A3292044E91147807C528 /* Pods-FTX Identity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTX Identity.debug.xcconfig"; path = "Target Support Files/Pods-FTX Identity/Pods-FTX Identity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -426,6 +440,8 @@
 		1863BB222768AAC600CBCEDF /* DashboardVC */ = {
 			isa = PBXGroup;
 			children = (
+				18E1A79D277443D700B90EF7 /* BiometricInfoVC */,
+				18E1A797277439E400B90EF7 /* QrCodeDisplayVC */,
 				18317C452772E88800C90A22 /* SignInSecurityVC */,
 				188CD14D27709FF50034F431 /* PersonalInfoVC */,
 				18BBA99E276C79A10010222A /* SearchRetailerVC */,
@@ -576,6 +592,35 @@
 			path = "FTX Identity";
 			sourceTree = "<group>";
 		};
+		18E1A797277439E400B90EF7 /* QrCodeDisplayVC */ = {
+			isa = PBXGroup;
+			children = (
+				18E1A798277439FE00B90EF7 /* QrCodeDisplayVC.swift */,
+				18E1A799277439FE00B90EF7 /* QrCodeDisplayVC.xib */,
+			);
+			path = QrCodeDisplayVC;
+			sourceTree = "<group>";
+		};
+		18E1A79D277443D700B90EF7 /* BiometricInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				18E1A7A3277445B600B90EF7 /* Cell */,
+				18E1A79E277443E600B90EF7 /* BiometricInfoVC.swift */,
+				18E1A79F277443E600B90EF7 /* BiometricInfoVC.xib */,
+				18E1A7A9277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift */,
+			);
+			path = BiometricInfoVC;
+			sourceTree = "<group>";
+		};
+		18E1A7A3277445B600B90EF7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18E1A7A4277445D400B90EF7 /* BiometricInfoTableViewCell.swift */,
+				18E1A7A5277445D400B90EF7 /* BiometricInfoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		18EB4D40276C554D00CAF8B4 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
@@ -699,6 +744,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E1A7A1277443E600B90EF7 /* BiometricInfoVC.xib in Resources */,
 				1863BB262768AAE900CBCEDF /* DashboardVC.xib in Resources */,
 				18CB930227677C20008A89C5 /* LaunchScreen.storyboard in Resources */,
 				18CB92FF27677C20008A89C5 /* Assets.xcassets in Resources */,
@@ -706,6 +752,7 @@
 				18B14FE5277335FA007A6277 /* TwoFactorAuthenticationVC.xib in Resources */,
 				18BBA9A2276C79BC0010222A /* SearchRetailerVC.xib in Resources */,
 				18CB92FD27677C1F008A89C5 /* Main.storyboard in Resources */,
+				18E1A79B277439FE00B90EF7 /* QrCodeDisplayVC.xib in Resources */,
 				184633DE2768641C007229A3 /* SourceSansPro-Regular.ttf in Resources */,
 				18100BD62770652E00E961D9 /* ListOfShareOptionCell.xib in Resources */,
 				184633DF2768641C007229A3 /* SourceSansPro-SemiBold.ttf in Resources */,
@@ -721,6 +768,7 @@
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
 				18100BCF27705D7900E961D9 /* ShareUnshareIdentityVC.xib in Resources */,
 				188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */,
+				18E1A7A7277445D400B90EF7 /* BiometricInfoTableViewCell.xib in Resources */,
 				18B14FF527734612007A6277 /* TwoFASuccessCell.xib in Resources */,
 				1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */,
 				188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */,
@@ -778,6 +826,7 @@
 			files = (
 				189519702771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift in Sources */,
 				187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */,
+				18E1A79A277439FE00B90EF7 /* QrCodeDisplayVC.swift in Sources */,
 				18BBA994276C6E240010222A /* CreateAccountStep5VC+Apicall.swift in Sources */,
 				18B14FF427734612007A6277 /* TwoFASuccessCell.swift in Sources */,
 				18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */,
@@ -822,8 +871,10 @@
 				188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */,
 				1847525A276B494F00F9F739 /* Banner.swift in Sources */,
 				18BBA9AE276C8AC70010222A /* SearchRetailerVC+ApiCall.swift in Sources */,
+				18E1A7A6277445D400B90EF7 /* BiometricInfoTableViewCell.swift in Sources */,
 				18B14FDF27732A47007A6277 /* StringMsgToDisplay.swift in Sources */,
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
+				18E1A7A0277443E600B90EF7 /* BiometricInfoVC.swift in Sources */,
 				188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */,
 				18CB92FA27677C1F008A89C5 /* SplashViewController.swift in Sources */,
 				180C63452771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift in Sources */,
@@ -840,6 +891,7 @@
 				18100BCE27705D7900E961D9 /* ShareUnshareIdentityVC.swift in Sources */,
 				18100BDD27706A0800E961D9 /* ShareUnshareIdentityVC+ApiCall.swift in Sources */,
 				18475257276B482A00F9F739 /* AppUtills.swift in Sources */,
+				18E1A7AA277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift in Sources */,
 				189519742771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift in Sources */,
 				18475260276B4CD800F9F739 /* CreateAccountStep2VC+ApiCall.swift in Sources */,
 				188949CB2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift in Sources */,

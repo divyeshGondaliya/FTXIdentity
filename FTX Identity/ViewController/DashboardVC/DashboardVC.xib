@@ -66,6 +66,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lin-Tw-LjL">
                                     <rect key="frame" x="228.5" y="96" width="54" height="54"/>
                                     <state key="normal" image="qr-scan"/>
+                                    <connections>
+                                        <action selector="btn_profile_qr_press:" destination="-1" eventType="touchUpInside" id="rX0-IH-my8"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Jack Peterson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i2-sS-no0">
                                     <rect key="frame" x="82" y="185" width="250" height="31"/>
