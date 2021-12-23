@@ -23,7 +23,7 @@ extension TwoFactorAuthenticationVC
                     if let authenticatorUri = data["authenticatorUri"]?.string
                     {
                         print(authenticatorUri)
-                        self.generateQRCode(qrstring: authenticatorUri)
+                        self.img_qrcode.image = authenticatorUri.generateQRCode()
                     }
                     if let sharedKey = data["sharedKey"]?.string
                     {
@@ -60,27 +60,5 @@ extension TwoFactorAuthenticationVC
         } failure: { (error) in
             print(error)
         }
-    }
-    
-    
-    
-    func generateQRCode(qrstring:String)
-    {
-        // Get data from the string
-        let data = qrstring.data(using: String.Encoding.ascii)
-        // Get a QR CIFilter
-        guard let qrFilter = CIFilter(name: "CIQRCodeGenerator") else { return }
-        // Input the data
-        qrFilter.setValue(data, forKey: "inputMessage")
-        // Get the output image
-        guard let qrImage = qrFilter.outputImage else { return }
-        // Scale the image
-        let transform = CGAffineTransform(scaleX: 10, y: 10)
-        let scaledQrImage = qrImage.transformed(by: transform)
-        // Do some processing to get the UIImage
-        let context = CIContext()
-        guard let cgImage = context.createCGImage(scaledQrImage, from: scaledQrImage.extent) else { return }
-        let processedImage = UIImage(cgImage: cgImage)
-        self.img_qrcode.image = processedImage
     }
 }

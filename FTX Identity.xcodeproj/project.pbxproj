@@ -105,6 +105,7 @@
 		18E1A7A6277445D400B90EF7 /* BiometricInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A7A4277445D400B90EF7 /* BiometricInfoTableViewCell.swift */; };
 		18E1A7A7277445D400B90EF7 /* BiometricInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A7A5277445D400B90EF7 /* BiometricInfoTableViewCell.xib */; };
 		18E1A7AA277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A7A9277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift */; };
+		18E1A7AD27744E1200B90EF7 /* QrCodeDisplayVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A7AC27744E1200B90EF7 /* QrCodeDisplayVC+ApiCall.swift */; };
 		18EB4D42276C555F00CAF8B4 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 18EB4D41276C555F00CAF8B4 /* loading_animation.json */; };
 		18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */; };
 		8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */; };
@@ -212,6 +213,7 @@
 		18E1A7A4277445D400B90EF7 /* BiometricInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricInfoTableViewCell.swift; sourceTree = "<group>"; };
 		18E1A7A5277445D400B90EF7 /* BiometricInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BiometricInfoTableViewCell.xib; sourceTree = "<group>"; };
 		18E1A7A9277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BiometricInfoVC+Tableview.swift"; sourceTree = "<group>"; };
+		18E1A7AC27744E1200B90EF7 /* QrCodeDisplayVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QrCodeDisplayVC+ApiCall.swift"; sourceTree = "<group>"; };
 		18EB4D41276C555F00CAF8B4 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
 		18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+NavigationToOtherView.swift"; sourceTree = "<group>"; };
 		5D4A3292044E91147807C528 /* Pods-FTX Identity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTX Identity.debug.xcconfig"; path = "Target Support Files/Pods-FTX Identity/Pods-FTX Identity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -597,6 +599,7 @@
 			children = (
 				18E1A798277439FE00B90EF7 /* QrCodeDisplayVC.swift */,
 				18E1A799277439FE00B90EF7 /* QrCodeDisplayVC.xib */,
+				18E1A7AC27744E1200B90EF7 /* QrCodeDisplayVC+ApiCall.swift */,
 			);
 			path = QrCodeDisplayVC;
 			sourceTree = "<group>";
@@ -842,6 +845,7 @@
 				183A1B412769D03300464652 /* Constant.swift in Sources */,
 				189519792771E8BF0098A38C /* ChangePwdVC.swift in Sources */,
 				1847525D276B4B0B00F9F739 /* CustomAlertView.swift in Sources */,
+				18E1A7AD27744E1200B90EF7 /* QrCodeDisplayVC+ApiCall.swift in Sources */,
 				18475251276B3C7100F9F739 /* CreateAccountStep1VC+ApiCall.swift in Sources */,
 				1847524E276B186D00F9F739 /* ChooseOprtionVC+Apicall.swift in Sources */,
 				1847524A276B14DD00F9F739 /* CreateAccountStep5VC.swift in Sources */,

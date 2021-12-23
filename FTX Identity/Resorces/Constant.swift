@@ -48,6 +48,7 @@ class ApiURls{
     static let Disable2Fa            = "/api/v1/Profile/Disable2Fa"
     static let AlternateEmail        = "/api/v1/Profile/AlternateEmail"
     static let AlternateEmail_Verify = "/api/v1/Profile/AlternateEmail/Verify"
+    static let Identityqr            = "/api/v1/Profile/Identity/qr"
 }
 
 struct APIHeader {
