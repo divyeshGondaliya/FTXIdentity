@@ -35,6 +35,7 @@ class BiometricInfoVC: UIViewController {
         AVCaptureDevice.requestAccess(for: .video) { success in
             if success {
                 DispatchQueue.main.async {
+                    SignUpData.shared.initdata()
                     let vc = VerifyBioMetricsVC(nibName: "VerifyBioMetricsVC", bundle: nil)
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
