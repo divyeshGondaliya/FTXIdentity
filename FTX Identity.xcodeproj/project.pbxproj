@@ -338,6 +338,7 @@
 		183A1B322769C07C00464652 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1863BADA27688AD700CBCEDF /* ApiRelatedStuff */,
 				183A1B332769C09700464652 /* AuthLoginClass.swift */,
 				18475253276B40D000F9F739 /* SignUpData.swift */,
 			);
@@ -358,7 +359,6 @@
 			children = (
 				180C63422771BEF1005D8669 /* OnlyDateAndMonthPickerVC */,
 				18EB4D40276C554D00CAF8B4 /* Loader */,
-				1863BADA27688AD700CBCEDF /* ApiRelatedStuff */,
 				184633CF2768640F007229A3 /* Font */,
 				18CB92FE27677C20008A89C5 /* Assets.xcassets */,
 				184633CC27686263007229A3 /* UIViewExtension.swift */,
