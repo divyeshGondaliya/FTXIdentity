@@ -3,11 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Identify yourself by capturing a selfie video saved</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>For Scan your ID Document and Identify yourself by capturing a selfie video</string>
+	<string>This allows us to access your photo library to let you browse and pick the profile picture.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Identify yourself by capturing a selfie video with audio</string>
+	<string>This allows us to capture images of ID document and your selfie for biometric verification.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

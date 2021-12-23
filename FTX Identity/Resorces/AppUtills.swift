@@ -56,3 +56,26 @@ extension String
         return processedImage
     }
 }
+
+extension String
+{
+    func createImage()->UIImage
+    {
+        let outerView = UIView(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
+        outerView.backgroundColor = #colorLiteral(red: 0, green: 0.4588235294, blue: 1, alpha: 1)
+        let lbl = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 250))
+        lbl.font = UIFont(name: "SourceSansPro-Regular", size: 70)
+        lbl.text = self
+        lbl.textAlignment = .center
+        lbl.textColor = UIColor.white
+        
+        outerView.addSubview(lbl)
+        
+        let renderer = UIGraphicsImageRenderer(size: outerView.bounds.size)
+        let convertedImage = renderer.image { ctx in
+            outerView.drawHierarchy(in: outerView.bounds, afterScreenUpdates: true)
+            
+        }
+        return convertedImage
+    }
+}

@@ -36,6 +36,8 @@ class StringMsgToDisplay{
     
     static let dltRecoveryEmail = "Are you sure you want to delete Email ?"
     static let TwoFADisable = "Are you sure you want to Disable 2FA Authentication?"
+    
+    static let logout = "Are you sure you want to log out ?"
 }
 
 class StaticArray

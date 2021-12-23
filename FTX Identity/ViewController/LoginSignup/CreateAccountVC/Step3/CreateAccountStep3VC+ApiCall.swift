@@ -38,6 +38,10 @@ extension CreateAccountStep3VC
                             if SignUpData.shared.biometricOption == 0
                             {
                                 //Skip Here step 4 and go to step 5
+                                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateAccountStep5VC") as? CreateAccountStep5VC
+                                {
+                                    self.navigationController?.pushViewController(vc, animated: true)
+                                } 
                             }else if SignUpData.shared.biometricOption == 1
                             {
                                 self.goingToStep4()

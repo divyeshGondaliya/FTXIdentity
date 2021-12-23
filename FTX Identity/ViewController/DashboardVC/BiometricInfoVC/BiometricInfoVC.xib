@@ -19,7 +19,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BiometricInfoVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
+                <outlet property="btn_verify_again" destination="aF8-0S-CO6" id="MDn-43-Qkp"/>
                 <outlet property="tbl_view" destination="SYP-Zk-Els" id="rSi-3c-vYe"/>
+                <outlet property="top_lbl_txt" destination="sso-Yj-Ib8" id="4Fc-Ix-pF3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -59,14 +61,15 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sso-Yj-Ib8">
-                    <rect key="frame" x="30" y="134" width="354" height="107"/>
-                    <string key="text">You can view and manage the document images and selfie videos enrolled through the FTxIdentity app or through the FTxIdentity website. If you wish to reverify your Biometric Information, please click "VERIFY AGAIN" button</string>
+                    <rect key="frame" x="30" y="134" width="354" height="128.5"/>
+                    <string key="text">You can view and manage your Biometric Information like Front and Back side of ID document images and selfie photo.
+Please click on Verify to submit your Biometric Information and if wish to reverify your Biometric Information click on "Verify Again"</string>
                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-0S-CO6">
-                    <rect key="frame" x="107" y="271" width="200" height="44"/>
+                    <rect key="frame" x="107" y="292.5" width="200" height="44"/>
                     <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="SVq-ne-UmH"/>
@@ -86,7 +89,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-Zk-Els">
-                    <rect key="frame" x="16" y="345" width="382" height="517"/>
+                    <rect key="frame" x="16" y="366.5" width="382" height="495.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="cf9-HF-u1k"/>

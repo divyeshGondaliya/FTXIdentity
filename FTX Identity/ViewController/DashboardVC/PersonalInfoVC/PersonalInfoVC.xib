@@ -19,6 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalInfoVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
+                <outlet property="btn_delete_profile_pic" destination="3U5-xh-EOz" id="qVQ-GL-y13"/>
                 <outlet property="btn_dlt_dob" destination="64z-wq-xi4" id="OLY-lb-Eu3"/>
                 <outlet property="btn_dlt_mobile" destination="yZ9-Fl-jzw" id="AUm-DL-BKd"/>
                 <outlet property="btn_dlt_ssn" destination="6ER-dB-fj8" id="Nyh-kK-eof"/>
@@ -118,6 +119,13 @@
                                     <state key="normal" image="editprofilepic"/>
                                     <connections>
                                         <action selector="btn_edit_profile_press:" destination="-1" eventType="touchUpInside" id="WHc-rK-h6q"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U5-xh-EOz">
+                                    <rect key="frame" x="246" y="35" width="40" height="40"/>
+                                    <state key="normal" image="deleteProfile"/>
+                                    <connections>
+                                        <action selector="btn_delete_profile_pic_press:" destination="-1" eventType="touchUpInside" id="NSM-kq-4jT"/>
                                     </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="985-vm-5bU">
@@ -506,6 +514,7 @@
                                 <constraint firstItem="985-vm-5bU" firstAttribute="top" secondItem="Pkl-Eb-Me5" secondAttribute="bottom" constant="24" id="1AJ-UE-EZc"/>
                                 <constraint firstItem="bOk-bK-Uio" firstAttribute="bottom" secondItem="OVi-IG-qHC" secondAttribute="bottom" constant="-15" id="3QC-h0-1LN"/>
                                 <constraint firstItem="OVi-IG-qHC" firstAttribute="top" secondItem="3XF-yB-GyQ" secondAttribute="top" constant="20" id="5Eu-Ea-YHE"/>
+                                <constraint firstItem="3U5-xh-EOz" firstAttribute="trailing" secondItem="OVi-IG-qHC" secondAttribute="trailing" constant="17" id="9u9-lV-eRf"/>
                                 <constraint firstItem="FNg-3v-aA1" firstAttribute="trailing" secondItem="985-vm-5bU" secondAttribute="trailing" id="AAX-eL-SQQ"/>
                                 <constraint firstItem="FNg-3v-aA1" firstAttribute="leading" secondItem="985-vm-5bU" secondAttribute="leading" id="DQS-nw-ChR"/>
                                 <constraint firstItem="Pkl-Eb-Me5" firstAttribute="leading" secondItem="OVi-IG-qHC" secondAttribute="leading" constant="-10" id="DSf-vd-xOp"/>
@@ -513,6 +522,7 @@
                                 <constraint firstAttribute="bottom" secondItem="FNg-3v-aA1" secondAttribute="bottom" constant="30" id="Lcv-nC-Vf9"/>
                                 <constraint firstItem="bOk-bK-Uio" firstAttribute="trailing" secondItem="OVi-IG-qHC" secondAttribute="trailing" constant="17" id="Pdd-HA-tCl"/>
                                 <constraint firstItem="Pkl-Eb-Me5" firstAttribute="top" secondItem="OVi-IG-qHC" secondAttribute="top" constant="-10" id="ST2-s2-7h5"/>
+                                <constraint firstItem="3U5-xh-EOz" firstAttribute="top" secondItem="OVi-IG-qHC" secondAttribute="top" constant="15" id="Sqb-6x-kos"/>
                                 <constraint firstItem="Pkl-Eb-Me5" firstAttribute="bottom" secondItem="OVi-IG-qHC" secondAttribute="bottom" constant="10" id="aQg-hK-7FG"/>
                                 <constraint firstItem="Pkl-Eb-Me5" firstAttribute="trailing" secondItem="OVi-IG-qHC" secondAttribute="trailing" constant="10" id="mZx-hT-JEf"/>
                                 <constraint firstAttribute="trailing" secondItem="985-vm-5bU" secondAttribute="trailing" constant="24" id="mod-Mg-cPR"/>
@@ -549,6 +559,7 @@
     <resources>
         <image name="btnback" width="12" height="20.5"/>
         <image name="delete" width="34" height="34"/>
+        <image name="deleteProfile" width="40" height="40"/>
         <image name="edit" width="34" height="34"/>
         <image name="editprofilepic" width="54" height="54"/>
         <systemColor name="systemBackgroundColor">

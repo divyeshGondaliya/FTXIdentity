@@ -49,6 +49,10 @@ class ApiURls{
     static let AlternateEmail        = "/api/v1/Profile/AlternateEmail"
     static let AlternateEmail_Verify = "/api/v1/Profile/AlternateEmail/Verify"
     static let Identityqr            = "/api/v1/Profile/Identity/qr"
+    static let ProfileBiometric      = "/api/v1/Profile/Biometric"
+    static let dltProfile            = "/api/v1/Profile/Image"
+    static let BiometricVerify       = "/api/v1/Profile/Biometric/Verify"
+    static let ProfileBiometricPut      = "/api/v1/Profile/Biometric"
 }
 
 struct APIHeader {

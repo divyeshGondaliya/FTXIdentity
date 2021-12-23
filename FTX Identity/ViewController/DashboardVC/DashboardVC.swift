@@ -24,16 +24,43 @@ class DashboardVC: MainStuffViewController {
         
     }
     @IBAction func btn_profile_qr_press(_ sender: Any) {
-        let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
-        vc.imgurlStr = self.profileimg
-        self.present(vc, animated: true, completion: nil)
+//        let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
+//        vc.imgurlStr = self.profileimg
+//        vc.delegate = self
+//        self.present(vc, animated: true, completion: nil)
+        self.openQrCodeDisplay()
     }
     
+    @IBAction func btn_bottom_scan_press(_ sender: Any) {
+//        let vc = QrCodeScannerVC(nibName: "QrCodeScannerVC", bundle: nil)
+//        vc.delegate = self
+//        self.navigationController?.present(vc, animated: true, completion: nil)
+        self.openQrScanner()
+    }
     override func viewWillAppear(_ animated: Bool) {
         self.getUserDetails()
     }
 }
 
+extension DashboardVC:QrCodeScannerDelegate,QrCodeDisplayDelegate
+{
+    func openQrScanner() {
+        DispatchQueue.main.async {
+            let vc = QrCodeScannerVC(nibName: "QrCodeScannerVC", bundle: nil)
+            vc.delegate = self
+            self.navigationController?.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func openQrCodeDisplay() {
+        DispatchQueue.main.async {
+            let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
+            vc.imgurlStr = self.profileimg
+            vc.delegate = self
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+}
 
 extension DashboardVC
 {
@@ -57,7 +84,13 @@ extension DashboardVC
                     
                     self.lbl_greeting.attributedText = mutableAttrString1
                     self.profileimg = data["profileImageUrl"]?.string ?? ""
-                    self.profile_img.kf.setImage(with: URL(string: data["profileImageUrl"]?.string ?? ""))
+                    if self.profileimg.count > 0
+                    {
+                        self.profile_img.kf.setImage(with: URL(string: data["profileImageUrl"]?.string ?? ""))
+                    }else{
+                        self.profile_img.image = "\(data["firstName"]?.string ?? "") \(data["lastName"]?.string ?? "")".getFirstLetterOfTwoString().createImage()
+                        self.profileimg = "\(data["firstName"]?.string ?? "") \(data["lastName"]?.string ?? "")".getFirstLetterOfTwoString()
+                    }
                 }
             }else{
                 

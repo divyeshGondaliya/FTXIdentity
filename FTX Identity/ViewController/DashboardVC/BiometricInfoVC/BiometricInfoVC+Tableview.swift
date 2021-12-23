@@ -25,6 +25,27 @@ extension BiometricInfoVC:UITableViewDataSource,UITableViewDelegate
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = DisplayImageVC(nibName: "DisplayImageVC", bundle: nil)
+        var imgurl = ""
+        if indexPath.row == 0
+        {
+            imgurl = self.idFrontImageUrl
+        }
+        if indexPath.row == 1
+        {
+            imgurl = self.idBackImageUrl
+        }
+        if indexPath.row == 2
+        {
+            imgurl = self.selfImageUrl
+        }
+        if imgurl.count > 0
+        {
+            vc.imgStringUrl = imgurl
+            self.present(vc, animated: true, completion: nil)
+        }        
+    }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

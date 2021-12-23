@@ -7,6 +7,7 @@
 
 import UIKit
 import AppAuth
+import AVFoundation
 
 class ChooseOprtionVC: MainStuffViewController {
 
@@ -35,8 +36,22 @@ class ChooseOprtionVC: MainStuffViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     @IBAction func create_ac_press(_ sender: Any) {
-        SignUpData.shared.initdata()
-        self.getGuestToken()
+        AVCaptureDevice.requestAccess(for: .video) { success in
+            if success { 
+                DispatchQueue.main.async {
+                    SignUpData.shared.initdata()
+                    self.getGuestToken()
+                }
+            } else {
+                let alert = UIAlertController(title: "Camera", message: "Camera access is absolutely necessary to use this app.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                }))
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true)
+                }
+            }
+        }
     }
     
     @IBAction func btn_already_member_press(_ sender: Any) {

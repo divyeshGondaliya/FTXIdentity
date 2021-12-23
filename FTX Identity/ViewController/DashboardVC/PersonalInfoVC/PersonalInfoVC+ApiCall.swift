@@ -90,6 +90,17 @@ extension PersonalInfoVC
 
     }
     
+    func deleteProfilePic()
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        AFWrapper.sharedInstance.requestDelete(ApiURls.dltProfile) { (responceJson) in
+            LoadingOverlay.shared.hideOverlayView()
+            self.getUserDetails()
+        } failure: { (error) in
+            print(error)
+        }
+    }
+    
 }
 
 extension PersonalInfoVC

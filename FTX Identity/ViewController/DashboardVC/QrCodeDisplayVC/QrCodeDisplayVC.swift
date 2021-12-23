@@ -7,6 +7,9 @@
 
 import UIKit
 
+protocol QrCodeDisplayDelegate:class {
+    func openQrScanner()
+}
 class QrCodeDisplayVC: UIViewController {
 
     @IBOutlet weak var img_qr: UIImageView!
@@ -14,10 +17,15 @@ class QrCodeDisplayVC: UIViewController {
     
     var imgurlStr = ""
     
+    weak var delegate:QrCodeDisplayDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getQrCode()
-        if imgurlStr.count > 0
+        if imgurlStr.count == 2
+        {
+            self.profile_img.image = self.imgurlStr.createImage()
+        }else if imgurlStr.count > 0
         {
             self.profile_img.kf.setImage(with: URL(string: imgurlStr))
         }
@@ -25,6 +33,9 @@ class QrCodeDisplayVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func btn_open_scaner(_ sender: Any) {
+        self.dismiss(animated: true) {
+            self.delegate?.openQrScanner()
+        }
     }
     
     @IBAction func btn_close_press(_ sender: Any) {

@@ -1,4 +1,4 @@
-//
+    //
 //  IDScanVC.swift
 //  FTX Identity
 //

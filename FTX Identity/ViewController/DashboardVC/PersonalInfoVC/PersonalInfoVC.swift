@@ -23,6 +23,7 @@ class PersonalInfoVC: UIViewController {
     @IBOutlet weak var btn_edit_ssn: UIButton!
     @IBOutlet weak var btn_edit_email: UIButton!
     @IBOutlet weak var btn_edit_mobile: UIButton!
+    @IBOutlet weak var btn_delete_profile_pic: UIButton!
     
     @IBOutlet weak var btn_dlt_dob: UIButton!
     @IBOutlet weak var btn_dlt_ssn: UIButton!
@@ -37,6 +38,7 @@ class PersonalInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.btn_delete_profile_pic.isHidden = true
         self.getUserDetails()
     }
     
@@ -93,6 +95,10 @@ class PersonalInfoVC: UIViewController {
 //        self.openPopupForEdit()
     }
     
+    @IBAction func btn_delete_profile_pic_press(_ sender: Any) {
+        self.deleteProfilePic()
+    }
+    
     @IBAction func btn_pwd_edit(_ sender: Any) {
         let vc = ChangePwdVC(nibName: "ChangePwdVC", bundle: nil)
         vc.delegate = self
@@ -134,15 +140,18 @@ extension PersonalInfoVC
     
     func setupDataToView()
     {
+        self.btn_delete_profile_pic.isHidden = true
         self.btn_edit_profile_pic.setImage(UIImage(named: "editprofilepic"), for: .normal)
         print(self.userData)
         if let basicInfo = self.userData["basicInfo"]?.dictionary
         {
+            self.img_profile.image = "\(basicInfo["firstName"]?.string ?? "") \(basicInfo["lastName"]?.string ?? "")".getFirstLetterOfTwoString().createImage()
             if let profileImageUrl = basicInfo["profileImageUrl"]?.string
             {
                 if let url = URL(string: profileImageUrl)
                 {
                     self.img_profile.kf.setImage(with: url)
+                    self.btn_delete_profile_pic.isHidden = false
                     self.btn_edit_profile_pic.setImage(UIImage(named: "edit-input-icon"), for: .normal)
                 }
             }

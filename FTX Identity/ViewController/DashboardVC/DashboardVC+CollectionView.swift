@@ -44,21 +44,13 @@ extension DashboardVC:UICollectionViewDelegate
         }
         switch self.arr_title[indexPath.row] {
         case "Logout":
-            if let userDefaults = UserDefaults(suiteName: "group.net.openid.appauth.Example") {
-                userDefaults.removeObject(forKey: kAppAuthExampleAuthStateKey)
-                userDefaults.synchronize()
-                AuthLoginClass.shared.setAuthState(nil)
-            }
-            
-            DispatchQueue.main.async {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                if let vc = storyboard.instantiateViewController(withIdentifier: "ChooseOprtionVC") as? ChooseOprtionVC
-                {
-                    self.navigationController?.pushViewController(vc, animated: true)
-                }
+            showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.logout) {
+                self.logOut()
+            } failure: {
             }
         case "Biometric Info":
             let vc = BiometricInfoVC(nibName: "BiometricInfoVC", bundle: nil)
+            vc.img_url = self.profileimg
             self.navigationController?.pushViewController(vc, animated: true)
         case "Sign-in Security":
             let vc = SignInSecurityVC(nibName: "SignInSecurityVC", bundle: nil)
@@ -75,6 +67,23 @@ extension DashboardVC:UICollectionViewDelegate
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("nothing")
+        }
+    }
+    
+    func logOut()
+    {
+        if let userDefaults = UserDefaults(suiteName: "group.net.openid.appauth.Example") {
+            userDefaults.removeObject(forKey: kAppAuthExampleAuthStateKey)
+            userDefaults.synchronize()
+            AuthLoginClass.shared.setAuthState(nil)
+        }
+        
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let vc = storyboard.instantiateViewController(withIdentifier: "ChooseOprtionVC") as? ChooseOprtionVC
+            {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
 }
