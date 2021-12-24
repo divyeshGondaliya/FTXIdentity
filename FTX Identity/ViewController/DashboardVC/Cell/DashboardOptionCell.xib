@@ -35,15 +35,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MPb-V2-19R">
                                 <rect key="frame" x="16" y="16" width="332" height="176.5"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biometricsNotDone" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-Ol-yv8">
+                                <rect key="frame" x="335" y="13" width="16" height="16"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dfm-Ol-yv8" firstAttribute="top" secondItem="MOO-FR-Cm5" secondAttribute="top" constant="13" id="1qs-HS-gei"/>
                             <constraint firstItem="M2l-ak-kyV" firstAttribute="leading" secondItem="MOO-FR-Cm5" secondAttribute="leading" constant="8" id="5Na-JI-NF4"/>
                             <constraint firstItem="M2l-ak-kyV" firstAttribute="top" secondItem="MPb-V2-19R" secondAttribute="bottom" constant="16" id="8o8-eQ-3Ci"/>
                             <constraint firstAttribute="trailing" secondItem="M2l-ak-kyV" secondAttribute="trailing" constant="8" id="92h-EZ-34g"/>
                             <constraint firstAttribute="bottom" secondItem="M2l-ak-kyV" secondAttribute="bottom" constant="24" id="Mok-c9-B2r"/>
                             <constraint firstAttribute="trailing" secondItem="MPb-V2-19R" secondAttribute="trailing" constant="16" id="OlZ-89-y1p"/>
                             <constraint firstItem="MPb-V2-19R" firstAttribute="leading" secondItem="MOO-FR-Cm5" secondAttribute="leading" constant="16" id="RaE-VV-7UR"/>
+                            <constraint firstAttribute="trailing" secondItem="dfm-Ol-yv8" secondAttribute="trailing" constant="13" id="wty-PK-zFb"/>
                             <constraint firstItem="MPb-V2-19R" firstAttribute="top" secondItem="MOO-FR-Cm5" secondAttribute="top" constant="16" id="y7J-fM-WNo"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -69,6 +74,7 @@
             </constraints>
             <size key="customSize" width="364" height="274"/>
             <connections>
+                <outlet property="img_bio_not_done" destination="dfm-Ol-yv8" id="Blb-t7-z4v"/>
                 <outlet property="img_name" destination="MPb-V2-19R" id="nIQ-F0-yPs"/>
                 <outlet property="lbl_name" destination="M2l-ak-kyV" id="Cbq-nX-Bbu"/>
             </connections>
@@ -76,6 +82,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="biometricsNotDone" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

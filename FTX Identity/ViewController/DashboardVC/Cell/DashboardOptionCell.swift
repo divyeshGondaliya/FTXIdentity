@@ -9,6 +9,7 @@ import UIKit
 
 class DashboardOptionCell: UICollectionViewCell {
     
+    @IBOutlet weak var img_bio_not_done: UIImageView!
     @IBOutlet weak var img_name: UIImageView!
     @IBOutlet weak var lbl_name: UILabel!
     override func awakeFromNib() {

@@ -16,7 +16,7 @@ class DashboardVC: MainStuffViewController {
     let arr_img = [UIImage(named: "personal-info-icon"),UIImage(named: "biometric-info-icon"),UIImage(named: "sign-in-security-icon"),UIImage(named: "icon-membership"),UIImage(named: "icon-search"),UIImage(named: "Icon metro-settings-power")]
     let arr_title = ["Personal Info","Biometric Info","Sign-in Security","Membership","Search Retailer","Logout"]
     var profileimg = ""
-    
+    var hasBiometric = true
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collection_view.register(UINib(nibName: "DashboardOptionCell", bundle: nil), forCellWithReuseIdentifier: "DashboardOptionCell")
@@ -81,7 +81,7 @@ extension DashboardVC
                     let myAttribute2 = [ NSAttributedString.Key.font: UIFont(name: "SourceSansPro-SemiBold", size: 24.0)! ,
                                          NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0.4588235294, blue: 1, alpha: 1).cgColor] as [NSAttributedString.Key : Any]
                     mutableAttrString1.append(NSMutableAttributedString(string: "\(data["firstName"]?.string ?? "") \(data["lastName"]?.string ?? "")", attributes: myAttribute2))
-                    
+                    self.hasBiometric = data["hasBiometric"]?.bool ?? false
                     self.lbl_greeting.attributedText = mutableAttrString1
                     self.profileimg = data["profileImageUrl"]?.string ?? ""
                     if self.profileimg.count > 0
@@ -91,6 +91,7 @@ extension DashboardVC
                         self.profile_img.image = "\(data["firstName"]?.string ?? "") \(data["lastName"]?.string ?? "")".getFirstLetterOfTwoString().createImage()
                         self.profileimg = "\(data["firstName"]?.string ?? "") \(data["lastName"]?.string ?? "")".getFirstLetterOfTwoString()
                     }
+                    self.collection_view.reloadData()
                 }
             }else{
                 

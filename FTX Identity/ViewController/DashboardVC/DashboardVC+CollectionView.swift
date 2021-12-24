@@ -17,6 +17,12 @@ extension DashboardVC:UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardOptionCell", for: indexPath) as? DashboardOptionCell
         {
+            cell.img_bio_not_done.isHidden = true
+            if !self.hasBiometric && indexPath.row == 1
+            {
+                cell.img_bio_not_done.isHidden = false
+            }
+            
             cell.lbl_name.text = self.arr_title[indexPath.row]
             cell.img_name.image = self.arr_img[indexPath.row]
             return cell
