@@ -33,6 +33,7 @@ extension PersonalInfoVC:PersonalnfoChangePopupDelegate
                 self.getUserDetails()
             case .Mobile:
                 print("Mobile \(stringValueOfTextField)")
+                self.getUserDetails()
             case .DateOfBirth:
                 self.updateUserInfo(txtToUpdate: stringValueOfTextField)
         }
@@ -41,6 +42,7 @@ extension PersonalInfoVC:PersonalnfoChangePopupDelegate
     func cancelButtonPress(stringValueOfTextField: String) {
         print(stringValueOfTextField)
     }
+
 }
 
 extension PersonalInfoVC:ChangePwdDelegate

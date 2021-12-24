@@ -118,6 +118,9 @@
 		18E1A7B42774557A00B90EF7 /* QrCodeScannerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E1A7B22774557A00B90EF7 /* QrCodeScannerVC.xib */; };
 		18E1A7B82774567600B90EF7 /* QrCodeScannerVC+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1A7B72774567600B90EF7 /* QrCodeScannerVC+Helper.swift */; };
 		18EB4D42276C555F00CAF8B4 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 18EB4D41276C555F00CAF8B4 /* loading_animation.json */; };
+		18ECF1FB277588CC00FA36DF /* MobileNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF1F9277588CC00FA36DF /* MobileNumberVC.swift */; };
+		18ECF1FC277588CC00FA36DF /* MobileNumberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECF1FA277588CC00FA36DF /* MobileNumberVC.xib */; };
+		18ECF1FF27758F5800FA36DF /* MobileNumberVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */; };
 		18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */; };
 		8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */; };
 /* End PBXBuildFile section */
@@ -237,6 +240,9 @@
 		18E1A7B22774557A00B90EF7 /* QrCodeScannerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrCodeScannerVC.xib; sourceTree = "<group>"; };
 		18E1A7B72774567600B90EF7 /* QrCodeScannerVC+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QrCodeScannerVC+Helper.swift"; sourceTree = "<group>"; };
 		18EB4D41276C555F00CAF8B4 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
+		18ECF1F9277588CC00FA36DF /* MobileNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberVC.swift; sourceTree = "<group>"; };
+		18ECF1FA277588CC00FA36DF /* MobileNumberVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileNumberVC.xib; sourceTree = "<group>"; };
+		18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileNumberVC+ApiCall.swift"; sourceTree = "<group>"; };
 		18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+NavigationToOtherView.swift"; sourceTree = "<group>"; };
 		5D4A3292044E91147807C528 /* Pods-FTX Identity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTX Identity.debug.xcconfig"; path = "Target Support Files/Pods-FTX Identity/Pods-FTX Identity.debug.xcconfig"; sourceTree = "<group>"; };
 		CA9071216D47B921DA99B82A /* Pods-FTX Identity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTX Identity.release.xcconfig"; path = "Target Support Files/Pods-FTX Identity/Pods-FTX Identity.release.xcconfig"; sourceTree = "<group>"; };
@@ -493,6 +499,7 @@
 		188CD14D27709FF50034F431 /* PersonalInfoVC */ = {
 			isa = PBXGroup;
 			children = (
+				18ECF1F82775889D00FA36DF /* MobileNumberVC */,
 				189519762771E8AC0098A38C /* ChangePwdVC */,
 				188949C42770AAFE00CB563E /* PersonalnfoChangePopupVC */,
 				188CD14E2770A00F0034F431 /* PersonalInfoVC.swift */,
@@ -690,6 +697,16 @@
 			path = Loader;
 			sourceTree = "<group>";
 		};
+		18ECF1F82775889D00FA36DF /* MobileNumberVC */ = {
+			isa = PBXGroup;
+			children = (
+				18ECF1F9277588CC00FA36DF /* MobileNumberVC.swift */,
+				18ECF1FA277588CC00FA36DF /* MobileNumberVC.xib */,
+				18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */,
+			);
+			path = MobileNumberVC;
+			sourceTree = "<group>";
+		};
 		18F9A2AE276B112B00D0F9AC /* Step1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -833,6 +850,7 @@
 				188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */,
 				18E1A7A7277445D400B90EF7 /* BiometricInfoTableViewCell.xib in Resources */,
 				18B14FF527734612007A6277 /* TwoFASuccessCell.xib in Resources */,
+				18ECF1FC277588CC00FA36DF /* MobileNumberVC.xib in Resources */,
 				1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */,
 				188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */,
 			);
@@ -947,6 +965,7 @@
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
 				18E1A7A0277443E600B90EF7 /* BiometricInfoVC.swift in Sources */,
 				188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */,
+				18ECF1FF27758F5800FA36DF /* MobileNumberVC+ApiCall.swift in Sources */,
 				18CB92FA27677C1F008A89C5 /* SplashViewController.swift in Sources */,
 				180C63452771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift in Sources */,
 				1836F1552769FF0100219340 /* CreateAccountStep3VC.swift in Sources */,
@@ -954,6 +973,7 @@
 				18A84D6A276A30E800B8991D /* CameraConfiguration.swift in Sources */,
 				184633F627686DE0007229A3 /* ChooseOprtionTopInfoCollectionViewCell.swift in Sources */,
 				18475254276B40D000F9F739 /* SignUpData.swift in Sources */,
+				18ECF1FB277588CC00FA36DF /* MobileNumberVC.swift in Sources */,
 				187F9C262770503700D1451A /* RetailerDetailsVC+HelperFunction.swift in Sources */,
 				188D40012769FAB800043FAB /* CreateAccountStep2VC.swift in Sources */,
 				18100BE027708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift in Sources */,

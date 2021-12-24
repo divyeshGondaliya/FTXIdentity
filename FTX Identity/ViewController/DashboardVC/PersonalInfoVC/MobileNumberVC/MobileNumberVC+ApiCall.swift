@@ -1,22 +1,27 @@
 //
-//  PersonalnfoChangePopupVC+APICall.swift
+//  MobileNumberVC+ApiCall.swift
 //  FTX Identity
 //
-//  Created by Divyesh Gondaliya on 21/12/21.
+//  Created by Divyesh Gondaliya on 24/12/21.
 //
 
 import Foundation
-extension PersonalnfoChangePopupVC
+import OTPFieldView
+
+extension MobileNumberVC
 {
-    func getOtpForEmail()
+    func getOtpForMobile()
     {
         LoadingOverlay.shared.showOverlay(view: self.view)
+        
         var dic = [:] as [String:AnyObject]
-        dic["email"] = (self.txt_fiels.text ?? "") as AnyObject
-        var apiCallFor = ApiURls.EmailUpdate
-        if isRecoverEmail
+        dic["countryCode"] = (self.txt_country_code.text ?? "") as AnyObject
+        dic["mobile"] = (self.txt_mobile_number.text ?? "") as AnyObject
+        
+        var apiCallFor = ApiURls.ProfileMobileUpdate
+        if forAlternate
         {
-            apiCallFor = ApiURls.AlternateEmail
+            apiCallFor = ApiURls.AlternateMobile
         }
         AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
             LoadingOverlay.shared.hideOverlayView()
@@ -28,7 +33,7 @@ extension PersonalnfoChangePopupVC
                 {
                     DispatchQueue.main.async {
                         self.otp_view.isHidden = false
-                        self.lbl_email_otp_send.text = "A text with a One Time Password (OTP) has been sent to your Email Address: \(self.txt_fiels.text ?? "")"
+                        self.lbl_mobile_otp_send.text = "A text with a One Time Password (OTP) has been sent to your Phone Number: \(self.txt_country_code.text ?? "") \(self.txt_mobile_number.text ?? "")"
                         self.setupOtpView()
                     }
                 }else{
@@ -46,12 +51,14 @@ extension PersonalnfoChangePopupVC
     func verifyOtp()
     {
         LoadingOverlay.shared.showOverlay(view: self.view)
+        
         var dic = [:] as [String:AnyObject]
         dic["otp"] = self.strOTP as AnyObject
-        var apiCallFor = ApiURls.EmailVerify
-        if isRecoverEmail
+        
+        var apiCallFor = ApiURls.MobileVerifyUpdate
+        if forAlternate
         {
-            apiCallFor = ApiURls.AlternateEmail_Verify
+            apiCallFor = ApiURls.AlternateMobileVerify
         }
         AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
             LoadingOverlay.shared.hideOverlayView()
@@ -77,4 +84,23 @@ extension PersonalnfoChangePopupVC
             print(error)
         }
     }
+}
+
+extension MobileNumberVC:OTPFieldViewDelegate
+{
+    func shouldBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool {
+        return true
+    }
+    
+    func enteredOTP(otp: String) {
+        print(otp)
+        self.strOTP = otp
+    }
+    
+    func hasEnteredAllOTP(hasEnteredAll: Bool) -> Bool {
+        print("Has entered all OTP? \(hasEnteredAll)")
+        return false
+    }
+    
+    
 }

@@ -55,7 +55,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign-In Security " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnY-Rp-Dn2">
-                            <rect key="frame" x="144" y="20" width="126" height="20"/>
+                            <rect key="frame" x="147.5" y="19.5" width="119.5" height="21.5"/>
                             <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -71,7 +71,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-D2-AIU">
-                    <rect key="frame" x="18" y="122" width="378" height="35"/>
+                    <rect key="frame" x="18" y="122" width="378" height="38"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <string key="text">Lorem ipsum dolor sit amet, consetetur 
 sadipscing elitr, sed diam nonumy eirmod</string>
@@ -80,31 +80,31 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4Y-HI-C5E">
-                    <rect key="frame" x="0.0" y="161" width="414" height="701"/>
+                    <rect key="frame" x="0.0" y="164" width="414" height="698"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-pI-4DF">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="476"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="486"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIp-N6-GeY">
-                                    <rect key="frame" x="24" y="26" width="366" height="276"/>
+                                    <rect key="frame" x="24" y="26" width="366" height="281"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfL-ks-ai1">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="66.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="69"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-ge-xub">
-                                                    <rect key="frame" x="16" y="14" width="288" height="15.5"/>
+                                                    <rect key="frame" x="16" y="14" width="288" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jack@peterson.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAZ-JR-Yxf">
-                                                    <rect key="frame" x="16" y="33.5" width="288" height="20"/>
+                                                    <rect key="frame" x="16" y="34.5" width="288" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh9-SY-Smo">
-                                                    <rect key="frame" x="312" y="16.5" width="34" height="34"/>
+                                                    <rect key="frame" x="312" y="17.5" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="bD8-gO-Qby"/>
                                                         <constraint firstAttribute="width" constant="34" id="vxD-dZ-fgA"/>
@@ -129,22 +129,22 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPz-u3-wdv">
-                                            <rect key="frame" x="0.0" y="67.5" width="366" height="66.5"/>
+                                            <rect key="frame" x="0.0" y="70" width="366" height="69"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuQ-UV-pNY">
-                                                    <rect key="frame" x="16" y="14" width="238" height="15.5"/>
+                                                    <rect key="frame" x="16" y="14" width="238" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Not Set)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj4-vB-yrm">
-                                                    <rect key="frame" x="16" y="33.5" width="238" height="20"/>
+                                                    <rect key="frame" x="16" y="34.5" width="238" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wm-2t-Af2">
-                                                    <rect key="frame" x="312" y="16.5" width="34" height="34"/>
+                                                    <rect key="frame" x="312" y="17.5" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="34" id="RUi-FM-HFc"/>
                                                         <constraint firstAttribute="height" constant="34" id="u52-se-cIR"/>
@@ -155,7 +155,7 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMB-q0-hP1">
-                                                    <rect key="frame" x="262" y="16.5" width="34" height="34"/>
+                                                    <rect key="frame" x="262" y="17.5" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="34" id="Qce-wg-giC"/>
                                                         <constraint firstAttribute="height" constant="34" id="tcq-l1-ddo"/>
@@ -182,16 +182,16 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzU-hO-Gu1">
-                                            <rect key="frame" x="0.0" y="135" width="366" height="70"/>
+                                            <rect key="frame" x="0.0" y="140" width="366" height="70"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoB-S6-SgV">
-                                                    <rect key="frame" x="16" y="14" width="288" height="15.5"/>
+                                                    <rect key="frame" x="16" y="14" width="288" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="***************" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CB8-Ec-Ppo">
-                                                    <rect key="frame" x="16" y="33.5" width="288" height="20"/>
+                                                    <rect key="frame" x="16" y="34.5" width="288" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -222,16 +222,16 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="che-wo-BuS">
-                                            <rect key="frame" x="0.0" y="206" width="366" height="70"/>
+                                            <rect key="frame" x="0.0" y="211" width="366" height="70"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2FA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEO-W6-Ltc">
-                                                    <rect key="frame" x="16" y="14" width="22.5" height="15.5"/>
+                                                    <rect key="frame" x="16" y="14" width="19.5" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-Hm-vJc">
-                                                    <rect key="frame" x="16" y="33.5" width="0.0" height="0.0"/>
+                                                    <rect key="frame" x="16" y="34.5" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -289,25 +289,25 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-DW-uEv">
-                                    <rect key="frame" x="24" y="322" width="366" height="134"/>
+                                    <rect key="frame" x="24" y="327" width="366" height="139"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hao-tc-Zaf">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="66.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="69"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-Za-7L5">
-                                                    <rect key="frame" x="16" y="14" width="238" height="15.5"/>
+                                                    <rect key="frame" x="16" y="14" width="238" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jack@peterson.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-cI-auc">
-                                                    <rect key="frame" x="16" y="33.5" width="238" height="20"/>
+                                                    <rect key="frame" x="16" y="34.5" width="238" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-ro-CUo">
-                                                    <rect key="frame" x="312" y="16.5" width="34" height="34"/>
+                                                    <rect key="frame" x="312" y="17.5" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="gzF-gt-cLu"/>
                                                         <constraint firstAttribute="width" constant="34" id="tPx-Iw-Sua"/>
@@ -318,7 +318,7 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-j3-BWs">
-                                                    <rect key="frame" x="262" y="16.5" width="34" height="34"/>
+                                                    <rect key="frame" x="262" y="17.5" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="jcD-wR-npR"/>
                                                         <constraint firstAttribute="width" constant="34" id="rbz-Zr-ERS"/>
@@ -345,27 +345,30 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiY-9N-88z">
-                                            <rect key="frame" x="0.0" y="67.5" width="366" height="66.5"/>
+                                            <rect key="frame" x="0.0" y="70" width="366" height="69"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaS-VR-Vmc">
-                                                    <rect key="frame" x="16" y="14" width="288" height="15.5"/>
+                                                    <rect key="frame" x="16" y="14" width="288" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Not Set)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-ma-zaq">
-                                                    <rect key="frame" x="16" y="33.5" width="288" height="20"/>
+                                                    <rect key="frame" x="16" y="34.5" width="288" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMo-Dv-SjA">
-                                                    <rect key="frame" x="312" y="16.5" width="34" height="34"/>
+                                                    <rect key="frame" x="312" y="17.5" width="34" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="34" id="dtq-sN-dDQ"/>
                                                         <constraint firstAttribute="width" constant="34" id="mkn-hX-lg6"/>
                                                     </constraints>
                                                     <state key="normal" image="edit"/>
+                                                    <connections>
+                                                        <action selector="btn_recover_mobilenumber_press:" destination="-1" eventType="touchUpInside" id="agk-Gs-sj1"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

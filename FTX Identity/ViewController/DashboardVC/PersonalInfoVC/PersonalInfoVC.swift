@@ -93,6 +93,12 @@ class PersonalInfoVC: UIViewController {
     @IBAction func btn_mobile_edit(_ sender: Any) {
 //        self.editFor = .Mobile
 //        self.openPopupForEdit()
+        self.editFor = .Mobile
+        let vc = MobileNumberVC(nibName: "MobileNumberVC", bundle: nil)
+        vc.delegate = self
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func btn_delete_profile_pic_press(_ sender: Any) {

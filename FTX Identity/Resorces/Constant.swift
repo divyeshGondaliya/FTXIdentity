@@ -52,7 +52,11 @@ class ApiURls{
     static let ProfileBiometric      = "/api/v1/Profile/Biometric"
     static let dltProfile            = "/api/v1/Profile/Image"
     static let BiometricVerify       = "/api/v1/Profile/Biometric/Verify"
-    static let ProfileBiometricPut      = "/api/v1/Profile/Biometric"
+    static let ProfileBiometricPut   = "/api/v1/Profile/Biometric"
+    static let ProfileMobileUpdate   = "/api/v1/Profile/Mobile"
+    static let MobileVerifyUpdate    = "/api/v1/Profile/Mobile/Verify"
+    static let AlternateMobile       = "/api/v1/Profile/AlternateMobile"
+    static let AlternateMobileVerify = "/api/v1/Profile/AlternateMobile/Verify"
 }
 
 struct APIHeader {
