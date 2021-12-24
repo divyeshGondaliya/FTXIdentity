@@ -16,7 +16,7 @@ class CreateAccountStep3VC: MainStuffViewController {
     @IBOutlet weak var btn_resend: UIButton!
     
     var timer: Timer?
-    var totalTime = 60
+    var totalTime = StaticValues.OtpSendInTimer
     
     var strOTP : String = "" {
         
@@ -44,7 +44,7 @@ class CreateAccountStep3VC: MainStuffViewController {
     }
     
     func startOtpTimer() {
-        self.totalTime = 60
+        self.totalTime = StaticValues.OtpSendInTimer
         self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     func stopOtpTimer(){

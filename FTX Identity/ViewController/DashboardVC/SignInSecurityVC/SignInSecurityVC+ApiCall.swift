@@ -116,4 +116,31 @@ extension SignInSecurityVC
 
     }
     
+    func dltMobileNumber(apiCallFor:String)
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        
+        var dic = [:] as [String:AnyObject]
+        dic["mobile"] = nil
+        
+        AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
+            LoadingOverlay.shared.hideOverlayView()
+            if let dic = jsonResponce.dictionary
+            {
+                print(dic)
+                let succeeded = dic["succeeded"]?.bool ?? false
+                if succeeded
+                {
+                    self.getSigninInfo()
+                }else{
+                    if let message = dic["message"]?.string
+                    {
+                        CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: message, andAlertType: 3)
+                    }
+                }
+            }
+        } failure: { (error) in
+            print(error)
+        }
+    }
 }

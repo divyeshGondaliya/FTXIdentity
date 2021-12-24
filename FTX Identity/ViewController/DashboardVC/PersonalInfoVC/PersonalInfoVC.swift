@@ -90,6 +90,13 @@ class PersonalInfoVC: UIViewController {
         self.editFor = .Email
         self.openPopupForEdit()
     }
+    @IBAction func btn_dlt_mobile(_ sender: Any) {
+        showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.DLTMobileNumber) {
+            self.dltMobileNumber()
+        } failure: {
+        }
+        
+    }
     @IBAction func btn_mobile_edit(_ sender: Any) {
 //        self.editFor = .Mobile
 //        self.openPopupForEdit()

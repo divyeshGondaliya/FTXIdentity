@@ -423,7 +423,7 @@
                                                     </constraints>
                                                     <state key="normal" image="delete"/>
                                                     <connections>
-                                                        <action selector="btn_dlt_bday:" destination="-1" eventType="touchUpInside" id="3MF-rt-Yck"/>
+                                                        <action selector="btn_dlt_mobile:" destination="-1" eventType="touchUpInside" id="gHp-vJ-TLD"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

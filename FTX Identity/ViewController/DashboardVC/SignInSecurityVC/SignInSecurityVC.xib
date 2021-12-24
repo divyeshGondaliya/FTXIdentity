@@ -19,6 +19,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInSecurityVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
+                <outlet property="btn_dlt_alternate_mobile" destination="4Te-xc-Nz4" id="x3L-4h-QGR"/>
                 <outlet property="btn_dlt_mobile" destination="XMB-q0-hP1" id="9dp-af-aHH"/>
                 <outlet property="btn_dlt_recover_email" destination="SyC-j3-BWs" id="0u8-oS-EuK"/>
                 <outlet property="btn_edit_2fa" destination="LDS-c6-4VM" id="StF-dc-JF8"/>
@@ -348,13 +349,13 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                             <rect key="frame" x="0.0" y="70" width="366" height="69"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovery Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaS-VR-Vmc">
-                                                    <rect key="frame" x="16" y="14" width="288" height="16.5"/>
+                                                    <rect key="frame" x="16" y="14" width="238" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Not Set)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-ma-zaq">
-                                                    <rect key="frame" x="16" y="34.5" width="288" height="21.5"/>
+                                                    <rect key="frame" x="16" y="34.5" width="238" height="21.5"/>
                                                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -370,18 +371,31 @@ sadipscing elitr, sed diam nonumy eirmod</string>
                                                         <action selector="btn_recover_mobilenumber_press:" destination="-1" eventType="touchUpInside" id="agk-Gs-sj1"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Te-xc-Nz4">
+                                                    <rect key="frame" x="262" y="17.5" width="34" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="34" id="XwB-hJ-acV"/>
+                                                        <constraint firstAttribute="height" constant="34" id="vpZ-FM-3bd"/>
+                                                    </constraints>
+                                                    <state key="normal" image="delete"/>
+                                                    <connections>
+                                                        <action selector="btn_dlt_alternate_mobile:" destination="-1" eventType="touchUpInside" id="eWE-1s-SbV"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="HaS-VR-Vmc" firstAttribute="top" secondItem="qiY-9N-88z" secondAttribute="top" constant="14" id="376-Ez-OyG"/>
+                                                <constraint firstItem="4Te-xc-Nz4" firstAttribute="leading" secondItem="u0H-ma-zaq" secondAttribute="trailing" constant="8" id="5bt-yh-BaG"/>
                                                 <constraint firstItem="u0H-ma-zaq" firstAttribute="top" secondItem="HaS-VR-Vmc" secondAttribute="bottom" constant="4" id="71g-VI-Nd2"/>
                                                 <constraint firstAttribute="bottom" secondItem="u0H-ma-zaq" secondAttribute="bottom" constant="13" id="EBV-M5-X1g"/>
-                                                <constraint firstItem="tMo-Dv-SjA" firstAttribute="leading" secondItem="u0H-ma-zaq" secondAttribute="trailing" constant="8" id="EO0-kO-v4e"/>
                                                 <constraint firstItem="u0H-ma-zaq" firstAttribute="leading" secondItem="qiY-9N-88z" secondAttribute="leading" constant="16" id="FmV-Sk-1OX"/>
+                                                <constraint firstItem="tMo-Dv-SjA" firstAttribute="leading" secondItem="4Te-xc-Nz4" secondAttribute="trailing" constant="16" id="Hik-5l-YfJ"/>
                                                 <constraint firstItem="HaS-VR-Vmc" firstAttribute="leading" secondItem="qiY-9N-88z" secondAttribute="leading" constant="16" id="MtY-4x-tlP"/>
                                                 <constraint firstAttribute="trailing" secondItem="tMo-Dv-SjA" secondAttribute="trailing" constant="20" id="cOn-ua-4IX"/>
+                                                <constraint firstItem="4Te-xc-Nz4" firstAttribute="centerY" secondItem="tMo-Dv-SjA" secondAttribute="centerY" id="gYp-vz-ZlE"/>
                                                 <constraint firstItem="tMo-Dv-SjA" firstAttribute="centerY" secondItem="qiY-9N-88z" secondAttribute="centerY" id="o0M-4l-ubd"/>
-                                                <constraint firstItem="tMo-Dv-SjA" firstAttribute="leading" secondItem="HaS-VR-Vmc" secondAttribute="trailing" constant="8" id="pWW-Ge-HNc"/>
+                                                <constraint firstItem="4Te-xc-Nz4" firstAttribute="leading" secondItem="HaS-VR-Vmc" secondAttribute="trailing" constant="8" id="zEb-Ag-r3e"/>
                                             </constraints>
                                         </view>
                                     </subviews>

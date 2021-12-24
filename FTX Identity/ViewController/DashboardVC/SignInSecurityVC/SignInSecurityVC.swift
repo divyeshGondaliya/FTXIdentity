@@ -23,6 +23,7 @@ class SignInSecurityVC: UIViewController {
     @IBOutlet weak var btn_edit_recover_email: UIButton!
     @IBOutlet weak var btn_edit_recover_mobile: UIButton!
     @IBOutlet weak var btn_dlt_recover_email: UIButton!
+    @IBOutlet weak var btn_dlt_alternate_mobile: UIButton!
     
     @IBOutlet weak var btn_dlt_mobile: UIButton!
     
@@ -107,6 +108,17 @@ class SignInSecurityVC: UIViewController {
     }
     
     @IBAction func btn_dlt_mobile(_ sender: Any) {
+        showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.DLTMobileNumber) {
+            self.dltMobileNumber(apiCallFor: ApiURls.ProfileMobileUpdate)
+        } failure: {
+        }
+    }
+    
+    @IBAction func btn_dlt_alternate_mobile(_ sender: Any) {
+        showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.DLTMobileNumber) {
+            self.dltMobileNumber(apiCallFor: ApiURls.AlternateMobile)
+        } failure: {
+        }
     }
     
     @IBAction func btn_pwd_edit(_ sender: Any) {
@@ -184,8 +196,10 @@ extension SignInSecurityVC
         if self.lbl_recover_mobile.text ?? "" == "(Not Set)"
         {
             self.btn_edit_recover_mobile.setImage(self.add_img, for: .normal)
+            self.btn_dlt_alternate_mobile.isHidden = true
         }else{
             self.btn_edit_recover_mobile.setImage(self.edit_img, for: .normal)
+            self.btn_dlt_alternate_mobile.isHidden = false
         }
     }
 }

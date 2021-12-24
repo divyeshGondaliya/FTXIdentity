@@ -38,12 +38,19 @@ class StringMsgToDisplay{
     static let TwoFADisable = "Are you sure you want to Disable 2FA Authentication?"
     
     static let logout = "Are you sure you want to log out ?"
+    
+    static let DLTMobileNumber = "Are you sure you want to delete Mobile ?"
 }
 
 class StaticArray
 {
     static let countryCode = ["+1", "+91"]
     static let countryName = ["usa","india"]
+}
+
+class StaticValues
+{
+    static let OtpSendInTimer = 60
 }
 
 class AlertString

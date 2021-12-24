@@ -31,6 +31,36 @@ extension PersonalInfoVC
         }
     }
     
+    func dltMobileNumber()
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        
+        var dic = [:] as [String:AnyObject]
+        dic["mobile"] = nil
+        
+        let apiCallFor = ApiURls.ProfileMobileUpdate
+        
+        AFWrapper.sharedInstance.requestPut(apiCallFor, parma: dic) { (jsonResponce) in
+            LoadingOverlay.shared.hideOverlayView()
+            if let dic = jsonResponce.dictionary
+            {
+                print(dic)
+                let succeeded = dic["succeeded"]?.bool ?? false
+                if succeeded
+                {
+                    self.getUserDetails()
+                }else{
+                    if let message = dic["message"]?.string
+                    {
+                        CustomAlertView.display(activeViewController:self, withTitle: nil, andMessage: message, andAlertType: 3)
+                    }
+                }
+            }
+        } failure: { (error) in
+            print(error)
+        }
+    }
+    
     func updateUserInfo(txtToUpdate:String)
     {
         LoadingOverlay.shared.showOverlay(view: self.view)

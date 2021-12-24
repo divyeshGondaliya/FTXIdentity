@@ -35,6 +35,7 @@ extension MobileNumberVC
                         self.otp_view.isHidden = false
                         self.lbl_mobile_otp_send.text = "A text with a One Time Password (OTP) has been sent to your Phone Number: \(self.txt_country_code.text ?? "") \(self.txt_mobile_number.text ?? "")"
                         self.setupOtpView()
+                        
                     }
                 }else{
                     if let message = dic["message"]?.string

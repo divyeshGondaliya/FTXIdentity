@@ -16,7 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MobileNumberVC" customModule="FTX_Identity" customModuleProvider="target">
             <connections>
+                <outlet property="btn_resend" destination="UO4-n5-9d0" id="Z55-Ke-qzz"/>
                 <outlet property="lbl_mobile_otp_send" destination="pl9-TQ-o3l" id="2E5-6c-lzl"/>
+                <outlet property="lbl_resend_txt" destination="Z5a-dJ-ABd" id="dCp-h7-15t"/>
                 <outlet property="otp_view" destination="FAn-uh-pil" id="ytf-sI-ICj"/>
                 <outlet property="txt_country_code" destination="jeO-vo-65a" id="hnh-wI-WIC"/>
                 <outlet property="txt_mobile_number" destination="AR3-3G-uU3" id="0Ys-Bn-Ucg"/>
@@ -212,7 +214,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="btn_update_cancel_press:" destination="-1" eventType="touchUpInside" id="s9Z-dw-Apu"/>
+                                                        <action selector="btn_update_cancel_press:" destination="-1" eventType="touchUpInside" id="fUY-aE-hxK"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxJ-sf-Xfs">
@@ -280,18 +282,50 @@
                                                 <action selector="btn_change_mobile_press:" destination="-1" eventType="touchUpInside" id="pTq-uD-h6e"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5a-dJ-ABd">
+                                            <rect key="frame" x="10" y="177.5" width="374" height="44"/>
+                                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UO4-n5-9d0">
+                                            <rect key="frame" x="10" y="177.5" width="374" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="XbJ-wu-dGO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                    <real key="value" value="7"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btn_resend_press:" destination="-1" eventType="touchUpInside" id="YYJ-9e-Sj6"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
+                                        <constraint firstItem="Z5a-dJ-ABd" firstAttribute="top" secondItem="UO4-n5-9d0" secondAttribute="top" id="1UO-82-YWY"/>
                                         <constraint firstItem="Umf-cD-aN3" firstAttribute="leading" secondItem="FAn-uh-pil" secondAttribute="leading" constant="14" id="1WG-kX-5zd"/>
                                         <constraint firstItem="jnN-mo-CCW" firstAttribute="centerY" secondItem="pl9-TQ-o3l" secondAttribute="centerY" id="5v0-Br-MZI"/>
                                         <constraint firstAttribute="trailing" secondItem="jnN-mo-CCW" secondAttribute="trailing" constant="16" id="6on-6a-e7i"/>
+                                        <constraint firstItem="Z5a-dJ-ABd" firstAttribute="trailing" secondItem="UO4-n5-9d0" secondAttribute="trailing" id="7a9-kT-Cp8"/>
                                         <constraint firstItem="pl9-TQ-o3l" firstAttribute="leading" secondItem="FAn-uh-pil" secondAttribute="leading" constant="16" id="8NQ-Su-8sn"/>
                                         <constraint firstItem="5oM-7r-DTR" firstAttribute="top" secondItem="pl9-TQ-o3l" secondAttribute="bottom" constant="20" id="A7V-TT-laJ"/>
                                         <constraint firstAttribute="bottom" secondItem="Umf-cD-aN3" secondAttribute="bottom" constant="25" id="B8E-kL-Hfg"/>
+                                        <constraint firstItem="UO4-n5-9d0" firstAttribute="trailing" secondItem="5oM-7r-DTR" secondAttribute="trailing" id="DMp-eF-Jtc"/>
+                                        <constraint firstItem="UO4-n5-9d0" firstAttribute="leading" secondItem="5oM-7r-DTR" secondAttribute="leading" id="IPt-mY-rLa"/>
                                         <constraint firstItem="jnN-mo-CCW" firstAttribute="leading" secondItem="pl9-TQ-o3l" secondAttribute="trailing" constant="8" id="PCG-17-LDo"/>
                                         <constraint firstAttribute="trailing" secondItem="Umf-cD-aN3" secondAttribute="trailing" constant="14" id="V8r-gx-Dcy"/>
+                                        <constraint firstItem="UO4-n5-9d0" firstAttribute="top" secondItem="5oM-7r-DTR" secondAttribute="bottom" constant="16" id="epa-8s-0AL"/>
+                                        <constraint firstItem="Z5a-dJ-ABd" firstAttribute="leading" secondItem="UO4-n5-9d0" secondAttribute="leading" id="l88-3G-jnQ"/>
                                         <constraint firstItem="Umf-cD-aN3" firstAttribute="top" secondItem="5oM-7r-DTR" secondAttribute="bottom" constant="80" id="nHO-qk-r6K"/>
+                                        <constraint firstItem="Z5a-dJ-ABd" firstAttribute="bottom" secondItem="UO4-n5-9d0" secondAttribute="bottom" id="noU-Qs-qKc"/>
                                         <constraint firstAttribute="trailing" secondItem="5oM-7r-DTR" secondAttribute="trailing" constant="10" id="s9a-ep-o2q"/>
                                         <constraint firstItem="pl9-TQ-o3l" firstAttribute="top" secondItem="FAn-uh-pil" secondAttribute="top" constant="16" id="xHW-72-amh"/>
                                         <constraint firstItem="5oM-7r-DTR" firstAttribute="leading" secondItem="FAn-uh-pil" secondAttribute="leading" constant="10" id="zAs-bU-MeH"/>

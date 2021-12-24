@@ -2,7 +2,7 @@
 //  VerifyBioMetricsVC+ApiCall.swift
 //  FTX Identity
 //
-//  Created by Darshan on 23/12/21.
+//  Created by Divyesh Gondaliya on 23/12/21.
 //
 
 import Foundation

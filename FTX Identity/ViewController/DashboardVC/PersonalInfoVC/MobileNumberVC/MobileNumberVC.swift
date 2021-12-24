@@ -15,6 +15,8 @@ class MobileNumberVC: UIViewController {
     
     @IBOutlet weak var txt_mobile_number: UITextField!
     @IBOutlet weak var txt_country_code: DropDown!
+    @IBOutlet weak var lbl_resend_txt: UILabel!
+    @IBOutlet weak var btn_resend: UIButton!
     
     @IBOutlet weak var txt_otp: OTPFieldView!
     @IBOutlet weak var otp_view: UIView!
@@ -23,6 +25,8 @@ class MobileNumberVC: UIViewController {
     weak var delegate: PersonalnfoChangePopupDelegate?
     
     var forAlternate = false
+    var timer: Timer?
+    var totalTime = StaticValues.OtpSendInTimer
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +37,19 @@ class MobileNumberVC: UIViewController {
         self.txt_country_code.showList()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.stopOtpTimer()
+    }
+    
     @IBAction func btn_cancel_press(_ sender: Any) {
         self.dismiss(animated: true) {
             
         }
+    }
+    
+    @IBAction func btn_resend_press(_ sender: Any) {
+        print("resend?")
+        self.getOtpForMobile()
     }
     
     @IBAction func btn_update_press(_ sender: Any) {
@@ -63,13 +76,15 @@ class MobileNumberVC: UIViewController {
         }
     }
     @IBAction func btn_update_cancel_press(_ sender: Any) {
-        self.dismiss(animated: true) {
-            
-        }
-    }
-    @IBAction func btn_change_mobile_press(_ sender: Any) {
+        stopOtpTimer()
         self.otp_view.isHidden = true
     }
+    @IBAction func btn_change_mobile_press(_ sender: Any) {
+        self.stopOtpTimer()
+        self.otp_view.isHidden = true
+    }
+    
+    
 }
 
 extension MobileNumberVC
@@ -89,6 +104,7 @@ extension MobileNumberVC
         self.txt_otp.shouldAllowIntermediateEditing = false
         self.txt_otp.delegate = self
         self.txt_otp.initializeUI()
+        self.startOtpTimer()
     }
     
     func initData()
@@ -106,6 +122,35 @@ extension MobileNumberVC
         txt_country_code.optionImageArray = StaticArray.countryName
         txt_country_code.didSelect{(selectedText , index ,id) in
             self.txt_country_code.text = selectedText
+        }
+    }
+    
+    func startOtpTimer() {
+        self.totalTime = StaticValues.OtpSendInTimer
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        self.btn_resend.isEnabled = false
+    }
+    func stopOtpTimer(){
+        if let timer = self.timer {
+            self.btn_resend.isEnabled = true
+            timer.invalidate()
+            self.timer = nil
+            self.lbl_resend_txt.text = "Resend code"
+        }
+    }
+    
+    @objc func updateTimer() {
+        self.lbl_resend_txt.text = "Resend your code in \(self.totalTime)"
+        if totalTime != 0 {
+            self.btn_resend.isEnabled = false
+            totalTime -= 1  // decrease counter timer
+        } else {
+            if let timer = self.timer {
+                self.btn_resend.isEnabled = true
+                timer.invalidate()
+                self.timer = nil
+                self.lbl_resend_txt.text = "Resend code"
+            }
         }
     }
 }
