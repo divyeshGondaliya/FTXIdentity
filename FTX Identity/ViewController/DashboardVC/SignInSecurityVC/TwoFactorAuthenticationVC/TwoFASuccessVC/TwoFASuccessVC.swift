@@ -8,7 +8,7 @@
 import UIKit
 import SwiftyJSON
 
-class TwoFASuccessVC: UIViewController {
+class TwoFASuccessVC: MainStuffViewController {
 
     @IBOutlet weak var tbl_view: UITableView!
     var recoveryCodes = [JSON]()

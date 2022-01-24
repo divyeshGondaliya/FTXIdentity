@@ -10,22 +10,22 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-
-
 class AFWrapper: NSObject {
-
+    
     static let sharedInstance = AFWrapper()
-
+    
+    
     //TODO :-
     /* Handle Time out request alamofire */
-
+    
     func requestDelete(_ strURL: String, parma:[String : AnyObject]? = [String : AnyObject](),success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void)
     {
+        Connectivity.checkAndDisplayMsgForInternetConnection()
         AuthLoginClass.shared.gettingFreshToken { (result) in
         }
         
         let headers:HTTPHeaders = [APIConstant.contentType: APIHeader.contentType,
-                       APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
+                                   APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
         
         print("-----------")
         print("calling url - \(APIEnvironment.mainURL+strURL)")
@@ -49,18 +49,19 @@ class AFWrapper: NSObject {
     
     func requestPut(_ strURL: String, parma:[String : AnyObject]? = [String : AnyObject](),success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void)
     {
+        Connectivity.checkAndDisplayMsgForInternetConnection()
         AuthLoginClass.shared.gettingFreshToken { (result) in
         }
         
         let headers:HTTPHeaders = [APIConstant.contentType: APIHeader.contentType,
-                       APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
+                                   APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
         
         print("-----------")
         print("calling url - \(APIEnvironment.mainURL+strURL)")
         print("header = \(headers.dictionary)")
         print("Param - \(parma ?? [String : AnyObject]())")
         print("-----------")
-
+        
         AF.request(APIEnvironment.mainURL+strURL, method: .put,parameters: parma,encoding: JSONEncoding.default, headers: headers).responseJSON { (responseObject) in
             switch responseObject.result {
             case .success(let value):
@@ -74,14 +75,15 @@ class AFWrapper: NSObject {
             }
         }
     }
-
+    
     func requestGETURL(_ strURL: String, parma:[String : AnyObject]? = [String : AnyObject](),success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void)
     {
+        Connectivity.checkAndDisplayMsgForInternetConnection()
         AuthLoginClass.shared.gettingFreshToken { (result) in
         }
         
         let headers:HTTPHeaders = [APIConstant.contentType: APIHeader.contentType,
-                       APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
+                                   APIConstant.authorization: "Bearer " + AuthLoginClass.shared.FreshToken]
         
         print("-----------")
         print("calling url - \(APIEnvironment.mainURL+strURL)")
@@ -102,8 +104,9 @@ class AFWrapper: NSObject {
             }
         }
     }
-
+    
     func requestPOSTURL(_ strURL : String,accessTokenSignup : String? = "", params : [String : AnyObject]?, success:@escaping (JSON) -> Void, failure:@escaping (Error) -> Void){
+        Connectivity.checkAndDisplayMsgForInternetConnection()
         AuthLoginClass.shared.gettingFreshToken { (result) in
         }
         
@@ -163,23 +166,23 @@ class AFWrapper: NSObject {
 
 
 extension URL {
-
+    
     func appending(_ queryItem: String, value: String?) -> URL {
-
+        
         guard var urlComponents = URLComponents(string: absoluteString) else { return absoluteURL }
-
+        
         // Create array of existing query items
         var queryItems: [URLQueryItem] = urlComponents.queryItems ??  []
-
+        
         // Create query item
         let queryItem = URLQueryItem(name: queryItem, value: value)
-
+        
         // Append the new query item in the existing query items array
         queryItems.append(queryItem)
-
+        
         // Append updated query items array in the url component object
         urlComponents.queryItems = queryItems
-
+        
         // Returns the url from new url components
         return urlComponents.url!
     }

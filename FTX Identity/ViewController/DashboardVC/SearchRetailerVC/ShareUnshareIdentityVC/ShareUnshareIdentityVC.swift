@@ -8,7 +8,7 @@
 import UIKit
 import SwiftyJSON
 
-class ShareUnshareIdentityVC: UIViewController {
+class ShareUnshareIdentityVC: MainStuffViewController {
 
     @IBOutlet weak var tbl_view: UITableView!
     

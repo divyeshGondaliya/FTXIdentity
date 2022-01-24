@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftyJSON
-class PersonalInfoVC: UIViewController {
+class PersonalInfoVC: MainStuffViewController {
     
     @IBOutlet weak var img_profile: UIImageView!
     

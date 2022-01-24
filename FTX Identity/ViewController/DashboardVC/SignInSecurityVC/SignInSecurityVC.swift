@@ -8,7 +8,7 @@
 import UIKit
 import SwiftyJSON
 
-class SignInSecurityVC: UIViewController {
+class SignInSecurityVC: MainStuffViewController {
 
     @IBOutlet weak var lbl_email: UILabel!
     @IBOutlet weak var lbl_recover_email: UILabel!

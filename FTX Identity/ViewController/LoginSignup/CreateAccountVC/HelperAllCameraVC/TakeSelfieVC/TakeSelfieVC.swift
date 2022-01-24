@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class TakeSelfieVC: UIViewController,AVCapturePhotoCaptureDelegate {
+class TakeSelfieVC: MainStuffViewController,AVCapturePhotoCaptureDelegate {
 
     var captureSession: AVCaptureSession!
     var stillImageOutput: AVCapturePhotoOutput!

@@ -7,8 +7,11 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class SplashViewController: MainStuffViewController {
 
+    @IBOutlet weak var img_1: UIImageView!
+    @IBOutlet weak var img_2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +24,11 @@ class SplashViewController: UIViewController {
         UINavigationBar.appearance().barTintColor = .white
         UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
         UINavigationBar.appearance().isTranslucent = false
-
+        
+//        let vc = CaptureViewController(nibName: "CaptureViewController", bundle: nil)
+//        vc.callback = self
+//        vc.configuration = CaptureConfiguration.init(forEnrollment: "Face,Periocular")
+//        self.present(vc, animated: true, completion: nil)
         AuthLoginClass.shared.validateOAuthConfiguration()
         AuthLoginClass.shared.loadState()
         // Do any additional setup after loading the view.
@@ -56,3 +63,38 @@ class SplashViewController: UIViewController {
     }
 }
 
+extension SplashViewController:CaptureDelegate
+{
+    func biometricTaskFinished(_ data: CaptureConfiguration!, withSuccess success: [Any]!) {
+        print(success)
+        if success.count == 2
+        {
+            if let img_arr = success as? [UIImage]
+            {
+                self.img_1.image = img_arr[0]
+                self.img_2.image = img_arr[1]
+            }
+        }
+    }
+    
+    
+//    func biometricTaskFinished(_ data: CaptureConfiguration!, withSuccess success: Bool) {
+//        var biometricResult = ""
+//        if (success) {
+//            biometricResult = "Successful "
+//        }
+//        else {
+//            biometricResult = "Failed "
+//        }
+//
+//        if (data.performEnrollment) {
+//            biometricResult = "\(biometricResult) Enrollment"
+//        }
+//        else {
+//            biometricResult = "\(biometricResult) Verification"
+//        }
+//        print(biometricResult)
+//    }
+    
+    
+}

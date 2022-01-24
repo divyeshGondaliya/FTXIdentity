@@ -12,7 +12,7 @@ enum ForImage {
     case FRONT
     case BACK
 }
-class IDScanVC: UIViewController,AVCapturePhotoCaptureDelegate {
+class IDScanVC: MainStuffViewController,AVCapturePhotoCaptureDelegate {
 
     var captureSession: AVCaptureSession!
     var stillImageOutput: AVCapturePhotoOutput!

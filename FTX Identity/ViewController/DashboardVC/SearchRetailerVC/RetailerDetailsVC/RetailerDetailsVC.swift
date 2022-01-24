@@ -8,7 +8,7 @@
 import UIKit
 import SwiftyJSON
 
-class RetailerDetailsVC: UIViewController {
+class RetailerDetailsVC: MainStuffViewController {
 
     @IBOutlet weak var retailer_profile_img: UIImageView!
     @IBOutlet weak var img_share_unshare_identity: UIImageView!

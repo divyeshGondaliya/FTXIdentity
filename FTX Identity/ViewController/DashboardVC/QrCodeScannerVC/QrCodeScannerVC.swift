@@ -12,7 +12,7 @@ protocol QrCodeScannerDelegate:class {
     func openQrCodeDisplay()
 }
 
-class QrCodeScannerVC: UIViewController {
+class QrCodeScannerVC: MainStuffViewController {
     
     @IBOutlet weak var priviewView: UIView!
     @IBOutlet weak var center_view: UIView!

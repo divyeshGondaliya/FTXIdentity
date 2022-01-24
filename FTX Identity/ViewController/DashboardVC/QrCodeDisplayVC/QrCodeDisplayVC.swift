@@ -10,7 +10,7 @@ import UIKit
 protocol QrCodeDisplayDelegate:class {
     func openQrScanner()
 }
-class QrCodeDisplayVC: UIViewController {
+class QrCodeDisplayVC: MainStuffViewController {
 
     @IBOutlet weak var img_qr: UIImageView!
     @IBOutlet weak var profile_img: UIImageView!

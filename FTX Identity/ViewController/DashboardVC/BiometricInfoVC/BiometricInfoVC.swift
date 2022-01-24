@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class BiometricInfoVC: UIViewController {
+class BiometricInfoVC: MainStuffViewController {
     
     @IBOutlet weak var top_lbl_txt: UILabel!
     @IBOutlet weak var tbl_view: UITableView!

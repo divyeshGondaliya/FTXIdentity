@@ -7,7 +7,7 @@
 
 import UIKit
 import Kingfisher
-class DisplayImageVC: UIViewController,UIScrollViewDelegate {
+class DisplayImageVC: MainStuffViewController,UIScrollViewDelegate {
     
     @IBOutlet weak var container_view: UIView!
     

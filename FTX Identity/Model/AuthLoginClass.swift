@@ -23,7 +23,8 @@ class AuthLoginClass:NSObject
     var FreshToken = ""
     
     func performAuthAndLogin(vc:UIViewController,completionHandler:@escaping (Bool) -> Void)
-    {        
+    {
+        Connectivity.checkAndDisplayMsgForInternetConnection()
         guard let issuer = URL(string: kIssuer) else {
             self.logMessage("Error creating URL for : \(kIssuer)")
             completionHandler(false)
@@ -70,7 +71,7 @@ class AuthLoginClass:NSObject
     
     func gettingFreshToken(completionHandler:@escaping (Bool) -> Void)
     {
-        
+        Connectivity.checkAndDisplayMsgForInternetConnection()
 //        self.authState?.performAction(freshTokens: { (accessToken, idToken, error) in
 //            if error != nil  {
 //                self.logMessage("Error fetching fresh tokens: \(error?.localizedDescription ?? "Unknown error")")

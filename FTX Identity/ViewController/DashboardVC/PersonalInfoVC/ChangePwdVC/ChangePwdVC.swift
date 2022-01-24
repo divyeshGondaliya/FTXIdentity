@@ -10,7 +10,7 @@ protocol ChangePwdDelegate:class {
     func pwdChange(responce:Bool)
     func cancelPwdChange()
 }
-class ChangePwdVC: UIViewController {
+class ChangePwdVC: MainStuffViewController {
     
     @IBOutlet weak var txt_current_pwd: UITextField!
     @IBOutlet weak var txt_new_pwd: UITextField!

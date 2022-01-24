@@ -8,7 +8,7 @@
 import UIKit
 import SwiftyJSON
 
-class TwoFactorAuthenticationVC: UIViewController {
+class TwoFactorAuthenticationVC: MainStuffViewController {
 
     @IBOutlet weak var enterThisCode: UILabel!
     @IBOutlet weak var txt_enterCode: UITextField!

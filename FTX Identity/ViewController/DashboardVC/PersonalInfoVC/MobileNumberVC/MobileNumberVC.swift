@@ -9,7 +9,7 @@ import UIKit
 import OTPFieldView
 import iOSDropDown
 
-class MobileNumberVC: UIViewController {
+class MobileNumberVC: MainStuffViewController {
 
     var strOTP : String = ""
     

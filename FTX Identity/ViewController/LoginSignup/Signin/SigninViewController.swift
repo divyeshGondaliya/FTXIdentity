@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 import AppAuth
 
-class SigninViewController: UIViewController, WKNavigationDelegate {
+class SigninViewController: MainStuffViewController, WKNavigationDelegate {
     
     @IBOutlet weak var txt_email_mobile_number: UITextField!
     @IBOutlet weak var txt_pwd: UITextField!

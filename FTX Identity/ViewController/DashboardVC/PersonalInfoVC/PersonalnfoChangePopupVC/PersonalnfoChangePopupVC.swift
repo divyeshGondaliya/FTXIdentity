@@ -17,7 +17,7 @@ enum SelectionFor {
     case TXT
     case CTXT
 }
-class PersonalnfoChangePopupVC: UIViewController {
+class PersonalnfoChangePopupVC: MainStuffViewController {
     
     var strOTP : String = ""
     

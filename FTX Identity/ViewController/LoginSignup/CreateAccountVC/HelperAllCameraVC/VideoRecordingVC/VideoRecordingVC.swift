@@ -10,7 +10,7 @@ import AssetsLibrary
 import UIKit
 import Photos
 
-class VideoRecordingVC: UIViewController {
+class VideoRecordingVC: MainStuffViewController {
 
     @IBOutlet weak var lbl_code: UILabel!
     @IBOutlet weak var cameraButton: UIButton!

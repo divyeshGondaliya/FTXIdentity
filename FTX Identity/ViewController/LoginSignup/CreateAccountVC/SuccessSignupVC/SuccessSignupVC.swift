@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SuccessSignupVC: UIViewController {
+class SuccessSignupVC: MainStuffViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

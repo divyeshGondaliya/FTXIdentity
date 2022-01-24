@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VerifyBioMetricsVC: UIViewController {
+class VerifyBioMetricsVC: MainStuffViewController {
 
     @IBOutlet weak var btn_upload: UIButton!
     
