@@ -2,7 +2,7 @@
 //  Reachability.swift
 //  FTX Identity
 //
-//  Created by Darshan on 24/01/22.
+//  Created by Divyesh Gondaliya on 24/01/22.
 //
 
 import Foundation
