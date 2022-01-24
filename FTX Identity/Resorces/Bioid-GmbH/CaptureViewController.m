@@ -2,7 +2,7 @@
 //  CaptureViewController.m
 //  FTX Identity
 //
-//  Created by Darshan on 10/01/22.
+//  Created by Divyesh Gondaliya on 10/01/22.
 //
 
 #import "CaptureViewController.h"
