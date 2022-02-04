@@ -1,0 +1,76 @@
+{
+  "layer_shapes" : {
+    "activation_3\/Relu:0" : {
+      "k" : 128,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "max_pooling2d_2\/MaxPool:0" : {
+      "k" : 64,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "activation_6__Sigmoid__0" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense_3\/BiasAdd:0" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_1\/Relu:0" : {
+      "k" : 32,
+      "w" : 24,
+      "n" : 1,
+      "h" : 24
+    },
+    "activation_4\/Relu:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "max_pooling2d_3\/MaxPool:0" : {
+      "k" : 128,
+      "w" : 3,
+      "n" : 1,
+      "h" : 3
+    },
+    "flatten_1\/Reshape:0" : {
+      "k" : 1152,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_1_input__0" : {
+      "k" : 1,
+      "w" : 24,
+      "n" : 1,
+      "h" : 24
+    },
+    "max_pooling2d_1\/MaxPool:0" : {
+      "k" : 32,
+      "w" : 12,
+      "n" : 1,
+      "h" : 12
+    },
+    "activation_5\/Relu:0" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_2\/Relu:0" : {
+      "k" : 64,
+      "w" : 12,
+      "n" : 1,
+      "h" : 12
+    }
+  }
+}

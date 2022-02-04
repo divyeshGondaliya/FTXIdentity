@@ -24,7 +24,7 @@ class StringMsgToDisplay{
     static let takeAllBiometricsFirst = "Please first scan your ID Document and take selfie for verification."
     static let idAlreadyScaned = "Are you sure you want to scan again? Your ID Document last ID Document will be deleted."
     static let selfieAlreadyTaken = "Are you sure you want to captured again? Last selfie image will be deleted."
-    static let biometricsError = "Please make sure that your id proof photos clear and selfie is clear."
+    static let biometricsError = "Please make sure that your id proof photos is clear."
     
     static let SSNinstead = "Use SSN instead"
     static let BDYinsted = "Use Birth Date instead"

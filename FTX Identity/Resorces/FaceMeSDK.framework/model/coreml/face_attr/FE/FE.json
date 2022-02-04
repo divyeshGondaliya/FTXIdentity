@@ -1,0 +1,12 @@
+{
+"model_name" : "FE",
+"face_size" : 80,
+"input_name" : "data",
+"output_name" : "fc2_output",
+"output_size" : 7,
+"ref_anchors" : [
+	22.2946,  19.6963,  57.5318,  19.5014,
+	40.0252,  39.7366,  25.5493,  60.3655,
+	54.7299,  60.2041],
+"need_normalized_input" : false
+}

@@ -1,0 +1,12 @@
+{
+"model_name" : "FA",
+"face_size" : 112,
+"input_name" : "data",
+"output_name" : "fc2_output",
+"output_size" : 205,
+"ref_anchors" : [
+	38.2946,  51.6963,  73.5318,  51.5014, 
+	56.0252,  71.7366,  41.5493,  92.3655, 
+	70.7299,  92.2041],
+"need_normalized_input" : false
+}

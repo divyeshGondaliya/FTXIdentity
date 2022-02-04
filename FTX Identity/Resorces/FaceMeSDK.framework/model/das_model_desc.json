@@ -1,0 +1,33 @@
+{
+  "//angle_limit": ["yaw, roll, pitch"],
+  
+  "astro_pro": {
+	"valid_range": [500.0, 1200.0],  
+  "angle_limit": [30.0, 30.0, 30.0]
+  },
+
+  "d415": {
+	"valid_range": [500.0, 900.0],
+  "angle_limit": [20.0, 20.0, 20.0]
+  },
+  "kara":{
+	"valid_range": [70.0, 180.0],
+  "angle_limit": [30.0, 30.0, 30.0]
+  },
+  "iphone":{
+	"valid_range": [250.0, 500.0],
+  "angle_limit": [30.0, 30.0, 30.0]
+  },
+  "ipad":{
+	  "valid_range": [250.0, 500.0],
+	  "angle_limit": [30.0, 30.0, 30.0]
+  },
+  "himax":{
+	"valid_range": [400.0, 700.0],
+  "angle_limit": [30.0, 30.0, 30.0]
+  },
+  "eys3d":{
+    "valid_range": [400.0, 600.0],
+    "angle_limit": [20.0, 30.0, 30.0]
+    }
+}

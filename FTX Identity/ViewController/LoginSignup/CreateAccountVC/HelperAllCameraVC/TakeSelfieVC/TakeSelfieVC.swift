@@ -40,7 +40,7 @@ class TakeSelfieVC: MainStuffViewController,AVCapturePhotoCaptureDelegate {
     }
     
     @IBAction func btn_next_press(_ sender: Any) {
-        SignUpData.shared.selfieImage = self.captureImageView.image
+//        SignUpData.shared.selfieImage = self.captureImageView.image
         self.navigationController?.popViewController(animated: true)
     }
     

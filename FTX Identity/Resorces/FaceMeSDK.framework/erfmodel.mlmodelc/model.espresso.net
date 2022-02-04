@@ -1,0 +1,319 @@
+{
+  "transform_params" : {
+    "input" : {
+      "bias_a" : 0,
+      "bias_g" : 0,
+      "bias_r" : 0,
+      "bias_b" : 0,
+      "center_mean" : 0,
+      "is_network_bgr" : 0,
+      "scale" : 1
+    }
+  },
+  "properties" : {
+
+  },
+  "analyses" : {
+
+  },
+  "format_version" : 200,
+  "storage" : "model.espresso.weights",
+  "layers" : [
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "24",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "25",
+      "blob_weights" : 3,
+      "K" : 1,
+      "blob_biases" : 1,
+      "name" : "24",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "input",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 0,
+      "debug_info" : "26",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "26",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "26",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "25",
+      "weights" : {
+
+      },
+      "pad_mode" : 2,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "27",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "28",
+      "blob_weights" : 7,
+      "K" : 32,
+      "blob_biases" : 5,
+      "name" : "27",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "26",
+      "weights" : {
+
+      },
+      "Nx" : 2,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 2,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 0,
+      "debug_info" : "29",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "29",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "29",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "28",
+      "weights" : {
+
+      },
+      "pad_mode" : 2,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "30",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "31",
+      "blob_weights" : 11,
+      "K" : 64,
+      "blob_biases" : 9,
+      "name" : "30",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "29",
+      "weights" : {
+
+      },
+      "Nx" : 2,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 2,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 0,
+      "debug_info" : "32",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "32",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "32",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "31",
+      "weights" : {
+
+      },
+      "pad_mode" : 2,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "bottom" : "32",
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "nd_axis" : 0,
+      "debug_info" : "33",
+      "top" : "33",
+      "type" : "flatten",
+      "name" : "33"
+    },
+    {
+      "nB" : 512,
+      "top" : "35",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 15,
+      "type" : "inner_product",
+      "has_relu" : 1,
+      "bottom" : "33",
+      "blob_biases" : 13,
+      "has_tanh" : 0,
+      "debug_info" : "34",
+      "name" : "34",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "35",
+      "weights" : {
+
+      },
+      "mode" : 3,
+      "debug_info" : "36",
+      "top" : "36",
+      "type" : "activation",
+      "name" : "36"
+    },
+    {
+      "nB" : 512,
+      "top" : "37",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 2,
+      "blob_weights" : 19,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "36",
+      "blob_biases" : 17,
+      "has_tanh" : 0,
+      "debug_info" : "37",
+      "name" : "37",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "37",
+      "attributes" : {
+        "is_output" : 1
+      },
+      "weights" : {
+
+      },
+      "debug_info" : "classification_eyeballs",
+      "top" : "classification_eyeballs",
+      "C" : 2,
+      "type" : "softmax",
+      "name" : "classification_eyeballs"
+    },
+    {
+      "nB" : 512,
+      "top" : "39",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 2,
+      "blob_weights" : 23,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "36",
+      "blob_biases" : 21,
+      "has_tanh" : 0,
+      "debug_info" : "39",
+      "name" : "39",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "39",
+      "attributes" : {
+        "is_output" : 1
+      },
+      "weights" : {
+
+      },
+      "debug_info" : "classification_eyeglasses",
+      "top" : "classification_eyeglasses",
+      "C" : 2,
+      "type" : "softmax",
+      "name" : "classification_eyeglasses"
+    },
+    {
+      "nB" : 512,
+      "top" : "41",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 2,
+      "blob_weights" : 27,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "36",
+      "blob_biases" : 25,
+      "has_tanh" : 0,
+      "debug_info" : "41",
+      "name" : "41",
+      "has_prelu" : 0
+    },
+    {
+      "bottom" : "41",
+      "attributes" : {
+        "is_output" : 1
+      },
+      "weights" : {
+
+      },
+      "debug_info" : "classification_eyebrows",
+      "top" : "classification_eyebrows",
+      "C" : 2,
+      "type" : "softmax",
+      "name" : "classification_eyebrows"
+    }
+  ]
+}

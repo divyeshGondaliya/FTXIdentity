@@ -1,0 +1,64 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1)",
+        "shortDescription" : "",
+        "shape" : "[1]",
+        "name" : "activation_6__Sigmoid__0",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 1,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "24",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "24",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 24 × 24)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "conv2d_1_input__0"
+      }
+    ],
+    "userDefinedMetadata" : {
+
+    },
+    "generatedClassName" : "eye_model",
+    "neuralNetworkLayerTypeHistogram" : {
+      "PoolingMax" : 3,
+      "Reshape" : 1,
+      "ActivationReLU" : 5,
+      "BatchNorm" : 3,
+      "Convolution" : 3,
+      "ActivationSigmoid" : 1,
+      "InnerProduct" : 3
+    },
+    "method" : "predict"
+  }
+]

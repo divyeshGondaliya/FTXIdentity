@@ -148,8 +148,9 @@ NSString *const BIOID_FONT = @"HelveticaNeue";
 //            }
 //        }
 //    }];
-    [self start];
     [super viewDidAppear:TRUE];
+    [self start];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -594,21 +595,23 @@ NSString *const BIOID_FONT = @"HelveticaNeue";
         
         if (img1 != nil)
         {
-            img2 = [self resizeImageForUpload:image];
-            NSMutableArray * imagesArray = [[NSMutableArray alloc] init];
-            [imagesArray addObject: img1];
-            [imagesArray addObject: img2];
-            
-            [self.callback biometricTaskFinished:self.configuration withSuccess:imagesArray];
-            [self dismissViewController];
-            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                self->img2 = [self resizeImageForUpload:image];
+                NSMutableArray * imagesArray = [[NSMutableArray alloc] init];
+                [imagesArray addObject: self->img1];
+                [imagesArray addObject: self->img2];
+                
+                [self.callback biometricTaskFinished:self.configuration withSuccess:imagesArray];
+                [self dismissViewController];
+            });
         }else{
-            img1 = [self resizeImageForUpload:image];
-            uploaded++;
-            turnCount++;
-            noFaceFound = 0;
-            [self turnPosition];
-            [self createActionForLiveDetection];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+                self->img1 = [self resizeImageForUpload:image];
+                self->uploaded++;
+                self->turnCount++;
+                self->noFaceFound = 0;
+                [self turnPosition];
+            });
         }
         
     }
@@ -1231,10 +1234,18 @@ NSString *const BIOID_FONT = @"HelveticaNeue";
         }
     }
     else {
-        SCNAction *moveUp = [SCNAction rotateByX:-0.2 y:0 z:0 duration:1.0];
-        SCNAction *moveDown =  [SCNAction rotateByX:0.2 y:0 z:0 duration:1.0];
-        SCNAction *moveSequence = [SCNAction sequence:@[moveUp,moveDown]];
-        action = [SCNAction repeatActionForever:moveSequence];
+        if (img1 != nil)
+        {
+            SCNAction *moveUp = [SCNAction rotateByX:0 y:-0.4 z:0 duration:1.0];
+            SCNAction *moveDown =  [SCNAction rotateByX:0 y:0.6 z:0 duration:1.0];
+            SCNAction *moveSequence = [SCNAction sequence:@[moveUp,moveDown]];
+            action = [SCNAction repeatActionForever:moveSequence];
+        }else{
+            SCNAction *moveUp = [SCNAction rotateByX:-0.2 y:0 z:0 duration:1.0];
+            SCNAction *moveDown =  [SCNAction rotateByX:0.2 y:0 z:0 duration:1.0];
+            SCNAction *moveSequence = [SCNAction sequence:@[moveUp,moveDown]];
+            action = [SCNAction repeatActionForever:moveSequence];
+        }
     }
     
     [headNode runAction:action];
@@ -1289,7 +1300,7 @@ NSString *const BIOID_FONT = @"HelveticaNeue";
     [viewWithBlurredBackground setHidden:YES];
     
     sceneView = [[SCNView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-    [sceneView setHidden:YES];
+    [sceneView setHidden:false];
     [sceneView setAlpha:0.85];
     [self.view addSubview:sceneView];
     
@@ -1739,6 +1750,7 @@ NSString *const BIOID_FONT = @"HelveticaNeue";
     switch(sender.tag) {
         case 1: {
             // Enrollment prodecure - Contiune
+            [self createActionForLiveDetection];
             [self start];
             break;
         }

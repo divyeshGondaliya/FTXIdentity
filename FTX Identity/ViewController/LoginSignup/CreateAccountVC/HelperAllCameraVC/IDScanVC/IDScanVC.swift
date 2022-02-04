@@ -83,15 +83,15 @@ class IDScanVC: MainStuffViewController,AVCapturePhotoCaptureDelegate {
         case .BACK:
             self.lbl_instruction.text = "Turn the back side of your ID Card and capture the photo"
             SignUpData.shared.backIDImg = self.captureImageView.image
-            if SignUpData.shared.selfieImage != nil
-            {
+//            if SignUpData.shared.selfieImage != nil
+//            {
                 self.navigationController?.popViewController(animated: true)
-            }else{
-                self.navigationController?.popViewController(animated: true)
-//                let vc = VideoRecordingVC(nibName: "VideoRecordingVC", bundle: nil)
-                let vc = TakeSelfieVC(nibName: "TakeSelfieVC", bundle: nil)
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
+//            }else{
+//                self.navigationController?.popViewController(animated: true)
+////                let vc = VideoRecordingVC(nibName: "VideoRecordingVC", bundle: nil)
+//                let vc = TakeSelfieVC(nibName: "TakeSelfieVC", bundle: nil)
+//                self.navigationController?.pushViewController(vc, animated: true)
+//            }
             
 //            let vc = IDPreviewVC(nibName: "IDPreviewVC", bundle: nil)
 //            vc.frontimg = self.img_front

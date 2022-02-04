@@ -1,0 +1,78 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "319",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "d",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 4,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 1 × 112 × 112)",
+        "shortDescription" : "",
+        "shape" : "[1, 1, 112, 112]",
+        "name" : "input_1",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "4.0",
+      "com.github.apple.coremltools.source" : "torch==1.6.0"
+    },
+    "generatedClassName" : "iOS_3das_coreml",
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 3,
+      "Convolution" : 15,
+      "ActivationSigmoid" : 1,
+      "ReshapeStatic" : 3,
+      "PoolingMax" : 2,
+      "Tile" : 1,
+      "Add" : 2,
+      "BatchNorm" : 15,
+      "Multiply" : 1,
+      "SoftmaxND" : 1,
+      "ActivationReLU" : 16,
+      "PoolingAverage" : 2
+    },
+    "method" : "predict"
+  }
+]

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		18100BE027708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18100BDF27708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift */; };
 		1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815DD4B277042DE0038BD9B /* RetailerDetailsVC.swift */; };
 		1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1815DD4C277042DE0038BD9B /* RetailerDetailsVC.xib */; };
-		182D84E7278C109000D719FD /* 3DHead.dae in Resources */ = {isa = PBXBuildFile; fileRef = 182D84E2278C109000D719FD /* 3DHead.dae */; };
 		182D84E8278C109000D719FD /* CaptureConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D84E3278C109000D719FD /* CaptureConfiguration.m */; };
 		182D84F4278C10CA00D719FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 182D84EF278C10CA00D719FD /* Localizable.strings */; };
 		182D84F5278C10CA00D719FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 182D84F2278C10CA00D719FD /* Localizable.strings */; };
@@ -39,6 +38,7 @@
 		183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183A1B382769C7C200464652 /* DashboardOptionCell.xib */; };
 		183A1B3E2769CA6100464652 /* DashboardVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A1B3D2769CA6100464652 /* DashboardVC+CollectionView.swift */; };
 		183A1B412769D03300464652 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A1B402769D03300464652 /* Constant.swift */; };
+		183AA07827AD501F004847E9 /* SDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 183AA07727AD501F004847E9 /* SDK.strings */; };
 		184633CD27686263007229A3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184633CC27686263007229A3 /* UIViewExtension.swift */; };
 		184633DE2768641C007229A3 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184633D22768641C007229A3 /* SourceSansPro-Regular.ttf */; };
 		184633DF2768641C007229A3 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184633D32768641C007229A3 /* SourceSansPro-SemiBold.ttf */; };
@@ -128,9 +128,71 @@
 		18ECF1FB277588CC00FA36DF /* MobileNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF1F9277588CC00FA36DF /* MobileNumberVC.swift */; };
 		18ECF1FC277588CC00FA36DF /* MobileNumberVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ECF1FA277588CC00FA36DF /* MobileNumberVC.xib */; };
 		18ECF1FF27758F5800FA36DF /* MobileNumberVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */; };
+		18F7DF7E27A3C156007753CD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F7DF7D27A3C156007753CD /* art.scnassets */; };
 		18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */; };
+		18FA6E4A27AD343600F46275 /* FaceMeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */; platformFilter = ios; };
+		18FA6E4B27AD343600F46275 /* FaceMeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18FA6F0C27AD35BD00F46275 /* UIFaceView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EA227AD35BD00F46275 /* UIFaceView+Refresh.m */; };
+		18FA6F0D27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EA927AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m */; };
+		18FA6F0E27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EAA27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib */; };
+		18FA6F0F27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EAB27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.xib */; };
+		18FA6F1027AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EAC27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.m */; };
+		18FA6F1127AD35BD00F46275 /* FaceMeRecognizerStringMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EAD27AD35BD00F46275 /* FaceMeRecognizerStringMapping.m */; };
+		18FA6F1227AD35BD00F46275 /* UIFaceNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EAE27AD35BD00F46275 /* UIFaceNameController.m */; };
+		18FA6F1327AD35BD00F46275 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EAF27AD35BD00F46275 /* SettingsController.m */; };
+		18FA6F1427AD35BD00F46275 /* UIFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EB027AD35BD00F46275 /* UIFaceView.m */; };
+		18FA6F1527AD35BD00F46275 /* FMPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EB127AD35BD00F46275 /* FMPopoverBackgroundView.m */; };
+		18FA6F1627AD35BD00F46275 /* LicenseInfoHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EB227AD35BD00F46275 /* LicenseInfoHandler.m */; };
+		18FA6F1727AD35BD00F46275 /* UiSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EB427AD35BD00F46275 /* UiSettings.m */; };
+		18FA6F1827AD35BD00F46275 /* DepthUiSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EB527AD35BD00F46275 /* DepthUiSettings.m */; };
+		18FA6F1927AD35BD00F46275 /* VisitService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EB927AD35BD00F46275 /* VisitService.m */; };
+		18FA6F1A27AD35BD00F46275 /* FaceExtraHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EBC27AD35BD00F46275 /* FaceExtraHandler.m */; };
+		18FA6F1B27AD35BD00F46275 /* RecognitionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EBD27AD35BD00F46275 /* RecognitionHandler.m */; };
+		18FA6F1C27AD35BD00F46275 /* AutoAddFaceCollectionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EBF27AD35BD00F46275 /* AutoAddFaceCollectionHandler.m */; };
+		18FA6F1D27AD35BD00F46275 /* ImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EC227AD35BD00F46275 /* ImageTool.m */; };
+		18FA6F1E27AD35BD00F46275 /* MiscUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EC527AD35BD00F46275 /* MiscUtils.m */; };
+		18FA6F1F27AD35BD00F46275 /* FpsMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EC627AD35BD00F46275 /* FpsMeter.m */; };
+		18FA6F2027AD35BD00F46275 /* DevTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EC827AD35BD00F46275 /* DevTool.m */; };
+		18FA6F2127AD35BD00F46275 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6ECB27AD35BD00F46275 /* UIView+Toast.m */; };
+		18FA6F2227AD35BD00F46275 /* ResultMaskUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6ECD27AD35BD00F46275 /* ResultMaskUIView.xib */; };
+		18FA6F2327AD35BD00F46275 /* AntiSpoofingContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6ECE27AD35BD00F46275 /* AntiSpoofingContainerViewController.xib */; };
+		18FA6F2427AD35BD00F46275 /* ResultMaskUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6ECF27AD35BD00F46275 /* ResultMaskUIView.m */; };
+		18FA6F2527AD35BD00F46275 /* AntiSpoofingContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6ED027AD35BD00F46275 /* AntiSpoofingContainerViewController.m */; };
+		18FA6F2627AD35BD00F46275 /* AntiSpoofingSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6ED327AD35BD00F46275 /* AntiSpoofingSettingsViewController.m */; };
+		18FA6F2727AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6ED427AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.m */; };
+		18FA6F2827AD35BD00F46275 /* AntiSpoofingSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6ED527AD35BD00F46275 /* AntiSpoofingSettingsViewController.xib */; };
+		18FA6F2927AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6ED627AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.xib */; };
+		18FA6F2A27AD35BD00F46275 /* AntiSpoofingSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6ED727AD35BD00F46275 /* AntiSpoofingSettings.m */; };
+		18FA6F2D27AD35BD00F46275 /* turn_left.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EDF27AD35BD00F46275 /* turn_left.wav */; };
+		18FA6F2E27AD35BD00F46275 /* center_your_face.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EE127AD35BD00F46275 /* center_your_face.wav */; };
+		18FA6F2F27AD35BD00F46275 /* face_go_farther.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EE327AD35BD00F46275 /* face_go_farther.wav */; };
+		18FA6F3027AD35BD00F46275 /* turn_right.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EE527AD35BD00F46275 /* turn_right.wav */; };
+		18FA6F3127AD35BD00F46275 /* face_come_closer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EE827AD35BD00F46275 /* face_come_closer.wav */; };
+		18FA6F3227AD35BD00F46275 /* ok.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EEA27AD35BD00F46275 /* ok.wav */; };
+		18FA6F3327AD35BD00F46275 /* processing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EED27AD35BD00F46275 /* processing.wav */; };
+		18FA6F3427AD35BD00F46275 /* smile.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EEF27AD35BD00F46275 /* smile.wav */; };
+		18FA6F3527AD35BD00F46275 /* alert_env_dark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EF127AD35BD00F46275 /* alert_env_dark.wav */; };
+		18FA6F3627AD35BD00F46275 /* nod_head.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EF327AD35BD00F46275 /* nod_head.wav */; };
+		18FA6F3727AD35BD00F46275 /* FMRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0427AD35BD00F46275 /* FMRecognizerWrapper.m */; };
+		18FA6F3827AD35BD00F46275 /* PresentFacesHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0527AD35BD00F46275 /* PresentFacesHolder.m */; };
+		18FA6F3927AD35BD00F46275 /* FaceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0A27AD35BD00F46275 /* FaceData.m */; };
+		18FA6F3A27AD35BD00F46275 /* FaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0B27AD35BD00F46275 /* FaceHolder.m */; };
 		8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18FA6E4C27AD343600F46275 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18FA6E4B27AD343600F46275 /* FaceMeSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTX_Identity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +208,6 @@
 		1815DD4B277042DE0038BD9B /* RetailerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailerDetailsVC.swift; sourceTree = "<group>"; };
 		1815DD4C277042DE0038BD9B /* RetailerDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RetailerDetailsVC.xib; sourceTree = "<group>"; };
 		182D84E1278C108F00D719FD /* FTX Identity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTX Identity-Bridging-Header.h"; sourceTree = "<group>"; };
-		182D84E2278C109000D719FD /* 3DHead.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = 3DHead.dae; sourceTree = "<group>"; };
 		182D84E3278C109000D719FD /* CaptureConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureConfiguration.m; sourceTree = "<group>"; };
 		182D84E6278C109000D719FD /* CaptureConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureConfiguration.h; sourceTree = "<group>"; };
 		182D84F0278C10CA00D719FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
@@ -169,6 +230,7 @@
 		183A1B382769C7C200464652 /* DashboardOptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardOptionCell.xib; sourceTree = "<group>"; };
 		183A1B3D2769CA6100464652 /* DashboardVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+CollectionView.swift"; sourceTree = "<group>"; };
 		183A1B402769D03300464652 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		183AA07727AD501F004847E9 /* SDK.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SDK.strings; sourceTree = "<group>"; };
 		184633CC27686263007229A3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		184633D22768641C007229A3 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		184633D32768641C007229A3 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -260,7 +322,94 @@
 		18ECF1F9277588CC00FA36DF /* MobileNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberVC.swift; sourceTree = "<group>"; };
 		18ECF1FA277588CC00FA36DF /* MobileNumberVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileNumberVC.xib; sourceTree = "<group>"; };
 		18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileNumberVC+ApiCall.swift"; sourceTree = "<group>"; };
+		18F7DF7D27A3C156007753CD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+NavigationToOtherView.swift"; sourceTree = "<group>"; };
+		18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FaceMeSDK.framework; sourceTree = "<group>"; };
+		18FA6E9E27AD35BD00F46275 /* UIFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFaceView.h; sourceTree = "<group>"; };
+		18FA6E9F27AD35BD00F46275 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		18FA6EA027AD35BD00F46275 /* UiSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiSettings.h; sourceTree = "<group>"; };
+		18FA6EA127AD35BD00F46275 /* LicenseInfoHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseInfoHandler.h; sourceTree = "<group>"; };
+		18FA6EA227AD35BD00F46275 /* UIFaceView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFaceView+Refresh.m"; sourceTree = "<group>"; };
+		18FA6EA327AD35BD00F46275 /* FMPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPopoverBackgroundView.h; sourceTree = "<group>"; };
+		18FA6EA427AD35BD00F46275 /* DepthUiSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthUiSettings.h; sourceTree = "<group>"; };
+		18FA6EA627AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceMeRecognizerSettingsDetailViewController.h; sourceTree = "<group>"; };
+		18FA6EA727AD35BD00F46275 /* FaceMeRecognizerStringMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceMeRecognizerStringMapping.h; sourceTree = "<group>"; };
+		18FA6EA827AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceMeRecognizerSettingsViewController.h; sourceTree = "<group>"; };
+		18FA6EA927AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceMeRecognizerSettingsDetailViewController.m; sourceTree = "<group>"; };
+		18FA6EAA27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceMeRecognizerSettingsDetailViewController.xib; sourceTree = "<group>"; };
+		18FA6EAB27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceMeRecognizerSettingsViewController.xib; sourceTree = "<group>"; };
+		18FA6EAC27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceMeRecognizerSettingsViewController.m; sourceTree = "<group>"; };
+		18FA6EAD27AD35BD00F46275 /* FaceMeRecognizerStringMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceMeRecognizerStringMapping.m; sourceTree = "<group>"; };
+		18FA6EAE27AD35BD00F46275 /* UIFaceNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFaceNameController.m; sourceTree = "<group>"; };
+		18FA6EAF27AD35BD00F46275 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		18FA6EB027AD35BD00F46275 /* UIFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFaceView.m; sourceTree = "<group>"; };
+		18FA6EB127AD35BD00F46275 /* FMPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPopoverBackgroundView.m; sourceTree = "<group>"; };
+		18FA6EB227AD35BD00F46275 /* LicenseInfoHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseInfoHandler.m; sourceTree = "<group>"; };
+		18FA6EB327AD35BD00F46275 /* UIFaceView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFaceView+Refresh.h"; sourceTree = "<group>"; };
+		18FA6EB427AD35BD00F46275 /* UiSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiSettings.m; sourceTree = "<group>"; };
+		18FA6EB527AD35BD00F46275 /* DepthUiSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepthUiSettings.m; sourceTree = "<group>"; };
+		18FA6EB627AD35BD00F46275 /* UIFaceNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFaceNameController.h; sourceTree = "<group>"; };
+		18FA6EB827AD35BD00F46275 /* FaceExtraHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceExtraHandler.h; sourceTree = "<group>"; };
+		18FA6EB927AD35BD00F46275 /* VisitService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitService.m; sourceTree = "<group>"; };
+		18FA6EBA27AD35BD00F46275 /* RecognitionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognitionHandler.h; sourceTree = "<group>"; };
+		18FA6EBB27AD35BD00F46275 /* AutoAddFaceCollectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoAddFaceCollectionHandler.h; sourceTree = "<group>"; };
+		18FA6EBC27AD35BD00F46275 /* FaceExtraHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceExtraHandler.m; sourceTree = "<group>"; };
+		18FA6EBD27AD35BD00F46275 /* RecognitionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognitionHandler.m; sourceTree = "<group>"; };
+		18FA6EBE27AD35BD00F46275 /* VisitService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitService.h; sourceTree = "<group>"; };
+		18FA6EBF27AD35BD00F46275 /* AutoAddFaceCollectionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoAddFaceCollectionHandler.m; sourceTree = "<group>"; };
+		18FA6EC127AD35BD00F46275 /* MiscUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscUtils.h; sourceTree = "<group>"; };
+		18FA6EC227AD35BD00F46275 /* ImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTool.m; sourceTree = "<group>"; };
+		18FA6EC327AD35BD00F46275 /* FpsMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FpsMeter.h; sourceTree = "<group>"; };
+		18FA6EC427AD35BD00F46275 /* DevTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevTool.h; sourceTree = "<group>"; };
+		18FA6EC527AD35BD00F46275 /* MiscUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscUtils.m; sourceTree = "<group>"; };
+		18FA6EC627AD35BD00F46275 /* FpsMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FpsMeter.m; sourceTree = "<group>"; };
+		18FA6EC727AD35BD00F46275 /* ImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTool.h; sourceTree = "<group>"; };
+		18FA6EC827AD35BD00F46275 /* DevTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevTool.m; sourceTree = "<group>"; };
+		18FA6ECA27AD35BD00F46275 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		18FA6ECB27AD35BD00F46275 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		18FA6ECD27AD35BD00F46275 /* ResultMaskUIView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultMaskUIView.xib; sourceTree = "<group>"; };
+		18FA6ECE27AD35BD00F46275 /* AntiSpoofingContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AntiSpoofingContainerViewController.xib; sourceTree = "<group>"; };
+		18FA6ECF27AD35BD00F46275 /* ResultMaskUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultMaskUIView.m; sourceTree = "<group>"; };
+		18FA6ED027AD35BD00F46275 /* AntiSpoofingContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AntiSpoofingContainerViewController.m; sourceTree = "<group>"; };
+		18FA6ED227AD35BD00F46275 /* AntiSpoofingSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntiSpoofingSettings.h; sourceTree = "<group>"; };
+		18FA6ED327AD35BD00F46275 /* AntiSpoofingSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AntiSpoofingSettingsViewController.m; sourceTree = "<group>"; };
+		18FA6ED427AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AntiSpoofingSettingsDetailViewController.m; sourceTree = "<group>"; };
+		18FA6ED527AD35BD00F46275 /* AntiSpoofingSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AntiSpoofingSettingsViewController.xib; sourceTree = "<group>"; };
+		18FA6ED627AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AntiSpoofingSettingsDetailViewController.xib; sourceTree = "<group>"; };
+		18FA6ED727AD35BD00F46275 /* AntiSpoofingSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AntiSpoofingSettings.m; sourceTree = "<group>"; };
+		18FA6ED827AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntiSpoofingSettingsDetailViewController.h; sourceTree = "<group>"; };
+		18FA6ED927AD35BD00F46275 /* AntiSpoofingSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntiSpoofingSettingsViewController.h; sourceTree = "<group>"; };
+		18FA6EE027AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/turn_left.wav; sourceTree = "<group>"; };
+		18FA6EE227AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/center_your_face.wav; sourceTree = "<group>"; };
+		18FA6EE427AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/face_go_farther.wav; sourceTree = "<group>"; };
+		18FA6EE627AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/turn_right.wav; sourceTree = "<group>"; };
+		18FA6EE927AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/face_come_closer.wav; sourceTree = "<group>"; };
+		18FA6EEB27AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/ok.wav; sourceTree = "<group>"; };
+		18FA6EEE27AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/processing.wav; sourceTree = "<group>"; };
+		18FA6EF027AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/smile.wav; sourceTree = "<group>"; };
+		18FA6EF227AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/alert_env_dark.wav; sourceTree = "<group>"; };
+		18FA6EF427AD35BD00F46275 /* en */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = en; path = en.lproj/nod_head.wav; sourceTree = "<group>"; };
+		18FA6EF527AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/turn_left.wav"; sourceTree = "<group>"; };
+		18FA6EF627AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/center_your_face.wav"; sourceTree = "<group>"; };
+		18FA6EF727AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/face_go_farther.wav"; sourceTree = "<group>"; };
+		18FA6EF827AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/turn_right.wav"; sourceTree = "<group>"; };
+		18FA6EFA27AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/face_come_closer.wav"; sourceTree = "<group>"; };
+		18FA6EFB27AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/ok.wav"; sourceTree = "<group>"; };
+		18FA6EFD27AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/processing.wav"; sourceTree = "<group>"; };
+		18FA6EFE27AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/smile.wav"; sourceTree = "<group>"; };
+		18FA6EFF27AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/alert_env_dark.wav"; sourceTree = "<group>"; };
+		18FA6F0027AD35BD00F46275 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "zh-Hant"; path = "zh-Hant.lproj/nod_head.wav"; sourceTree = "<group>"; };
+		18FA6F0127AD35BD00F46275 /* AntiSpoofingContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AntiSpoofingContainerViewController.h; sourceTree = "<group>"; };
+		18FA6F0227AD35BD00F46275 /* ResultMaskUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultMaskUIView.h; sourceTree = "<group>"; };
+		18FA6F0427AD35BD00F46275 /* FMRecognizerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRecognizerWrapper.m; sourceTree = "<group>"; };
+		18FA6F0527AD35BD00F46275 /* PresentFacesHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFacesHolder.m; sourceTree = "<group>"; };
+		18FA6F0627AD35BD00F46275 /* FaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceHolder.h; sourceTree = "<group>"; };
+		18FA6F0727AD35BD00F46275 /* FaceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceData.h; sourceTree = "<group>"; };
+		18FA6F0827AD35BD00F46275 /* PresentFacesHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFacesHolder.h; sourceTree = "<group>"; };
+		18FA6F0927AD35BD00F46275 /* FMRecognizerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRecognizerWrapper.h; sourceTree = "<group>"; };
+		18FA6F0A27AD35BD00F46275 /* FaceData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceData.m; sourceTree = "<group>"; };
+		18FA6F0B27AD35BD00F46275 /* FaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceHolder.m; sourceTree = "<group>"; };
+		18FA6F3B27AD360A00F46275 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		5D4A3292044E91147807C528 /* Pods-FTX Identity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTX Identity.debug.xcconfig"; path = "Target Support Files/Pods-FTX Identity/Pods-FTX Identity.debug.xcconfig"; sourceTree = "<group>"; };
 		CA9071216D47B921DA99B82A /* Pods-FTX Identity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTX Identity.release.xcconfig"; path = "Target Support Files/Pods-FTX Identity/Pods-FTX Identity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -270,6 +419,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FA6E4A27AD343600F46275 /* FaceMeSDK.framework in Frameworks */,
 				8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,9 +472,9 @@
 			isa = PBXGroup;
 			children = (
 				182D84E1278C108F00D719FD /* FTX Identity-Bridging-Header.h */,
+				18F7DF7D27A3C156007753CD /* art.scnassets */,
 				182D84F1278C10CA00D719FD /* de.lproj */,
 				182D84EE278C10CA00D719FD /* en.lproj */,
-				182D84E2278C109000D719FD /* 3DHead.dae */,
 				182D84E6278C109000D719FD /* CaptureConfiguration.h */,
 				182D84E3278C109000D719FD /* CaptureConfiguration.m */,
 				182D84F6278C195600D719FD /* CaptureViewController.h */,
@@ -412,6 +562,8 @@
 		184633CA27685FC3007229A3 /* Resorces */ = {
 			isa = PBXGroup;
 			children = (
+				18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */,
+				18FA6E9C27AD35BD00F46275 /* FacemeRequiredFiles */,
 				182D84E0278C105800D719FD /* Bioid-GmbH */,
 				180C63422771BEF1005D8669 /* OnlyDateAndMonthPickerVC */,
 				18EB4D40276C554D00CAF8B4 /* Loader */,
@@ -796,6 +948,162 @@
 			path = Step4;
 			sourceTree = "<group>";
 		};
+		18FA6E9C27AD35BD00F46275 /* FacemeRequiredFiles */ = {
+			isa = PBXGroup;
+			children = (
+				183AA07727AD501F004847E9 /* SDK.strings */,
+				18FA6E9D27AD35BD00F46275 /* Ui */,
+				18FA6EB727AD35BD00F46275 /* Extension */,
+				18FA6EC027AD35BD00F46275 /* Util */,
+				18FA6EC927AD35BD00F46275 /* Toast */,
+				18FA6ECC27AD35BD00F46275 /* AntiSpoofing */,
+				18FA6F0327AD35BD00F46275 /* Sdk */,
+			);
+			name = FacemeRequiredFiles;
+			path = "../../../../../Desktop/untitled folder/FacemeRequiredFiles";
+			sourceTree = "<group>";
+		};
+		18FA6E9D27AD35BD00F46275 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6E9E27AD35BD00F46275 /* UIFaceView.h */,
+				18FA6E9F27AD35BD00F46275 /* SettingsController.h */,
+				18FA6EA027AD35BD00F46275 /* UiSettings.h */,
+				18FA6EA127AD35BD00F46275 /* LicenseInfoHandler.h */,
+				18FA6EA227AD35BD00F46275 /* UIFaceView+Refresh.m */,
+				18FA6EA327AD35BD00F46275 /* FMPopoverBackgroundView.h */,
+				18FA6EA427AD35BD00F46275 /* DepthUiSettings.h */,
+				18FA6EA527AD35BD00F46275 /* FaceMeRecognizerSettings */,
+				18FA6EAE27AD35BD00F46275 /* UIFaceNameController.m */,
+				18FA6EAF27AD35BD00F46275 /* SettingsController.m */,
+				18FA6EB027AD35BD00F46275 /* UIFaceView.m */,
+				18FA6EB127AD35BD00F46275 /* FMPopoverBackgroundView.m */,
+				18FA6EB227AD35BD00F46275 /* LicenseInfoHandler.m */,
+				18FA6EB327AD35BD00F46275 /* UIFaceView+Refresh.h */,
+				18FA6EB427AD35BD00F46275 /* UiSettings.m */,
+				18FA6EB527AD35BD00F46275 /* DepthUiSettings.m */,
+				18FA6EB627AD35BD00F46275 /* UIFaceNameController.h */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		18FA6EA527AD35BD00F46275 /* FaceMeRecognizerSettings */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6EA627AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.h */,
+				18FA6EA727AD35BD00F46275 /* FaceMeRecognizerStringMapping.h */,
+				18FA6EA827AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.h */,
+				18FA6EA927AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m */,
+				18FA6EAA27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib */,
+				18FA6EAB27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.xib */,
+				18FA6EAC27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.m */,
+				18FA6EAD27AD35BD00F46275 /* FaceMeRecognizerStringMapping.m */,
+			);
+			path = FaceMeRecognizerSettings;
+			sourceTree = "<group>";
+		};
+		18FA6EB727AD35BD00F46275 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6EB827AD35BD00F46275 /* FaceExtraHandler.h */,
+				18FA6EB927AD35BD00F46275 /* VisitService.m */,
+				18FA6EBA27AD35BD00F46275 /* RecognitionHandler.h */,
+				18FA6EBB27AD35BD00F46275 /* AutoAddFaceCollectionHandler.h */,
+				18FA6EBC27AD35BD00F46275 /* FaceExtraHandler.m */,
+				18FA6EBD27AD35BD00F46275 /* RecognitionHandler.m */,
+				18FA6EBE27AD35BD00F46275 /* VisitService.h */,
+				18FA6EBF27AD35BD00F46275 /* AutoAddFaceCollectionHandler.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18FA6EC027AD35BD00F46275 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6EC127AD35BD00F46275 /* MiscUtils.h */,
+				18FA6EC227AD35BD00F46275 /* ImageTool.m */,
+				18FA6EC327AD35BD00F46275 /* FpsMeter.h */,
+				18FA6EC427AD35BD00F46275 /* DevTool.h */,
+				18FA6EC527AD35BD00F46275 /* MiscUtils.m */,
+				18FA6EC627AD35BD00F46275 /* FpsMeter.m */,
+				18FA6EC727AD35BD00F46275 /* ImageTool.h */,
+				18FA6EC827AD35BD00F46275 /* DevTool.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		18FA6EC927AD35BD00F46275 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6ECA27AD35BD00F46275 /* UIView+Toast.h */,
+				18FA6ECB27AD35BD00F46275 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		18FA6ECC27AD35BD00F46275 /* AntiSpoofing */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6ECD27AD35BD00F46275 /* ResultMaskUIView.xib */,
+				18FA6ECE27AD35BD00F46275 /* AntiSpoofingContainerViewController.xib */,
+				18FA6ECF27AD35BD00F46275 /* ResultMaskUIView.m */,
+				18FA6ED027AD35BD00F46275 /* AntiSpoofingContainerViewController.m */,
+				18FA6ED127AD35BD00F46275 /* AntiSpoofingSetting */,
+				18FA6F0127AD35BD00F46275 /* AntiSpoofingContainerViewController.h */,
+				18FA6F0227AD35BD00F46275 /* ResultMaskUIView.h */,
+			);
+			path = AntiSpoofing;
+			sourceTree = "<group>";
+		};
+		18FA6ED127AD35BD00F46275 /* AntiSpoofingSetting */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6ED227AD35BD00F46275 /* AntiSpoofingSettings.h */,
+				18FA6ED327AD35BD00F46275 /* AntiSpoofingSettingsViewController.m */,
+				18FA6F3B27AD360A00F46275 /* Constants.h */,
+				18FA6ED427AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.m */,
+				18FA6ED527AD35BD00F46275 /* AntiSpoofingSettingsViewController.xib */,
+				18FA6ED627AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.xib */,
+				18FA6ED727AD35BD00F46275 /* AntiSpoofingSettings.m */,
+				18FA6ED827AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.h */,
+				18FA6ED927AD35BD00F46275 /* AntiSpoofingSettingsViewController.h */,
+				18FA6EDA27AD35BD00F46275 /* Localization */,
+			);
+			path = AntiSpoofingSetting;
+			sourceTree = "<group>";
+		};
+		18FA6EDA27AD35BD00F46275 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6EDF27AD35BD00F46275 /* turn_left.wav */,
+				18FA6EE127AD35BD00F46275 /* center_your_face.wav */,
+				18FA6EE327AD35BD00F46275 /* face_go_farther.wav */,
+				18FA6EE527AD35BD00F46275 /* turn_right.wav */,
+				18FA6EE827AD35BD00F46275 /* face_come_closer.wav */,
+				18FA6EEA27AD35BD00F46275 /* ok.wav */,
+				18FA6EED27AD35BD00F46275 /* processing.wav */,
+				18FA6EEF27AD35BD00F46275 /* smile.wav */,
+				18FA6EF127AD35BD00F46275 /* alert_env_dark.wav */,
+				18FA6EF327AD35BD00F46275 /* nod_head.wav */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		18FA6F0327AD35BD00F46275 /* Sdk */ = {
+			isa = PBXGroup;
+			children = (
+				18FA6F0427AD35BD00F46275 /* FMRecognizerWrapper.m */,
+				18FA6F0527AD35BD00F46275 /* PresentFacesHolder.m */,
+				18FA6F0627AD35BD00F46275 /* FaceHolder.h */,
+				18FA6F0727AD35BD00F46275 /* FaceData.h */,
+				18FA6F0827AD35BD00F46275 /* PresentFacesHolder.h */,
+				18FA6F0927AD35BD00F46275 /* FMRecognizerWrapper.h */,
+				18FA6F0A27AD35BD00F46275 /* FaceData.m */,
+				18FA6F0B27AD35BD00F46275 /* FaceHolder.m */,
+			);
+			path = Sdk;
+			sourceTree = "<group>";
+		};
 		5E4EEB92A9642F480CE35784 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -825,6 +1133,7 @@
 				18CB92EF27677C1F008A89C5 /* Frameworks */,
 				18CB92F027677C1F008A89C5 /* Resources */,
 				26A85F6AB0FB0813C37608B0 /* [CP] Embed Pods Frameworks */,
+				18FA6E4C27AD343600F46275 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -858,6 +1167,10 @@
 				en,
 				Base,
 				de,
+				ja,
+				"zh-Hant",
+				"en copy",
+				"zh-Hant copy",
 			);
 			mainGroup = 18CB92E927677C1F008A89C5;
 			productRefGroup = 18CB92F327677C1F008A89C5 /* Products */;
@@ -874,41 +1187,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FA6F3227AD35BD00F46275 /* ok.wav in Resources */,
 				18E1A7A1277443E600B90EF7 /* BiometricInfoVC.xib in Resources */,
+				183AA07827AD501F004847E9 /* SDK.strings in Resources */,
 				18DB0426277464F70088604D /* DisplayImageVC.xib in Resources */,
 				1863BB262768AAE900CBCEDF /* DashboardVC.xib in Resources */,
+				18FA6F2D27AD35BD00F46275 /* turn_left.wav in Resources */,
 				18CB930227677C20008A89C5 /* LaunchScreen.storyboard in Resources */,
 				18CB92FF27677C20008A89C5 /* Assets.xcassets in Resources */,
+				18FA6F3427AD35BD00F46275 /* smile.wav in Resources */,
+				18FA6F2F27AD35BD00F46275 /* face_go_farther.wav in Resources */,
+				18FA6F3127AD35BD00F46275 /* face_come_closer.wav in Resources */,
 				18EB4D42276C555F00CAF8B4 /* loading_animation.json in Resources */,
 				18B14FE5277335FA007A6277 /* TwoFactorAuthenticationVC.xib in Resources */,
 				18BBA9A2276C79BC0010222A /* SearchRetailerVC.xib in Resources */,
 				18CB92FD27677C1F008A89C5 /* Main.storyboard in Resources */,
 				18E1A79B277439FE00B90EF7 /* QrCodeDisplayVC.xib in Resources */,
 				182D84F5278C10CA00D719FD /* Localizable.strings in Resources */,
+				18FA6F2327AD35BD00F46275 /* AntiSpoofingContainerViewController.xib in Resources */,
 				184633DE2768641C007229A3 /* SourceSansPro-Regular.ttf in Resources */,
+				18FA6F3027AD35BD00F46275 /* turn_right.wav in Resources */,
 				18100BD62770652E00E961D9 /* ListOfShareOptionCell.xib in Resources */,
 				184633DF2768641C007229A3 /* SourceSansPro-SemiBold.ttf in Resources */,
+				18FA6F2227AD35BD00F46275 /* ResultMaskUIView.xib in Resources */,
+				18FA6F0E27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib in Resources */,
 				1836F15E276A0B3000219340 /* IDScanVC.xib in Resources */,
 				1895197A2771E8BF0098A38C /* ChangePwdVC.xib in Resources */,
 				18317C5B2772F91700C90A22 /* TakeSelfieVC.xib in Resources */,
 				182D84FA278C195600D719FD /* CaptureViewController.xib in Resources */,
 				18BBA9A8276C7A7A0010222A /* RetailerTableViewCell.xib in Resources */,
+				18FA6F2827AD35BD00F46275 /* AntiSpoofingSettingsViewController.xib in Resources */,
 				182D84F4278C10CA00D719FD /* Localizable.strings in Resources */,
 				18B14FEF2773434C007A6277 /* TwoFASuccessVC.xib in Resources */,
-				182D84E7278C109000D719FD /* 3DHead.dae in Resources */,
 				180C63462771BF45005D8669 /* OnlyDateAndMonthPickerVC.xib in Resources */,
 				18DB042F277491740088604D /* VerifyBioMetricsVC.xib in Resources */,
 				18317C4D2772E8B000C90A22 /* SignInSecurityVC.xib in Resources */,
+				18FA6F3627AD35BD00F46275 /* nod_head.wav in Resources */,
+				18FA6F2E27AD35BD00F46275 /* center_your_face.wav in Resources */,
 				18BBA99A276C733D0010222A /* SuccessSignupVC.xib in Resources */,
+				18FA6F2927AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.xib in Resources */,
 				18A84D6F276A315A00B8991D /* VideoRecordingVC.xib in Resources */,
+				18F7DF7E27A3C156007753CD /* art.scnassets in Resources */,
 				18E1A7B42774557A00B90EF7 /* QrCodeScannerVC.xib in Resources */,
 				183A1B3A2769C7C200464652 /* DashboardOptionCell.xib in Resources */,
 				18100BCF27705D7900E961D9 /* ShareUnshareIdentityVC.xib in Resources */,
 				188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */,
+				18FA6F3527AD35BD00F46275 /* alert_env_dark.wav in Resources */,
 				18E1A7A7277445D400B90EF7 /* BiometricInfoTableViewCell.xib in Resources */,
 				18B14FF527734612007A6277 /* TwoFASuccessCell.xib in Resources */,
+				18FA6F0F27AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.xib in Resources */,
 				18ECF1FC277588CC00FA36DF /* MobileNumberVC.xib in Resources */,
 				1815DD4E277042DE0038BD9B /* RetailerDetailsVC.xib in Resources */,
+				18FA6F3327AD35BD00F46275 /* processing.wav in Resources */,
 				188CD1512770A00F0034F431 /* PersonalInfoVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -964,6 +1294,7 @@
 			files = (
 				189519702771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift in Sources */,
 				187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */,
+				18FA6F1B27AD35BD00F46275 /* RecognitionHandler.m in Sources */,
 				18E1A79A277439FE00B90EF7 /* QrCodeDisplayVC.swift in Sources */,
 				18BBA994276C6E240010222A /* CreateAccountStep5VC+Apicall.swift in Sources */,
 				18DC2078279E790200F62339 /* Reachability.swift in Sources */,
@@ -973,12 +1304,15 @@
 				18E1A7B32774557A00B90EF7 /* QrCodeScannerVC.swift in Sources */,
 				18DB04392774987F0088604D /* VerifyBioMetricsVC+Annimation.swift in Sources */,
 				184B4D63276CB36800937C11 /* MainStuffViewController.swift in Sources */,
+				18FA6F1827AD35BD00F46275 /* DepthUiSettings.m in Sources */,
 				18100BD52770652E00E961D9 /* ListOfShareOptionCell.swift in Sources */,
 				1846340127688254007229A3 /* UITextFieldExtension.swift in Sources */,
 				18B14FEE2773434C007A6277 /* TwoFASuccessVC.swift in Sources */,
 				18475263276B55E200F9F739 /* CreateAccountStep3VC+ApiCall.swift in Sources */,
 				18BBA9A1276C79BC0010222A /* SearchRetailerVC.swift in Sources */,
 				1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */,
+				18FA6F1F27AD35BD00F46275 /* FpsMeter.m in Sources */,
+				18FA6F2627AD35BD00F46275 /* AntiSpoofingSettingsViewController.m in Sources */,
 				18317C542772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift in Sources */,
 				18DB0433277498430088604D /* VerifyBioMetricsVC+ApiCall.swift in Sources */,
 				183A1B412769D03300464652 /* Constant.swift in Sources */,
@@ -986,23 +1320,31 @@
 				1847525D276B4B0B00F9F739 /* CustomAlertView.swift in Sources */,
 				18E1A7AD27744E1200B90EF7 /* QrCodeDisplayVC+ApiCall.swift in Sources */,
 				18475251276B3C7100F9F739 /* CreateAccountStep1VC+ApiCall.swift in Sources */,
+				18FA6F3727AD35BD00F46275 /* FMRecognizerWrapper.m in Sources */,
 				1847524E276B186D00F9F739 /* ChooseOprtionVC+Apicall.swift in Sources */,
 				1847524A276B14DD00F9F739 /* CreateAccountStep5VC.swift in Sources */,
 				18DB0436277498610088604D /* VerifyBioMetricsVC+Navigation.swift in Sources */,
+				18FA6F1527AD35BD00F46275 /* FMPopoverBackgroundView.m in Sources */,
 				1836F15D276A0B3000219340 /* IDScanVC.swift in Sources */,
 				18BBA9AB276C82500010222A /* SearchRetailerVC+TableViewDataSource.swift in Sources */,
+				18FA6F1C27AD35BD00F46275 /* AutoAddFaceCollectionHandler.m in Sources */,
 				18317C5A2772F91700C90A22 /* TakeSelfieVC.swift in Sources */,
+				18FA6F0C27AD35BD00F46275 /* UIFaceView+Refresh.m in Sources */,
 				183A1B392769C7C200464652 /* DashboardOptionCell.swift in Sources */,
 				18317C502772EB0100C90A22 /* SignInSecurityVC+Helper.swift in Sources */,
+				18FA6F2A27AD35BD00F46275 /* AntiSpoofingSettings.m in Sources */,
 				18DB042E277491740088604D /* VerifyBioMetricsVC.swift in Sources */,
 				183A1B342769C09700464652 /* AuthLoginClass.swift in Sources */,
 				1863BB202768A58300CBCEDF /* CreateAccountStep1VC.swift in Sources */,
 				18B14FE4277335FA007A6277 /* TwoFactorAuthenticationVC.swift in Sources */,
+				18FA6F0D27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m in Sources */,
 				18BBA999276C733D0010222A /* SuccessSignupVC.swift in Sources */,
+				18FA6F1627AD35BD00F46275 /* LicenseInfoHandler.m in Sources */,
 				1863BB16276897D000CBCEDF /* ApicallClass.swift in Sources */,
 				1863BB252768AAE900CBCEDF /* DashboardVC.swift in Sources */,
 				182D84F9278C195600D719FD /* CaptureViewController.m in Sources */,
 				18B14FE927733CD3007A6277 /* TwoFactorAuthenticationVC+ApiCall.swift in Sources */,
+				18FA6F3827AD35BD00F46275 /* PresentFacesHolder.m in Sources */,
 				18951981277204A00098A38C /* UIIMageExtension.swift in Sources */,
 				18317C4C2772E8B000C90A22 /* SignInSecurityVC.swift in Sources */,
 				184633CD27686263007229A3 /* UIViewExtension.swift in Sources */,
@@ -1011,14 +1353,19 @@
 				18E1A7B82774567600B90EF7 /* QrCodeScannerVC+Helper.swift in Sources */,
 				188CD1502770A00F0034F431 /* PersonalInfoVC.swift in Sources */,
 				18DB0429277472000088604D /* BiometricInfoVC+ApiCall.swift in Sources */,
+				18FA6F1227AD35BD00F46275 /* UIFaceNameController.m in Sources */,
 				1836F158276A029000219340 /* CreateAccountStep4VC.swift in Sources */,
 				184633F927686E15007229A3 /* ChooseOprtionVC+CollectionViewDatasource.swift in Sources */,
 				184633ED2768662D007229A3 /* ChooseOprtionVC.swift in Sources */,
+				18FA6F1427AD35BD00F46275 /* UIFaceView.m in Sources */,
 				1895197D2771F2410098A38C /* PersonalInfoVC+Helper.swift in Sources */,
 				18BBA9A7276C7A7A0010222A /* RetailerTableViewCell.swift in Sources */,
+				18FA6F2427AD35BD00F46275 /* ResultMaskUIView.m in Sources */,
 				188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */,
+				18FA6F2727AD35BD00F46275 /* AntiSpoofingSettingsDetailViewController.m in Sources */,
 				1847525A276B494F00F9F739 /* Banner.swift in Sources */,
 				18BBA9AE276C8AC70010222A /* SearchRetailerVC+ApiCall.swift in Sources */,
+				18FA6F1327AD35BD00F46275 /* SettingsController.m in Sources */,
 				18E1A7A6277445D400B90EF7 /* BiometricInfoTableViewCell.swift in Sources */,
 				18B14FDF27732A47007A6277 /* StringMsgToDisplay.swift in Sources */,
 				18A84D51276A10D600B8991D /* LoadingView.swift in Sources */,
@@ -1026,6 +1373,8 @@
 				188CD1542770A2CA0034F431 /* PersonalInfoVC+ApiCall.swift in Sources */,
 				18ECF1FF27758F5800FA36DF /* MobileNumberVC+ApiCall.swift in Sources */,
 				18CB92FA27677C1F008A89C5 /* SplashViewController.swift in Sources */,
+				18FA6F1E27AD35BD00F46275 /* MiscUtils.m in Sources */,
+				18FA6F2127AD35BD00F46275 /* UIView+Toast.m in Sources */,
 				180C63452771BF45005D8669 /* OnlyDateAndMonthPickerVC.swift in Sources */,
 				1836F1552769FF0100219340 /* CreateAccountStep3VC.swift in Sources */,
 				18A84D66276A2CA400B8991D /* AllPopupView.swift in Sources */,
@@ -1035,19 +1384,29 @@
 				18ECF1FB277588CC00FA36DF /* MobileNumberVC.swift in Sources */,
 				182D84E8278C109000D719FD /* CaptureConfiguration.m in Sources */,
 				187F9C262770503700D1451A /* RetailerDetailsVC+HelperFunction.swift in Sources */,
+				18FA6F1A27AD35BD00F46275 /* FaceExtraHandler.m in Sources */,
 				188D40012769FAB800043FAB /* CreateAccountStep2VC.swift in Sources */,
+				18FA6F1D27AD35BD00F46275 /* ImageTool.m in Sources */,
 				18100BE027708ABE00E961D9 /* RetailerDetailsVC+ApiCall.swift in Sources */,
+				18FA6F3927AD35BD00F46275 /* FaceData.m in Sources */,
 				183A1B3E2769CA6100464652 /* DashboardVC+CollectionView.swift in Sources */,
+				18FA6F1027AD35BD00F46275 /* FaceMeRecognizerSettingsViewController.m in Sources */,
 				18A84D6E276A315A00B8991D /* VideoRecordingVC.swift in Sources */,
+				18FA6F3A27AD35BD00F46275 /* FaceHolder.m in Sources */,
 				18100BCE27705D7900E961D9 /* ShareUnshareIdentityVC.swift in Sources */,
+				18FA6F1727AD35BD00F46275 /* UiSettings.m in Sources */,
 				18100BDD27706A0800E961D9 /* ShareUnshareIdentityVC+ApiCall.swift in Sources */,
 				18475257276B482A00F9F739 /* AppUtills.swift in Sources */,
 				18E1A7AA277449CC00B90EF7 /* BiometricInfoVC+Tableview.swift in Sources */,
+				18FA6F1927AD35BD00F46275 /* VisitService.m in Sources */,
+				18FA6F2027AD35BD00F46275 /* DevTool.m in Sources */,
 				189519742771E3B00098A38C /* PersonalnfoChangePopupVC+APICall.swift in Sources */,
 				18475260276B4CD800F9F739 /* CreateAccountStep2VC+ApiCall.swift in Sources */,
+				18FA6F1127AD35BD00F46275 /* FaceMeRecognizerStringMapping.m in Sources */,
 				18DB0425277464F70088604D /* DisplayImageVC.swift in Sources */,
 				188949CB2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift in Sources */,
 				18CB92F627677C1F008A89C5 /* AppDelegate.swift in Sources */,
+				18FA6F2527AD35BD00F46275 /* AntiSpoofingContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1084,6 +1443,96 @@
 				18CB930127677C20008A89C5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		18FA6EDF27AD35BD00F46275 /* turn_left.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EE027AD35BD00F46275 /* en */,
+				18FA6EF527AD35BD00F46275 /* zh-Hant */,
+			);
+			name = turn_left.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EE127AD35BD00F46275 /* center_your_face.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EE227AD35BD00F46275 /* en */,
+				18FA6EF627AD35BD00F46275 /* zh-Hant */,
+			);
+			name = center_your_face.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EE327AD35BD00F46275 /* face_go_farther.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EE427AD35BD00F46275 /* en */,
+				18FA6EF727AD35BD00F46275 /* zh-Hant */,
+			);
+			name = face_go_farther.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EE527AD35BD00F46275 /* turn_right.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EE627AD35BD00F46275 /* en */,
+				18FA6EF827AD35BD00F46275 /* zh-Hant */,
+			);
+			name = turn_right.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EE827AD35BD00F46275 /* face_come_closer.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EE927AD35BD00F46275 /* en */,
+				18FA6EFA27AD35BD00F46275 /* zh-Hant */,
+			);
+			name = face_come_closer.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EEA27AD35BD00F46275 /* ok.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EEB27AD35BD00F46275 /* en */,
+				18FA6EFB27AD35BD00F46275 /* zh-Hant */,
+			);
+			name = ok.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EED27AD35BD00F46275 /* processing.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EEE27AD35BD00F46275 /* en */,
+				18FA6EFD27AD35BD00F46275 /* zh-Hant */,
+			);
+			name = processing.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EEF27AD35BD00F46275 /* smile.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EF027AD35BD00F46275 /* en */,
+				18FA6EFE27AD35BD00F46275 /* zh-Hant */,
+			);
+			name = smile.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EF127AD35BD00F46275 /* alert_env_dark.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EF227AD35BD00F46275 /* en */,
+				18FA6EFF27AD35BD00F46275 /* zh-Hant */,
+			);
+			name = alert_env_dark.wav;
+			sourceTree = "<group>";
+		};
+		18FA6EF327AD35BD00F46275 /* nod_head.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FA6EF427AD35BD00F46275 /* en */,
+				18FA6F0027AD35BD00F46275 /* zh-Hant */,
+			);
+			name = nod_head.wav;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1214,6 +1663,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T34W5A79X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+				);
 				INFOPLIST_FILE = "FTX Identity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1238,6 +1693,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T34W5A79X;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+				);
 				INFOPLIST_FILE = "FTX Identity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

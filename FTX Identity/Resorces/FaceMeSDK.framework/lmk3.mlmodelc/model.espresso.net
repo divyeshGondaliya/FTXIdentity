@@ -1,0 +1,413 @@
+{
+  "transform_params" : {
+    "input.1" : {
+      "bias_a" : 0,
+      "bias_g" : 0,
+      "bias_r" : 0,
+      "bias_b" : 0,
+      "center_mean" : 0,
+      "is_network_bgr" : 1,
+      "scale" : 1
+    }
+  },
+  "properties" : {
+
+  },
+  "analyses" : {
+
+  },
+  "format_version" : 200,
+  "storage" : "model.espresso.weights",
+  "layers" : [
+    {
+      "pad_r" : 1,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "Conv_0",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 1,
+      "top" : "51",
+      "blob_weights" : 3,
+      "K" : 3,
+      "blob_biases" : 1,
+      "name" : "Conv_0",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 1,
+      "has_biases" : 1,
+      "C" : 32,
+      "bottom" : "input.1",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 2,
+      "debug_info" : "MaxPool_2",
+      "pad_fill_mode" : 0,
+      "pad_b" : 2,
+      "pad_l" : 0,
+      "size_x" : 3,
+      "top" : "52",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "MaxPool_2",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "51",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 3,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "Conv_3",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "55",
+      "blob_weights" : 7,
+      "K" : 32,
+      "blob_biases" : 5,
+      "name" : "Conv_3",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 64,
+      "bottom" : "52",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 2,
+      "debug_info" : "MaxPool_5",
+      "pad_fill_mode" : 0,
+      "pad_b" : 2,
+      "pad_l" : 0,
+      "size_x" : 3,
+      "top" : "56",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "MaxPool_5",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "55",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 3,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "Conv_6",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "59",
+      "blob_weights" : 11,
+      "K" : 64,
+      "blob_biases" : 9,
+      "name" : "Conv_6",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "56",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 1,
+      "debug_info" : "MaxPool_8",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "size_x" : 3,
+      "top" : "60",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "MaxPool_8",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "59",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 3,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "Conv_9",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "63",
+      "blob_weights" : 15,
+      "K" : 128,
+      "blob_biases" : 13,
+      "name" : "Conv_9",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 128,
+      "bottom" : "60",
+      "weights" : {
+
+      },
+      "Nx" : 3,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 3,
+      "n_parallel" : 1
+    },
+    {
+      "pad_r" : 1,
+      "debug_info" : "MaxPool_11",
+      "pad_fill_mode" : 0,
+      "pad_b" : 1,
+      "pad_l" : 0,
+      "size_x" : 2,
+      "top" : "64",
+      "top_shape_style" : 0,
+      "stride_x" : 2,
+      "avg_or_max" : 1,
+      "average_count_exclude_padding" : 1,
+      "type" : "pool",
+      "name" : "MaxPool_11",
+      "pad_t" : 0,
+      "stride_y" : 2,
+      "bottom" : "63",
+      "weights" : {
+
+      },
+      "pad_mode" : 0,
+      "size_y" : 2,
+      "pad_value" : 0
+    },
+    {
+      "pad_r" : 0,
+      "fused_relu" : 1,
+      "fused_tanh" : 0,
+      "debug_info" : "Conv_12",
+      "pad_fill_mode" : 0,
+      "pad_b" : 0,
+      "pad_l" : 0,
+      "top" : "67",
+      "blob_weights" : 19,
+      "K" : 128,
+      "blob_biases" : 17,
+      "name" : "Conv_12",
+      "has_batch_norm" : 0,
+      "type" : "convolution",
+      "n_groups" : 1,
+      "pad_t" : 0,
+      "has_biases" : 1,
+      "C" : 256,
+      "bottom" : "64",
+      "weights" : {
+
+      },
+      "Nx" : 2,
+      "pad_mode" : 0,
+      "pad_value" : 0,
+      "Ny" : 2,
+      "n_parallel" : 1
+    },
+    {
+      "bottom" : "67",
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "nd_axis" : 0,
+      "debug_info" : "Reshape_23",
+      "top" : "75",
+      "type" : "flatten",
+      "name" : "Reshape_23"
+    },
+    {
+      "nB" : 2304,
+      "top" : "76",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 256,
+      "blob_weights" : 23,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "75",
+      "blob_biases" : 21,
+      "has_tanh" : 0,
+      "debug_info" : "Gemm_24",
+      "name" : "Gemm_24",
+      "has_prelu" : 0
+    },
+    {
+      "name" : "BatchNormalization_27",
+      "bottom" : "76",
+      "weights" : {
+
+      },
+      "debug_info" : "BatchNormalization_27",
+      "top" : "79",
+      "C" : 256,
+      "blob_batchnorm_params" : 25,
+      "type" : "batchnorm"
+    },
+    {
+      "bottom" : "79",
+      "weights" : {
+
+      },
+      "mode" : 0,
+      "debug_info" : "Relu_28",
+      "top" : "80",
+      "type" : "activation",
+      "name" : "Relu_28"
+    },
+    {
+      "bottom" : "80",
+      "cut" : 0,
+      "weights" : {
+
+      },
+      "debug_info" : "Split_29",
+      "n_outputs" : 4,
+      "top" : "81,82,83,84",
+      "type" : "split",
+      "name" : "Split_29"
+    },
+    {
+      "has_prelu" : 0,
+      "top" : "85",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 10,
+      "blob_weights" : 29,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "81",
+      "debug_info" : "Gemm_30",
+      "has_tanh" : 0,
+      "blob_biases" : 27,
+      "name" : "Gemm_30",
+      "nB" : 64
+    },
+    {
+      "has_prelu" : 0,
+      "top" : "86",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 10,
+      "blob_weights" : 33,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "82",
+      "debug_info" : "Gemm_31",
+      "has_tanh" : 0,
+      "blob_biases" : 31,
+      "name" : "Gemm_31",
+      "nB" : 64
+    },
+    {
+      "has_prelu" : 0,
+      "top" : "87",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 10,
+      "blob_weights" : 37,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "83",
+      "debug_info" : "Gemm_32",
+      "has_tanh" : 0,
+      "blob_biases" : 35,
+      "name" : "Gemm_32",
+      "nB" : 64
+    },
+    {
+      "has_prelu" : 0,
+      "top" : "88",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 10,
+      "blob_weights" : 41,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "84",
+      "debug_info" : "Gemm_33",
+      "has_tanh" : 0,
+      "blob_biases" : 39,
+      "name" : "Gemm_33",
+      "nB" : 64
+    }
+  ]
+}

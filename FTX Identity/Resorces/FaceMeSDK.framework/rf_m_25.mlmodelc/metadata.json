@@ -1,0 +1,145 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 4, 20, 20). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_cls_score_stride32",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 8, 20, 20). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_bbox_pred_stride32",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 20, 20, 20). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_landmark_pred_stride32",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 4, 40, 40). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_cls_score_stride16",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 8, 40, 40). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_bbox_pred_stride16",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 20, 40, 40). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_landmark_pred_stride16",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 4, 80, 80). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_cls_score_stride8",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 8, 80, 80). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_bbox_pred_stride8",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 20, 80, 80). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "face_rpn_landmark_pred_stride8",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 3,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.14",
+      "tvOS" : "12.0",
+      "watchOS" : "5.0",
+      "iOS" : "12.0",
+      "macCatalyst" : "12.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "formattedType" : "Image (Color 640 × 640)",
+        "hasSizeFlexibility" : "1",
+        "shortDescription" : "",
+        "sizeRange" : "[[32, 1280], [32, 1280]]",
+        "width" : "640",
+        "type" : "Image",
+        "isColor" : "1",
+        "height" : "640",
+        "sizeFlexibility" : "32...1280 × 32...1280",
+        "colorspace" : "RGB",
+        "name" : "data",
+        "isOptional" : "0"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.4"
+    },
+    "generatedClassName" : "rf_m_25",
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 3,
+      "UpsampleNearestNeighbor" : 2,
+      "Convolution" : 56,
+      "BatchNorm" : 47,
+      "ActivationReLU" : 41,
+      "Add" : 2
+    },
+    "method" : "predict"
+  }
+]

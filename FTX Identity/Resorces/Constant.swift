@@ -28,6 +28,8 @@ class ApiURls{
     static let SignupStep3           = "/api/v2/Signup/Otp/Verify"
     static let OtpResend             = "/api/v2/Signup/Otp/Resend"
     static let SignupStep4           = "/api/v2/Signup/Biometric"
+    static let validate_liveness     = "/api/v1/Biometric/Liveness"
+    static let facemeImageValidate   = "/api/v1/Biometric/Liveness/Verify"
     static let SignupStep5           = "/api/v2/Signup"
     static let Memberships           = "/api/v1/Profile/Memberships"
     static let ClaimType             = "/api/v1/ClaimType"

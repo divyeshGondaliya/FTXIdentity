@@ -1,0 +1,194 @@
+{
+    "FA": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc2_output"
+        ],
+        "batch_size": 1
+    },
+    "FE": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc2_output"
+        ],
+        "batch_size": 1
+    },
+    "FG":{
+        "input_name": "data",
+        "output_name_list": [
+            "gender_softmax_2"
+        ],
+        "batch_size": 1
+    },
+    "VH": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1_output"
+        ],
+        "batch_size": 1
+    },
+    "VH5": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1"
+        ],
+        "batch_size": 1
+    },
+    "VH6": {
+        "input_name": "input",
+        "output_name_list": [
+            "embedding"
+        ],
+        "batch_size": 1
+    },
+    "VH_M": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1"
+        ],
+        "batch_size": 1
+    },
+    "VH_M2": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1"
+        ],
+        "batch_size": 1
+    },
+    "UH": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1_output"
+        ],
+        "batch_size": 1
+    },
+    "UH5": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1"
+        ],
+        "batch_size": 1
+    },
+    "H1": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1_output"
+        ],
+        "batch_size": 1
+    },
+    "H2": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1_output"
+        ],
+        "batch_size": 1
+    },
+    "H3": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1_output"
+        ],
+        "batch_size": 1
+    },
+    "H5": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1"
+        ],
+        "batch_size": 1
+    },
+    "H6": {
+        "input_name": "data",
+        "output_name_list": [
+            "fc1"
+        ],
+        "batch_size": 1
+    },
+    "FMD": {
+        "input_name": "input.1",
+        "output_name_list": [
+            "122",
+            "123",
+            "124",
+            "125",
+            "126"
+        ],
+        "batch_size": 1
+    },
+    "LMU": {
+        "input_name": "input_1__0",
+        "output_name_list": [
+            "DenseN__BiasAdd__0"
+        ],
+        "batch_size": 1,
+        "prefer_rgb": false
+    },
+    "FSA": {
+        "input_name": "input_1",
+        "output_name_list": [
+            "dense_3/Relu:01",
+            "delta_s1/Tanh:01",
+            "local_delta_stage1/Tanh:01",
+            "dense_6/Relu:01",
+            "delta_s2/Tanh:01",
+            "local_delta_stage2/Tanh:01",
+            "dense_9/Relu:01",
+            "delta_s3/Tanh:01",
+            "local_delta_stage3/Tanh:01"
+        ],
+        "prefer_rgb": false,
+        "batch_size": 1
+    },
+    "MFSA": {
+        "input_name": "input_1",
+        "output_name_list": [
+            "model_1/dense_3/Relu:01",
+            "model_1/delta_s1/Tanh:01",
+            "model_1/local_delta_stage1/Tanh:01",
+            "model_1/dense_6/Relu:01",
+            "model_1/delta_s2/Tanh:01",
+            "model_1/local_delta_stage2/Tanh:01",
+            "model_1/dense_9/Relu:01",
+            "model_1/delta_s3/Tanh:01",
+            "model_1/local_delta_stage3/Tanh:01"
+        ],
+        "prefer_rgb": false,
+        "batch_size": 1
+    },
+    "LMK_1": {
+        "input_name": "input.1",
+        "output_name_list": [
+            "74",
+            "75",
+            "76",
+            "77"
+        ],
+        "batch_size": 1
+    },
+    "LMK_2": {
+        "input_name": "input.1",
+        "output_name_list": [
+            "81"
+        ],
+        "batch_size": 1
+    },
+    "LMK_3": {
+        "input_name": "input.1",
+        "output_name_list": [
+            "85",
+            "86",
+            "87",
+            "88"
+        ],
+        "batch_size": 1
+    },
+    "ERF": {
+        "input_name": "input",
+        "output_name_list": [
+            "classification_eyeballs",
+            "classification_eyebrows",
+            "classification_eyeglasses"
+        ],
+        "batch_size": 1
+    }
+}

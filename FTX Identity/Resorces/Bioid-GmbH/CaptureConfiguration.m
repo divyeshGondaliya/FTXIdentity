@@ -11,9 +11,9 @@
 //#warning Don't forget these credentials should come from your server in production systems! Only for quickly checking how this code works you put the credentials here!
 
 NSString * const BWS_INSTANCE_NAME = @"";
-NSString * const CLIENT_APP_ID = @"0faab54a-cf7d-487e-b3d7-feddfb6e46ac";
-NSString * const CLIENT_APP_SECRET = @"i+SmvJP+LoAisLqumgl75DOr";
-NSString * const BCID = @"bioid.42.196355193";
+NSString * const CLIENT_APP_ID = @"";
+NSString * const CLIENT_APP_SECRET = @"";
+NSString * const BCID = @"";
 
 @implementation CaptureConfiguration
 

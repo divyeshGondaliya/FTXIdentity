@@ -27,7 +27,7 @@ class VerifyBioMetricsVC: MainStuffViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.selfieImage != nil
+        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
         {
             self.btn_upload.backgroundColor = #colorLiteral(red: 0, green: 0.4588235294, blue: 1, alpha: 1)
         }else{
@@ -40,18 +40,18 @@ class VerifyBioMetricsVC: MainStuffViewController {
     }
     
     @IBAction func btn_upload_pres(_ sender: Any) {
-        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImage != nil
+        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
         {
             if let frontIDImg = SignUpData.shared.frontIDImg.pngData(){
                 if let backIDImg = SignUpData.shared.backIDImg.pngData(){
-                    if let selfieData = SignUpData.shared.selfieImage.pngData(){
+//                    if let selfieData = SignUpData.shared.selfieImage.pngData(){
                         self.hideanimation = false
                         self.loadingView.isHidden = false
                         self.showanimationTopBottomAndBottomTop()
                         DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
-                            self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg,selfieData: selfieData)
+                            self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg,selfieData: nil)
                         }
-                    }
+//                    }
                 }
             }
         }else{
@@ -77,10 +77,10 @@ class VerifyBioMetricsVC: MainStuffViewController {
     
     
     @IBAction func btn_selfie_press(_ sender: Any) {
-        if SignUpData.shared.selfieImage != nil
+        if SignUpData.shared.selfieImageFaceMe != nil
         {
             showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.selfieAlreadyTaken) {
-                SignUpData.shared.selfieImage = nil
+                SignUpData.shared.selfieImageFaceMe = nil
                 self.goingToVideoRecord()
             } failure: {
             }

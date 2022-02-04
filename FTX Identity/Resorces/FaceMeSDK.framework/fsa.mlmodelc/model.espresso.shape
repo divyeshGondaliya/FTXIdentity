@@ -1,0 +1,502 @@
+{
+  "layer_shapes" : {
+    "convolution_output20" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "conv2d_1\/Tanh:0_pooling0" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "convolution_output22" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "conv2d_3\/Tanh:0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "activation_10\/Tanh:0_pooling0" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "activation_8\/Tanh:0" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "convolution_output24" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "convolution_output26" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "activation_12\/Tanh:0" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "conv2d_1\/Tanh:0_transpose0" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 4
+    },
+    "convolution_output28" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "multiply_1\/mul:0" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 4
+    },
+    "multiply_2\/mul:0" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 4
+    },
+    "convolution_output6" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "conv2d_4\/Relu:0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "dense_5\/Tanh:0" : {
+      "k" : 6,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "multiply_3\/mul:0" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 8
+    },
+    "conv2d_4\/Relu:0_pooling0" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "input_1" : {
+      "k" : 3,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "biased_tensor_name1" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_3\/Tanh:0_transpose0" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 4
+    },
+    "conv2d_1\/Tanh:0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "dense_2\/Tanh:0" : {
+      "k" : 6,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_5\/Tanh:0_pooling0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "activation_5\/Relu:0_pooling0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "biased_tensor_name5" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "delta_s1\/Tanh:01" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_12\/Tanh:0_pooling0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "activation_2\/Relu:0" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "activation_13\/Tanh:0" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "conv2d_2\/Relu:0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "activation_4\/Relu:0" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "activation_6\/Relu:0" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "conv2d_5\/Tanh:0_transpose0" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 8
+    },
+    "flatten_3\/Reshape:0" : {
+      "k" : 4096,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense_7\/Tanh:0" : {
+      "k" : 6,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "flatten_2\/Reshape:0" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "flatten_1\/Reshape:0" : {
+      "k" : 1024,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "delta_s3\/Tanh:01" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "delta_s2\/Tanh:01" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense_6\/Relu:01" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_3\/Relu:0_pooling0" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "activation_8\/Tanh:0_pooling0" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "biased_tensor_name2" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "dense_4\/Tanh:0" : {
+      "k" : 6,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "biased_tensor_name6" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "convolution_output10" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "convolution_output12" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "conv2d_2\/Relu:0_transpose0" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 4
+    },
+    "activation_14\/Tanh:0" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "convolution_output14" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "convolution_output16" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "convolution_output30" : {
+      "k" : 3,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "conv2d_2\/Relu:0_pooling0" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "convolution_output18" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "convolution_output32" : {
+      "k" : 3,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "activation_9\/Tanh:0" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "conv2d_4\/Relu:0_transpose0" : {
+      "k" : 4,
+      "w" : 64,
+      "n" : 1,
+      "h" : 4
+    },
+    "activation_1\/Relu:0_pooling0" : {
+      "k" : 16,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "dense_1\/Tanh:0" : {
+      "k" : 6,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_3\/Tanh:0_pooling0" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "convolution_output8" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "biased_tensor_name" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_10\/Tanh:0" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "biased_tensor_name3" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_6\/Relu:0_transpose0" : {
+      "k" : 8,
+      "w" : 64,
+      "n" : 1,
+      "h" : 8
+    },
+    "biased_tensor_name7" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_6\/Relu:0_pooling0" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "activation_1\/Relu:0" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "dense_9\/Relu:01" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_3\/Relu:0" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "activation_5\/Relu:0" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "activation_7\/Relu:0" : {
+      "k" : 128,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "local_delta_stage3\/Tanh:01" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "local_delta_stage2\/Tanh:01" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "local_delta_stage1\/Tanh:01" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "activation_11\/Tanh:0" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "conv2d_5\/Tanh:0" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "dense_8\/Tanh:0" : {
+      "k" : 6,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "biased_tensor_name4" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "biased_tensor_name8" : {
+      "k" : 3,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "conv2d_6\/Relu:0" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "dense_3\/Relu:01" : {
+      "k" : 9,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    }
+  }
+}

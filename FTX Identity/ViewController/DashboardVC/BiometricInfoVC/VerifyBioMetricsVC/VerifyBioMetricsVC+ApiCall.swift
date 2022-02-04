@@ -11,9 +11,9 @@ import Alamofire
 
 extension VerifyBioMetricsVC
 {
-    func uploadAllData(FrontImage:Data,BackImage:Data,selfieData:Data)
+    func uploadAllData(FrontImage:Data,BackImage:Data,selfieData:Data?)
     {
-        print("selfie size :- \(selfieData.count)")
+//        print("selfie size :- \(selfieData.count)")
         print("FrontImage Size :- \(FrontImage.count)")
         print("BackImage Size :- \(BackImage.count)")
         var headers:HTTPHeaders  = []
@@ -27,7 +27,7 @@ extension VerifyBioMetricsVC
         AF.upload(multipartFormData: { (multipartFormData) in
                 multipartFormData.append(FrontImage, withName: "FrontImage", fileName: "image.png")
                 multipartFormData.append(BackImage, withName: "BackImage", fileName: "image2.png")
-                multipartFormData.append(selfieData, withName: "SelfImage", fileName: "selfieData.png")
+//                multipartFormData.append(selfieData, withName: "SelfImage", fileName: "selfieData.png")
         }, to: finalUrl, usingThreshold: UInt64.init(), method: .post,headers: headers).responseJSON { (responseObject) in
             self.loadingView.isHidden = true
             self.hideanimation = true

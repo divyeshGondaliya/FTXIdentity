@@ -17,8 +17,8 @@ class CreateAccountStep2VC: MainStuffViewController {
         super.viewDidLoad()
         self.designRelatedStuff()
         print("access_token - \(access_token)")
-//        self.txt_pwd.text = "Divyesh@123"
-//        self.txt_c_pwd.text = "Divyesh@123"
+        self.txt_pwd.text = "Admin@123"
+        self.txt_c_pwd.text = "Admin@123"
         // Do any additional setup after loading the view.
     }
     @IBAction func btn_next_pres(_ sender: Any) {

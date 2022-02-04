@@ -14,7 +14,7 @@ class SplashViewController: MainStuffViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -25,10 +25,7 @@ class SplashViewController: MainStuffViewController {
         UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
         UINavigationBar.appearance().isTranslucent = false
         
-//        let vc = CaptureViewController(nibName: "CaptureViewController", bundle: nil)
-//        vc.callback = self
-//        vc.configuration = CaptureConfiguration.init(forEnrollment: "Face,Periocular")
-//        self.present(vc, animated: true, completion: nil)
+        
         AuthLoginClass.shared.validateOAuthConfiguration()
         AuthLoginClass.shared.loadState()
         // Do any additional setup after loading the view.

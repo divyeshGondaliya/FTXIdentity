@@ -1,0 +1,94 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 10, 1, 1). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "85",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 10, 1, 1). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "86",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 10, 1, 1). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "87",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 10, 1, 1). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "88",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 2,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13.2",
+      "tvOS" : "11.2",
+      "watchOS" : "4.2",
+      "iOS" : "11.2",
+      "macCatalyst" : "11.2"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "96",
+        "colorspace" : "BGR",
+        "isOptional" : "0",
+        "width" : "96",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 96 × 96)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "input.1"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.4"
+    },
+    "generatedClassName" : "lmk3",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationReLU" : 6,
+      "Flatten" : 1,
+      "Split" : 1,
+      "BatchNorm" : 1,
+      "Convolution" : 5,
+      "InnerProduct" : 5,
+      "PoolingMax" : 4
+    },
+    "method" : "predict"
+  }
+]

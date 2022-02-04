@@ -1,0 +1,677 @@
+{
+  "FA": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      205
+    ]
+  },
+  "FE": {
+    "face_size": [
+      80,
+      80
+    ],
+    "ref_anchors": [
+      22.2946,
+      19.6963,
+      57.5318,
+      19.5014,
+      40.0252,
+      39.7366,
+      25.5493,
+      60.3655,
+      54.7299,
+      60.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      7
+    ]
+  },
+  "FG": {
+    "face_size": [
+      160,
+      160
+    ],
+    "ref_anchors": [
+      72.704315,
+      73.85186,
+      107.94151,
+      73.57343,
+      90.43491,
+      102.480865,
+      75.959015,
+      131.95071,
+      105.13962,
+      131.72015
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      2
+    ]
+  },
+  "VH": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "VH5": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "VH6": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "VH_M": {
+    "face_size": [
+      80,
+      160
+    ],
+    "ref_anchors": [
+      54.7065,
+      67.8518,
+      105.0454,
+      67.5734
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "VH_M2": {
+    "face_size": [
+      80,
+      160
+    ],
+    "ref_anchors": [
+      54.7065,
+      67.8518,
+      105.0454,
+      67.5734
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "UH": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "UH3": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "UH5": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      1024
+    ]
+  },
+  "UH6": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      1024
+    ]
+  },
+  "UH_M": {
+    "face_size": [
+      80,
+      160
+    ],
+    "ref_anchors": [
+      54.7065,
+      67.8518,
+      105.0454,
+      67.5734
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "UH_M2": {
+    "face_size": [
+      80,
+      160
+    ],
+    "ref_anchors": [
+      54.7065,
+      67.8518,
+      105.0454,
+      67.5734
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "H1": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      128
+    ]
+  },
+  "H2": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      128
+    ]
+  },
+  "H3": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "H5": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "H6": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      512
+    ]
+  },
+  "FMD": {
+    "face_size": [
+      96,
+      96
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "LMU": {
+    "face_size": [
+      160,
+      160
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      178
+    ]
+  },
+  "FSA": {
+    "face_size": [
+      64,
+      64
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      9,
+      3,
+      3,
+      9,
+      3,
+      3,
+      9,
+      3,
+      3
+    ]
+  },
+  "MFSA": {
+    "face_size": [
+      64,
+      64
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      9,
+      3,
+      3,
+      9,
+      3,
+      3,
+      9,
+      3,
+      3
+    ]
+  },
+  "NIST_005": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      1024
+    ]
+  },
+  "NIST_006": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      1024
+    ]
+  },
+  "NIST_007_11": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      1024
+    ]
+  },
+  "NIST_007_1N": {
+    "face_size": [
+      112,
+      112
+    ],
+    "ref_anchors": [
+      38.2946,
+      51.6963,
+      73.5318,
+      51.5014,
+      56.0252,
+      71.7366,
+      41.5493,
+      92.3655,
+      70.7299,
+      92.2041
+    ],
+    "need_refined_landmark": false,
+    "use_warp": true,
+    "output_size_list": [
+      1024
+    ]
+  },
+  "LMK_1":{
+    "face_size": [
+      48,
+      48
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  "LMK_2":{
+    "face_size": [
+      96,
+      96
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10
+    ]
+  },
+  "LMK_NIST_VISA_005":{
+    "face_size": [
+      48,
+      48
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10
+    ]
+  },
+  "LMK_NIST_WILD_006":{
+    "face_size": [
+      48,
+      48
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10
+    ]
+  },
+  "LMK_NIST_WILD_007":{
+    "face_size": [
+      160,
+      160
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  "LMK_3":{
+    "face_size": [
+      96,
+      96
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  "LMK_3s":{
+    "face_size": [
+      96,
+      96
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "output_size_list": [
+      10
+    ]
+  },
+  "ERF": {
+    "face_size": [
+      24,
+      24
+    ],
+    "ref_anchors": [
+      34.1915625, 
+      42.407375, 
+      65.653375, 
+      40.983375
+    ],
+    "need_refined_landmark": false,
+    "use_warp": false,
+    "use_warp_and_crop": true,
+    "output_size_list": [
+      2,
+      2,
+      2
+    ]
+  }
+}

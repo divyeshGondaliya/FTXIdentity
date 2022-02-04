@@ -1,0 +1,66 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "MultiArray of shape (1, 1, 2, 1, 1). The first and second dimensions correspond to sequence and batch size, respectively",
+        "shape" : "[]",
+        "name" : "gender_softmax_2",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 2,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13.2",
+      "tvOS" : "11.2",
+      "watchOS" : "4.2",
+      "iOS" : "11.2",
+      "macCatalyst" : "11.2"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "160",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "160",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 160 × 160)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "data"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.4"
+    },
+    "generatedClassName" : "fg",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationReLU" : 1,
+      "Flatten" : 3,
+      "Softmax" : 1,
+      "ActivationPReLU" : 51,
+      "Add" : 20,
+      "PoolingAverage" : 1,
+      "BatchNorm" : 2,
+      "Convolution" : 74,
+      "InnerProduct" : 2
+    },
+    "method" : "predict"
+  }
+]

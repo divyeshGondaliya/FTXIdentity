@@ -1,0 +1,103 @@
+{
+  "ada_face": {
+    "face_detection": "ada_face"
+  },
+  "face_extraction_model_list": {
+    "1": "S80",
+    "2": "H1",
+    "3": "UH",
+    "4": "H2",
+    "5": "VH",
+    "6": "H3",
+    "7": "UH3",
+    "8": "UH_M",
+    "9": "VH_M",
+    
+    "10": "UH5",
+    "11": "VH5",
+    "12": "H5",
+    
+    "13": "UH6",
+    "14": "VH6",
+    "15": "H6",
+
+    "16": "UH_M2",
+    "17": "VH_M2",
+
+    "1000": "NIST_005",
+    "1001": "NIST_006",
+    "1002": "NIST_007_11",
+    "1003": "NIST_007_1N"
+  },
+  "face_detection_model_list": {
+    "1": "MO",
+    "10": "DNN",
+    "11": "DNN-X",
+    "100": "SDL",
+    "1000": "RF_NIST_VISA_004",
+    "1100": "RF_NIST_WILD_003",
+    "1101": "RF_NIST_WILD_007"
+  },
+  "face_landmark_model_list": {
+    "1": "LMK_1",
+    "2": "LMK_2",
+    "3": "LMK_3",
+    "103": "LMK_3s",
+    "1000": "LMK_NIST_VISA_005",
+    "1100": "LMK_NIST_WILD_006",
+    "1101": "LMK_NIST_WILD_007"
+  },
+  "person_detection_model_list": {
+    "1": "CD1"
+  },
+  "face_pose": "pose",
+  "nn": {
+    "face_detection": "nn/face_detection",
+    "face_attr": "nn/face_attr",
+    "face_gaze": "nn/face_gaze",
+    "facial_stat": "nn/facial_stat",
+    "fod": "nn/face_occlusion_detection"
+  },
+  "coreml": {
+    "face_detection": "coreml/face_detection",
+    "face_attr": "coreml/face_attr",
+    "face_gaze": "coreml/face_gaze/gazenet",
+    "facial_stat": "coreml/facial_stat"
+  },
+  "openvino": {
+    "face_detection": "openvino/face_detection",
+    "face_attr": "openvino/face_attr",
+    "face_gaze": "openvino/face_gaze/gazenet",
+    "facial_stat": "openvino/facial_stat",
+    "fod": "openvino/face_occlusion_detection"
+  },
+  "tensorflow": {
+    "face_detection": "tensorflow/face_detection",
+    "face_attr": "tensorflow/face_attr",
+    "face_gaze": "tensorflow/face_gaze/gazenet",
+    "facial_stat": "tensorflow/facial_stat",
+    "fod": "tensorflow/face_occlusion_detection"
+  },
+  "tensorrt": {
+    "face_detection": "tensorrt/face_detection",
+    "face_attr": "tensorrt/face_attr",
+    "fsa_net": "tensorrt/face_pose/fsa_net",
+    "person_detection": "tensorrt/person_detection"
+  },
+  "tflite": {
+    "face_detection": "tflite/face_detection",
+    "face_attr": "tflite/face_attr"
+  },
+   "snpe": {
+    "face_attr": "snpe/face_attr",
+    "face_detection": "snpe/face_detection"
+  },
+   "mtknp": {
+    "face_attr": "mtknp/face_attr",
+    "face_detection": "mtknp/face_detection"
+  },
+  "nxp": {
+    "face_attr": "nxp/face_attr",
+    "face_detection": "nxp/face_detection"
+  }
+}

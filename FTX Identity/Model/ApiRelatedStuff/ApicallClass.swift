@@ -134,7 +134,7 @@ class AFWrapper: NSObject {
         print("-----------")
         print("calling url - \(finalUrl)")
         print("header = \(headers.dictionary)")
-        print("Param - \(params ?? [String : AnyObject]())")
+//        print("Param - \(params ?? [String : AnyObject]())")
         print("-----------")
         
         if ApiURls.guestToken == strURL

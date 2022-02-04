@@ -21,7 +21,7 @@ class CreateAccountStep4VC: MainStuffViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.selfieImage != nil
+        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
         {
             self.btn_next.backgroundColor = #colorLiteral(red: 0, green: 0.4588235294, blue: 1, alpha: 1)
         }else{
@@ -35,18 +35,41 @@ class CreateAccountStep4VC: MainStuffViewController {
     }
     
     @IBAction func btn_next_pres(_ sender: Any) {
-        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImage != nil
+        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
         {
-            if let frontIDImg = SignUpData.shared.frontIDImg.pngData(){
-                if let backIDImg = SignUpData.shared.backIDImg.pngData(){
-                    if let selfieData = SignUpData.shared.selfieImage.pngData(){
-                        self.hideanimation = false
-                        self.loadingView.isHidden = false
-                        self.showanimationTopBottomAndBottomTop()
-                        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
-                            self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg,selfieData: selfieData)
-                        }
-                    }
+//            if let image1 = SignUpData.shared.selfieImage_1.pngData(){
+//                if let image2 = SignUpData.shared.selfieImage_2.pngData(){
+//                    let str1 = image1.base64EncodedString(options: .endLineWithLineFeed)//Data.Base64EncodingOptions.lineLength64Characters)
+//                    let str2 = image2.base64EncodedString(options: .endLineWithLineFeed)
+//                    self.hideanimation = false
+//                    self.loadingView.isHidden = false
+//                    self.showanimationTopBottomAndBottomTop()
+//                    DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+//                        self.validateSelfieImage(image1: str1, image2: str2)
+//                    }
+//                }
+//            }
+            
+//            if let frontIDImg = SignUpData.shared.frontIDImg.pngData(){
+//                if let backIDImg = SignUpData.shared.backIDImg.pngData(){
+////                    if let selfieData = SignUpData.shared.selfieImage.pngData(){
+//                        self.hideanimation = false
+//                        self.loadingView.isHidden = false
+//                        self.showanimationTopBottomAndBottomTop()
+//                        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+//                            self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg,selfieData: nil)
+//                        }
+////                    }
+//                }
+//            }
+            if let image = SignUpData.shared.selfieImageFaceMe.pngData()//SignUpData.shared.selfieImageFaceMe.jpegData(compressionQuality: 0.5)
+            {
+                self.hideanimation = false
+                self.loadingView.isHidden = false
+                self.showanimationTopBottomAndBottomTop()
+                let imgData = image.base64EncodedString(options: .endLineWithLineFeed)
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                    self.facemeImageValidate(image1: imgData)
                 }
             }
         }else{
@@ -72,13 +95,13 @@ class CreateAccountStep4VC: MainStuffViewController {
     
     
     @IBAction func btn_selfie_press(_ sender: Any) {
-        if SignUpData.shared.selfieImage != nil
+        if SignUpData.shared.selfieImageFaceMe != nil
         {
             showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.selfieAlreadyTaken) {
 //                let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
 //                let fileUrl = paths[0].appendingPathComponent("output.mp4")
 //                try? FileManager.default.removeItem(at: fileUrl)
-                SignUpData.shared.selfieImage = nil
+                SignUpData.shared.selfieImageFaceMe = nil
                 self.goingToVideoRecord()
             } failure: {
             }

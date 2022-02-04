@@ -27,21 +27,25 @@ extension VerifyBioMetricsVC
         UIView.animate(withDuration: 0.6) {
             self.view.layoutIfNeeded()
         } completion: { (result) in
-            self.loadSelfieImageAndAnnimate()
-        }
-    }
-    
-    func loadSelfieImageAndAnnimate()
-    {
-        self.img_bioMatrick.image = SignUpData.shared.selfieImage
-        self.line_top.constant = self.line_top.constant == 0 ? self.img_bioMatrick.frame.height:0
-        UIView.animate(withDuration: 0.6) {
-            self.view.layoutIfNeeded()
-        } completion: { (result) in
+//            self.loadSelfieImageAndAnnimate()
             if !self.hideanimation
             {
                 self.showanimationTopBottomAndBottomTop()
             }
         }
     }
+    
+//    func loadSelfieImageAndAnnimate()
+//    {
+//        self.img_bioMatrick.image = SignUpData.shared.selfieImage_1
+//        self.line_top.constant = self.line_top.constant == 0 ? self.img_bioMatrick.frame.height:0
+//        UIView.animate(withDuration: 0.6) {
+//            self.view.layoutIfNeeded()
+//        } completion: { (result) in
+//            if !self.hideanimation
+//            {
+//                self.showanimationTopBottomAndBottomTop()
+//            }
+//        }
+//    }
 }
