@@ -83,7 +83,8 @@ extension DashboardVC:UICollectionViewDelegate
             userDefaults.synchronize()
             AuthLoginClass.shared.setAuthState(nil)
         }
-        
+        UserDefaults.standard.removeObject(forKey: "UserImageToCompare_FTx")
+        UserDefaults.standard.synchronize()
         DispatchQueue.main.async {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let vc = storyboard.instantiateViewController(withIdentifier: "ChooseOprtionVC") as? ChooseOprtionVC

@@ -2,8 +2,7 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#import "CaptureViewController.h"
-#import "CaptureConfiguration.h"
+
 
 #import <FaceMeSDK/FMQualityDetector.h>
 #import <FaceMeSDK/FMRecognizer.h>
@@ -20,13 +19,16 @@
 #import <FaceMeSDK/FMLicenseManager.h>
 #import "AntiSpoofingContainerViewController.h"
 
-#import "Constants.h"
-#import "LicenseInfoHandler.h"
-#import "UiSettings.h"
-#import "PresentFacesHolder.h"
-#import "DevTool.h"
+//#import "CaptureViewController.h"
+#import "CaptureConfiguration.h"
+//#import "Constants.h"
+//#import "LicenseInfoHandler.h"
+//#import "UiSettings.h"
+//#import "PresentFacesHolder.h"
+//#import "DevTool.h"
 
 #import "ResultMaskUIView.h"
 #import "UIView+Toast.h"
 #import "AntiSpoofingSettings.h"
 #import "AntiSpoofingSettingsViewController.h"
+#import "FaceCompareHelper.h"

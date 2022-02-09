@@ -40,18 +40,40 @@ class VerifyBioMetricsVC: MainStuffViewController {
     }
     
     @IBAction func btn_upload_pres(_ sender: Any) {
+//        if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
+//        {
+//            //            if let frontIDImg = SignUpData.shared.frontIDImg.pngData(){
+//            //                if let backIDImg = SignUpData.shared.backIDImg.pngData(){
+//            self.hideanimation = false
+//            self.loadingView.isHidden = false
+//            self.showanimationTopBottomAndBottomTop()
+//            if let image1 = SignUpData.shared.frontIDImg.pngData(){
+//                if let image2 = SignUpData.shared.backIDImg.pngData(){
+//                    let str1 = image1.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+//                    let str2 = image2.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+//                    DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+//                        self.uploadAllData(FrontImage: str1, BackImage: str2, selfieData: nil)
+//                    }
+//
+//                }
+//            }
+//            //                    }
+//            //                }
+//            //            }
+//        }else{
+//            showalert(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.takeAllBiometricsFirst)
+//        }
+        
         if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
         {
-            if let frontIDImg = SignUpData.shared.frontIDImg.pngData(){
-                if let backIDImg = SignUpData.shared.backIDImg.pngData(){
-//                    if let selfieData = SignUpData.shared.selfieImage.pngData(){
-                        self.hideanimation = false
-                        self.loadingView.isHidden = false
-                        self.showanimationTopBottomAndBottomTop()
-                        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
-                            self.uploadAllData(FrontImage: frontIDImg, BackImage: backIDImg,selfieData: nil)
-                        }
-//                    }
+            if let image = SignUpData.shared.selfieImageFaceMe.pngData()//SignUpData.shared.selfieImageFaceMe.jpegData(compressionQuality: 0.5)
+            {
+                self.hideanimation = false
+                self.loadingView.isHidden = false
+                self.showanimationTopBottomAndBottomTop()
+                let imgData = image.base64EncodedString(options: .endLineWithLineFeed)
+                DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                    self.facemeImageValidate(image1: imgData)
                 }
             }
         }else{
@@ -60,7 +82,7 @@ class VerifyBioMetricsVC: MainStuffViewController {
     }
     
     @IBAction func btn_id_scan(_ sender: Any) {
-       
+        
         if SignUpData.shared.frontIDImg != nil && SignUpData.shared.backIDImg != nil
         {
             showalertYesNo(vc: self, title: AlertString.title, subTitle: StringMsgToDisplay.idAlreadyScaned) {

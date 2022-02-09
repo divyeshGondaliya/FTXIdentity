@@ -25,6 +25,8 @@ class ChooseOprtionVC: MainStuffViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.removeObject(forKey: "UserImageToCompare_FTx")
+        UserDefaults.standard.synchronize()
 //        LoadingOverlay.shared.showOverlay(view: self.view)
         self.collectionView.reloadData()
         self.updatePagging(selectedPage: self.currentPage)

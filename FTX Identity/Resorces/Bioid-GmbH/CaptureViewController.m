@@ -1,4 +1,4 @@
-//
+ //
 //  CaptureViewController.m
 //  FTX Identity
 //

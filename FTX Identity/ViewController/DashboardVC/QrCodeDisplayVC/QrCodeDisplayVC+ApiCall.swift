@@ -14,7 +14,15 @@ extension QrCodeDisplayVC
         AFWrapper.sharedInstance.requestGETURL(ApiURls.Identityqr) { (jsonResponse) in
             if let dic = jsonResponse.dictionary
             {
-                print(dic)
+                let imagStr = dic["data"]?.string ?? ""
+                if imagStr.count > 0
+                {
+                    if let decodedImageData = Data(base64Encoded: imagStr, options: .ignoreUnknownCharacters) {
+                        DispatchQueue.main.async {
+                            self.img_qr.image = UIImage(data: decodedImageData)
+                        }
+                    }
+                }
             }else{
             }
         } failure: { (error) in
@@ -22,3 +30,4 @@ extension QrCodeDisplayVC
         }
     }
 }
+

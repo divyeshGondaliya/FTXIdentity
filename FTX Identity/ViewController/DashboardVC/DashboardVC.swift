@@ -39,7 +39,35 @@ class DashboardVC: MainStuffViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         self.getUserDetails()
+        if let data = UserDefaults.standard.value(forKey: "UserImageToCompare_FTx") as? Data
+        {
+            if data.count > 0
+            {
+                
+            }else{
+                self.getBioMetricData()
+            }
+        }else{
+            self.getBioMetricData()
+        }
+        
     }
+}
+
+extension DashboardVC:VerifyUser
+{
+    func compareFace(userVerfied: Bool) {
+        if userVerfied
+        {
+            DispatchQueue.main.async {
+                let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
+                vc.imgurlStr = self.profileimg
+                vc.delegate = self
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+    }
+    
 }
 
 extension DashboardVC:QrCodeScannerDelegate,QrCodeDisplayDelegate
@@ -54,10 +82,73 @@ extension DashboardVC:QrCodeScannerDelegate,QrCodeDisplayDelegate
     
     func openQrCodeDisplay() {
         DispatchQueue.main.async {
-            let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
-            vc.imgurlStr = self.profileimg
+            if let data = UserDefaults.standard.value(forKey: "UserImageToCompare_FTx") as? Data
+            {
+                if data.count > 0
+                {
+                    self.openVerifyScreen()
+                }else{
+                    self.getBioMetricData()
+                }
+            }else{
+                self.getBioMetricData()
+            }
+        }
+    }
+    
+    func openVerifyScreen()
+    {
+        LoadingOverlay.shared.showOverlay(view: self.view)
+        var licenseManager: FMLicenseManager? = nil
+        licenseManager = FMLicenseManager()
+        let licenseConfig = FMLicenseManagerConfig()
+        // License verification.
+        let result1 = licenseManager?.initialize(licenseConfig, licenseInfo: api_key)
+        print(result1?.rawValue == 0 ? "Return Status1 :- FM_RETURN_OK":"Return Status1 :- \(result1?.rawValue ?? -1)")
+        let result = licenseManager?.registerLicense()
+        print(result?.rawValue == 0 ? "Return Status2 :- FM_RETURN_OK":"Return Status2 :- \(result1?.rawValue ?? -1)")
+        
+        self.getDataAndConvertToImage()
+    }
+    
+    func getDataAndConvertToImage()
+    {
+        if let data = UserDefaults.standard.value(forKey: "UserImageToCompare_FTx") as? Data
+        {
+            if data.count > 0
+            {
+                if let image = UIImage(data: data)
+                {
+                    if let img = image.cgImage
+                    {
+                        let ci = CIImage(cgImage: img)
+                        self.configureCompareFace(image: ci)
+                    }else{
+                        LoadingOverlay.shared.hideOverlayView()
+                    }
+                }else{
+                    LoadingOverlay.shared.hideOverlayView()
+                }
+            }else{
+                LoadingOverlay.shared.hideOverlayView()
+            }
+        }else{
+            LoadingOverlay.shared.hideOverlayView()
+        }
+    }
+    
+    func configureCompareFace(image:CIImage)
+    {
+        LoadingOverlay.shared.hideOverlayView()
+        let classObj = FaceCompareHelper()
+        if let compare = classObj.getFaceData(image)
+        {
+            let vc = VerifyUserVC(nibName: "VerifyUserVC", bundle: nil)
             vc.delegate = self
-            self.present(vc, animated: true, completion: nil)
+            vc.faceFeatureGlobal = compare
+            self.present(vc, animated: true) {
+                
+            }
         }
     }
 }

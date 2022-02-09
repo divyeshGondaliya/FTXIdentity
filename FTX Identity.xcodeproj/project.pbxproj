@@ -62,8 +62,14 @@
 		1863BB202768A58300CBCEDF /* CreateAccountStep1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863BB1F2768A58300CBCEDF /* CreateAccountStep1VC.swift */; };
 		1863BB252768AAE900CBCEDF /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863BB232768AAE900CBCEDF /* DashboardVC.swift */; };
 		1863BB262768AAE900CBCEDF /* DashboardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863BB242768AAE900CBCEDF /* DashboardVC.xib */; };
+		1879A13327B38E5F008455BE /* Pods_FTX_Identity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */; };
 		187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CE8AD276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift */; };
 		187F9C262770503700D1451A /* RetailerDetailsVC+HelperFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */; };
+		188414C027B1464D00AAE060 /* FaceCompareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 188414BE27B1464D00AAE060 /* FaceCompareHelper.m */; };
+		188414C427B1480500AAE060 /* VerifyUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188414C227B1480500AAE060 /* VerifyUserVC.swift */; };
+		188414C527B1480500AAE060 /* VerifyUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188414C327B1480500AAE060 /* VerifyUserVC.xib */; };
+		188414C727B1488A00AAE060 /* DashboardVC+APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188414C627B1488A00AAE060 /* DashboardVC+APICall.swift */; };
+		188414C927B14D0100AAE060 /* VerifyUserVC+CameraConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188414C827B14D0100AAE060 /* VerifyUserVC+CameraConfig.swift */; };
 		188949C72770AB1F00CB563E /* PersonalnfoChangePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188949C52770AB1F00CB563E /* PersonalnfoChangePopupVC.swift */; };
 		188949C82770AB1F00CB563E /* PersonalnfoChangePopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188949C62770AB1F00CB563E /* PersonalnfoChangePopupVC.xib */; };
 		188949CB2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188949CA2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift */; };
@@ -177,7 +183,6 @@
 		18FA6F3827AD35BD00F46275 /* PresentFacesHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0527AD35BD00F46275 /* PresentFacesHolder.m */; };
 		18FA6F3927AD35BD00F46275 /* FaceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0A27AD35BD00F46275 /* FaceData.m */; };
 		18FA6F3A27AD35BD00F46275 /* FaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6F0B27AD35BD00F46275 /* FaceHolder.m */; };
-		8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ABB71DA6459BB0D8AF9E67 /* Pods_FTX_Identity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -256,6 +261,12 @@
 		1863BB242768AAE900CBCEDF /* DashboardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardVC.xib; sourceTree = "<group>"; };
 		187CE8AD276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+LoadingAnnimation.swift"; sourceTree = "<group>"; };
 		187F9C252770503700D1451A /* RetailerDetailsVC+HelperFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RetailerDetailsVC+HelperFunction.swift"; sourceTree = "<group>"; };
+		188414BE27B1464D00AAE060 /* FaceCompareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceCompareHelper.m; sourceTree = "<group>"; };
+		188414BF27B1464D00AAE060 /* FaceCompareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceCompareHelper.h; sourceTree = "<group>"; };
+		188414C227B1480500AAE060 /* VerifyUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyUserVC.swift; sourceTree = "<group>"; };
+		188414C327B1480500AAE060 /* VerifyUserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyUserVC.xib; sourceTree = "<group>"; };
+		188414C627B1488A00AAE060 /* DashboardVC+APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardVC+APICall.swift"; sourceTree = "<group>"; };
+		188414C827B14D0100AAE060 /* VerifyUserVC+CameraConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VerifyUserVC+CameraConfig.swift"; sourceTree = "<group>"; };
 		188949C52770AB1F00CB563E /* PersonalnfoChangePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalnfoChangePopupVC.swift; sourceTree = "<group>"; };
 		188949C62770AB1F00CB563E /* PersonalnfoChangePopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalnfoChangePopupVC.xib; sourceTree = "<group>"; };
 		188949CA2770B0AA00CB563E /* PersonalInfoVC+PopupEditCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonalInfoVC+PopupEditCode.swift"; sourceTree = "<group>"; };
@@ -420,7 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FA6E4A27AD343600F46275 /* FaceMeSDK.framework in Frameworks */,
-				8F6A8EDDD5594F9E30884E1B /* Pods_FTX_Identity.framework in Frameworks */,
+				1879A13327B38E5F008455BE /* Pods_FTX_Identity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +685,7 @@
 		1863BB222768AAC600CBCEDF /* DashboardVC */ = {
 			isa = PBXGroup;
 			children = (
+				188414C127B147E200AAE060 /* VerifyUserVC */,
 				18E1A7B02774556000B90EF7 /* QrCodeScannerVC */,
 				18E1A79D277443D700B90EF7 /* BiometricInfoVC */,
 				18E1A797277439E400B90EF7 /* QrCodeDisplayVC */,
@@ -684,8 +696,28 @@
 				1863BB232768AAE900CBCEDF /* DashboardVC.swift */,
 				1863BB242768AAE900CBCEDF /* DashboardVC.xib */,
 				183A1B3D2769CA6100464652 /* DashboardVC+CollectionView.swift */,
+				188414C627B1488A00AAE060 /* DashboardVC+APICall.swift */,
 			);
 			path = DashboardVC;
+			sourceTree = "<group>";
+		};
+		188414BD27B1463E00AAE060 /* FaceCompareHelper */ = {
+			isa = PBXGroup;
+			children = (
+				188414BF27B1464D00AAE060 /* FaceCompareHelper.h */,
+				188414BE27B1464D00AAE060 /* FaceCompareHelper.m */,
+			);
+			path = FaceCompareHelper;
+			sourceTree = "<group>";
+		};
+		188414C127B147E200AAE060 /* VerifyUserVC */ = {
+			isa = PBXGroup;
+			children = (
+				188414C227B1480500AAE060 /* VerifyUserVC.swift */,
+				188414C327B1480500AAE060 /* VerifyUserVC.xib */,
+				188414C827B14D0100AAE060 /* VerifyUserVC+CameraConfig.swift */,
+			);
+			path = VerifyUserVC;
 			sourceTree = "<group>";
 		};
 		188949C42770AAFE00CB563E /* PersonalnfoChangePopupVC */ = {
@@ -951,6 +983,7 @@
 		18FA6E9C27AD35BD00F46275 /* FacemeRequiredFiles */ = {
 			isa = PBXGroup;
 			children = (
+				188414BD27B1463E00AAE060 /* FaceCompareHelper */,
 				183AA07727AD501F004847E9 /* SDK.strings */,
 				18FA6E9D27AD35BD00F46275 /* Ui */,
 				18FA6EB727AD35BD00F46275 /* Extension */,
@@ -1189,6 +1222,7 @@
 			files = (
 				18FA6F3227AD35BD00F46275 /* ok.wav in Resources */,
 				18E1A7A1277443E600B90EF7 /* BiometricInfoVC.xib in Resources */,
+				188414C527B1480500AAE060 /* VerifyUserVC.xib in Resources */,
 				183AA07827AD501F004847E9 /* SDK.strings in Resources */,
 				18DB0426277464F70088604D /* DisplayImageVC.xib in Resources */,
 				1863BB262768AAE900CBCEDF /* DashboardVC.xib in Resources */,
@@ -1293,8 +1327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				189519702771E33F0098A38C /* PersonalnfoChangePopupVC+Helper.swift in Sources */,
+				188414C927B14D0100AAE060 /* VerifyUserVC+CameraConfig.swift in Sources */,
 				187CE8AE276B7E5F00953179 /* CreateAccountStep4VC+LoadingAnnimation.swift in Sources */,
 				18FA6F1B27AD35BD00F46275 /* RecognitionHandler.m in Sources */,
+				188414C427B1480500AAE060 /* VerifyUserVC.swift in Sources */,
 				18E1A79A277439FE00B90EF7 /* QrCodeDisplayVC.swift in Sources */,
 				18BBA994276C6E240010222A /* CreateAccountStep5VC+Apicall.swift in Sources */,
 				18DC2078279E790200F62339 /* Reachability.swift in Sources */,
@@ -1312,6 +1348,7 @@
 				18BBA9A1276C79BC0010222A /* SearchRetailerVC.swift in Sources */,
 				1815DD4D277042DE0038BD9B /* RetailerDetailsVC.swift in Sources */,
 				18FA6F1F27AD35BD00F46275 /* FpsMeter.m in Sources */,
+				188414C027B1464D00AAE060 /* FaceCompareHelper.m in Sources */,
 				18FA6F2627AD35BD00F46275 /* AntiSpoofingSettingsViewController.m in Sources */,
 				18317C542772EBE000C90A22 /* SignInSecurityVC+ApiCall.swift in Sources */,
 				18DB0433277498430088604D /* VerifyBioMetricsVC+ApiCall.swift in Sources */,
@@ -1394,6 +1431,7 @@
 				18A84D6E276A315A00B8991D /* VideoRecordingVC.swift in Sources */,
 				18FA6F3A27AD35BD00F46275 /* FaceHolder.m in Sources */,
 				18100BCE27705D7900E961D9 /* ShareUnshareIdentityVC.swift in Sources */,
+				188414C727B1488A00AAE060 /* DashboardVC+APICall.swift in Sources */,
 				18FA6F1727AD35BD00F46275 /* UiSettings.m in Sources */,
 				18100BDD27706A0800E961D9 /* ShareUnshareIdentityVC+ApiCall.swift in Sources */,
 				18475257276B482A00F9F739 /* AppUtills.swift in Sources */,
@@ -1662,6 +1700,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6T34W5A79X;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1675,7 +1714,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "test.com.FTX.FTX-Identity";
+				MARKETING_VERSION = 3.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ftx.identity.goftx.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FTX Identity/Resorces/Bioid-GmbH/FTX Identity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1692,6 +1733,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6T34W5A79X;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1705,7 +1747,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "test.com.FTX.FTX-Identity";
+				MARKETING_VERSION = 3.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ftx.identity.goftx.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FTX Identity/Resorces/Bioid-GmbH/FTX Identity-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
