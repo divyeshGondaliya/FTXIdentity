@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,6 +28,7 @@
                 <outlet property="btn_edit_mobile" destination="wK7-xb-IHR" id="LmA-rE-Lbz"/>
                 <outlet property="btn_edit_profile_pic" destination="bOk-bK-Uio" id="cG7-AH-rbC"/>
                 <outlet property="btn_edit_ssn" destination="hnp-6N-skP" id="7ok-KB-PtV"/>
+                <outlet property="btn_firstName" destination="hAd-FT-XF5" id="EXf-7C-U3y"/>
                 <outlet property="img_profile" destination="OVi-IG-qHC" id="Xyb-Pa-tTb"/>
                 <outlet property="lbl_dob" destination="TW4-W2-8ZA" id="dHJ-w7-Wnd"/>
                 <outlet property="lbl_email" destination="YoE-0u-s8F" id="aH9-f4-cBw"/>

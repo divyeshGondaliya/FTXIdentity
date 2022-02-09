@@ -44,7 +44,7 @@ class PersonalnfoChangePopupVC: MainStuffViewController {
     var editFor = EditFor.FirstName
     var userCurrentEmail = ""
     var isRecoverEmail = false
-    
+    var sendingDate = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.otp_view.isHidden = true
@@ -75,18 +75,48 @@ class PersonalnfoChangePopupVC: MainStuffViewController {
     
     func openPickerView()
     {
-        let vc = OnlyDateAndMonthPickerVC(nibName: "OnlyDateAndMonthPickerVC", bundle: nil)
-        vc.modalPresentationStyle = .overFullScreen
-        vc.modalTransitionStyle = .crossDissolve
-        vc.delegate = self
-        switch self.selectionFor
+//        let vc = OnlyDateAndMonthPickerVC(nibName: "OnlyDateAndMonthPickerVC", bundle: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        vc.modalTransitionStyle = .crossDissolve
+//        vc.delegate = self
+//        switch self.selectionFor
+//        {
+//            case .TXT:
+//                vc.selected_Day_month = self.txt_fiels.text ?? ""
+//            case .CTXT:
+//                vc.selected_Day_month = self.txt_confirm.text ?? ""
+//        }
+//        self.present(vc, animated: true, completion: nil)
+        var preDate = Date()
+        if preFillString.count > 0
         {
-            case .TXT:
-                vc.selected_Day_month = self.txt_fiels.text ?? ""
-            case .CTXT:
-                vc.selected_Day_month = self.txt_confirm.text ?? ""
+            let formatter = DateFormatter()
+            formatter.timeZone = TimeZone(identifier: "UTC")
+            formatter.locale = .current
+            formatter.dateFormat = "MMM dd, YYYY"
+            if let date = formatter.date(from: preFillString)
+            {
+                preDate = date
+            }
         }
-        self.present(vc, animated: true, completion: nil)
+        DatePickerDialog().show("Birthday", doneButtonTitle: "Done", cancelButtonTitle: "Cancel",defaultDate: preDate, datePickerMode: .date) { date in
+            if let dt = date {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "MMM DD, YYYY"
+                switch self.selectionFor
+                {
+                case .TXT:
+                    self.txt_fiels.text = formatter.string(from: dt)
+                    formatter.dateFormat = "YYYY-MM-DD"
+                    self.sendingDate = formatter.string(from: dt)
+                case .CTXT:
+                    self.txt_confirm.text = formatter.string(from: dt)
+                    formatter.dateFormat = "YYYY-MM-DD"
+                    self.sendingDate = formatter.string(from: dt)
+                }
+
+            }
+        }
     }
     
     @IBAction func dateSelectionForConfirmTextField(_ sender:Any)
@@ -179,7 +209,7 @@ class PersonalnfoChangePopupVC: MainStuffViewController {
                 return
             }
             self.dismiss(animated: true) {
-                self.delegate?.updateButtonPress(stringValueOfTextField: self.txt_fiels.text ?? "")
+                self.delegate?.updateButtonPress(stringValueOfTextField: self.sendingDate)
             }
         }
         

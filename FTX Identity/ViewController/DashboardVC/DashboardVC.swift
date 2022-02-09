@@ -12,11 +12,10 @@ class DashboardVC: MainStuffViewController {
     @IBOutlet weak var collection_view: UICollectionView!
     @IBOutlet weak var lbl_greeting: UILabel!
     @IBOutlet weak var profile_img: UIImageView!
-    
+    var hasBiometric = false
     let arr_img = [UIImage(named: "personal-info-icon"),UIImage(named: "biometric-info-icon"),UIImage(named: "sign-in-security-icon"),UIImage(named: "icon-membership"),UIImage(named: "icon-search"),UIImage(named: "Icon metro-settings-power")]
     let arr_title = ["Personal Info","Biometric Info","Sign-in Security","Membership","Search Retailer","Logout"]
     var profileimg = ""
-    var hasBiometric = true
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collection_view.register(UINib(nibName: "DashboardOptionCell", bundle: nil), forCellWithReuseIdentifier: "DashboardOptionCell")
@@ -164,7 +163,6 @@ extension DashboardVC
                 {
                     print(data)
                     let mutableAttrString1 = NSMutableAttributedString()
-                    
                     let myAttribute = [ NSAttributedString.Key.font: UIFont(name: "SourceSansPro-SemiBold", size: 24.0)!,
                                         NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1).cgColor] as [NSAttributedString.Key : Any]
                     mutableAttrString1.append(NSMutableAttributedString(string: "Welcome, ", attributes: myAttribute))

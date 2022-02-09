@@ -19,6 +19,7 @@ class PersonalInfoVC: MainStuffViewController {
     @IBOutlet weak var lbl_mobile: UILabel!
     @IBOutlet weak var lbl_pwd: UILabel!
     
+    @IBOutlet weak var btn_firstName: UIButton!
     @IBOutlet weak var btn_edit_dob: UIButton!
     @IBOutlet weak var btn_edit_ssn: UIButton!
     @IBOutlet weak var btn_edit_email: UIButton!
@@ -32,6 +33,7 @@ class PersonalInfoVC: MainStuffViewController {
     
     var editFor = EditFor.FirstName
     var userData = [String:JSON]()
+    var hasBiometric = false
     
     let add_img = UIImage(named: "add")
     let edit_img = UIImage(named: "edit")
@@ -60,8 +62,12 @@ class PersonalInfoVC: MainStuffViewController {
         self.present(alert, animated: true, completion: nil)
     }
     @IBAction func btn_firstName_edit(_ sender: Any) {
-        self.editFor = .FirstName
-        self.openPopupForEdit()
+        if !self.hasBiometric
+        {
+            self.editFor = .FirstName
+            self.openPopupForEdit()
+        }
+        
     }
     @IBAction func btn_lastName_edit(_ sender: Any) {
         self.editFor = .LastName
@@ -168,6 +174,8 @@ extension PersonalInfoVC
                     self.btn_edit_profile_pic.setImage(UIImage(named: "edit-input-icon"), for: .normal)
                 }
             }
+            
+           
             self.lbl_fname.text = basicInfo["firstName"]?.string
             self.lbl_lname.text = basicInfo["lastName"]?.string
             if (basicInfo["ssn"]?.null) != nil || basicInfo["ssn"]?.string == ""
@@ -181,7 +189,21 @@ extension PersonalInfoVC
             {
                 self.lbl_dob.text = "(Not Set)"
             }else{
-                self.lbl_dob.text = basicInfo["dob"]?.string
+                let strdob = basicInfo["dob"]?.string?.components(separatedBy: "T")
+                if strdob?.count ?? 0 > 1
+                {
+                    let datFormatter = DateFormatter()
+                    datFormatter.dateFormat = "YYYY-MM-DD"
+                    if let date = datFormatter.date(from: strdob?[0] ?? "")
+                    {
+                        datFormatter.dateFormat = "MMM DD, YYYY"
+                        self.lbl_dob.text = datFormatter.string(from: date)
+                    }else{
+                        self.lbl_dob.text = strdob?[0]
+                    }
+                }else{
+                    self.lbl_dob.text = basicInfo["dob"]?.string
+                }
             }
             
         }
@@ -230,6 +252,13 @@ extension PersonalInfoVC
         }else{
             self.btn_edit_mobile.setImage(self.edit_img, for: .normal)
             self.btn_dlt_mobile.isHidden = false
+        }
+        
+        if self.hasBiometric
+        {
+            self.btn_firstName.isHidden = true
+            self.btn_edit_dob.isHidden = true
+            self.btn_dlt_dob.isHidden = true
         }
     }
 }

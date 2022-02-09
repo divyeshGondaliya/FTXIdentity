@@ -63,6 +63,7 @@ extension DashboardVC:UICollectionViewDelegate
             self.navigationController?.pushViewController(vc, animated: true)
         case "Personal Info":
             let vc = PersonalInfoVC(nibName: "PersonalInfoVC", bundle: nil)
+            vc.hasBiometric = self.hasBiometric
             self.navigationController?.pushViewController(vc, animated: true)
         case "Membership":
             let vc = SearchRetailerVC(nibName: "SearchRetailerVC", bundle: nil)

@@ -22,13 +22,27 @@ class QrCodeDisplayVC: MainStuffViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getQrCode()
-        if imgurlStr.count == 2
+        
+        if let data = UserDefaults.standard.value(forKey: "UserImageToCompare_FTx") as? Data
         {
-            self.profile_img.image = self.imgurlStr.createImage()
-        }else if imgurlStr.count > 0
-        {
-            self.profile_img.kf.setImage(with: URL(string: imgurlStr))
+            if data.count > 0
+            {
+                if let image = UIImage(data: data)
+                {
+                    self.profile_img.image = image
+                }
+            }
+        }else{
+            if imgurlStr.count == 2
+            {
+                self.profile_img.image = self.imgurlStr.createImage()
+            }else if imgurlStr.count > 0
+            {
+                self.profile_img.kf.setImage(with: URL(string: imgurlStr))
+            }
         }
+        
+
         
         // Do any additional setup after loading the view.
     }
