@@ -22,21 +22,27 @@ extension DashboardVC
                     {
                         if let url = URL(string: img_url)
                         {
+                            self.btn_profile_qr.isHidden = false
                             self.downloadImage(from: url)
                         }else{
+                            self.btn_profile_qr.isHidden = true
                             LoadingOverlay.shared.hideOverlayView()
                         }
                     }else{
+                        self.btn_profile_qr.isHidden = true
                         LoadingOverlay.shared.hideOverlayView()
                     }
                 }else{
+                    self.btn_profile_qr.isHidden = true
                     LoadingOverlay.shared.hideOverlayView()
                 }
             }else{
+                self.btn_profile_qr.isHidden = true
                 LoadingOverlay.shared.hideOverlayView()
             }
         } failure: { (error) in
             print(error)
+            self.btn_profile_qr.isHidden = true
             LoadingOverlay.shared.hideOverlayView()
         }
 

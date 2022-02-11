@@ -1872,7 +1872,7 @@ Member?</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIB-gL-ABq">
                                                 <rect key="frame" x="24" y="380.33333333333331" width="366" height="86.333333333333314"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idscan" translatesAutoresizingMaskIntoConstraints="NO" id="HSw-sq-0UI">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idscan_step_4" translatesAutoresizingMaskIntoConstraints="NO" id="HSw-sq-0UI">
                                                         <rect key="frame" x="19.999999999999996" y="22.999999999999996" width="40.666666666666657" height="40.666666666666657"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40.5" id="Hdv-9e-P0d"/>
@@ -1938,7 +1938,7 @@ Member?</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibf-x0-ico">
                                                 <rect key="frame" x="24" y="486.66666666666657" width="366" height="86.333333333333314"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfie" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Q-Ef-huH">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfie_step4" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Q-Ef-huH">
                                                         <rect key="frame" x="19.999999999999996" y="22.999999999999996" width="40.666666666666657" height="40.666666666666657"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40.5" id="4ci-KK-5C5"/>
@@ -2206,8 +2206,14 @@ your Biometrics.</string>
                         <outlet property="btn_next" destination="9Ng-r1-Z5S" id="LXh-ns-yOR"/>
                         <outlet property="btn_skip" destination="1p0-OF-T4o" id="eMr-0l-aYX"/>
                         <outlet property="img_bioMatrick" destination="wgg-HU-aav" id="I4D-Vg-6CE"/>
+                        <outlet property="img_id_scan" destination="HSw-sq-0UI" id="5bq-bG-fCG"/>
+                        <outlet property="img_selfie" destination="Z9Q-Ef-huH" id="VMo-9O-Rja"/>
+                        <outlet property="lbl_id_scan" destination="n4g-Js-5wB" id="tgu-PQ-SMb"/>
+                        <outlet property="lbl_selfie" destination="rlr-Au-HQ2" id="xu3-uj-lRq"/>
                         <outlet property="line_top" destination="oOD-in-ofb" id="swP-Js-Hlc"/>
                         <outlet property="loadingView" destination="o47-fS-2s1" id="THk-mA-M6f"/>
+                        <outlet property="view_id" destination="UIB-gL-ABq" id="NhR-Hp-1ma"/>
+                        <outlet property="view_selfie" destination="ibf-x0-ico" id="O7z-Cl-HCr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3B-zp-uEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2624,11 +2630,11 @@ your Biometrics.</string>
         <image name="boxWithCorner" width="231" height="241"/>
         <image name="btnback" width="12" height="20.666666030883789"/>
         <image name="createAccount" width="320" height="100"/>
-        <image name="idscan" width="40.333332061767578" height="40.333332061767578"/>
+        <image name="idscan_step_4" width="40.333332061767578" height="40.333332061767578"/>
         <image name="ionic-ios-arrow-forward" width="13.666666984558105" height="23.666666030883789"/>
         <image name="lineMovig" width="202" height="16"/>
         <image name="secureEntery" width="236.66667175292969" height="195.33332824707031"/>
-        <image name="selfie" width="40.333332061767578" height="40.333332061767578"/>
+        <image name="selfie_step4" width="40.333332061767578" height="40.333332061767578"/>
         <image name="signinimg" width="173" height="157"/>
         <image name="signup" width="173" height="157"/>
         <image name="spalshbg" width="1218" height="812"/>

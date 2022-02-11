@@ -12,6 +12,7 @@ class DashboardVC: MainStuffViewController {
     @IBOutlet weak var collection_view: UICollectionView!
     @IBOutlet weak var lbl_greeting: UILabel!
     @IBOutlet weak var profile_img: UIImageView!
+    @IBOutlet weak var btn_profile_qr: UIButton!
     var hasBiometric = false
     let arr_img = [UIImage(named: "personal-info-icon"),UIImage(named: "biometric-info-icon"),UIImage(named: "sign-in-security-icon"),UIImage(named: "icon-membership"),UIImage(named: "icon-search"),UIImage(named: "Icon metro-settings-power")]
     let arr_title = ["Personal Info","Biometric Info","Sign-in Security","Membership","Search Retailer","Logout"]
@@ -59,6 +60,7 @@ extension DashboardVC:VerifyUser
         if userVerfied
         {
             DispatchQueue.main.async {
+                AppUtills.shared.deactivateLicence()            
                 let vc = QrCodeDisplayVC(nibName: "QrCodeDisplayVC", bundle: nil)
                 vc.imgurlStr = self.profileimg
                 vc.delegate = self
@@ -105,7 +107,7 @@ extension DashboardVC:QrCodeScannerDelegate,QrCodeDisplayDelegate
         let result1 = licenseManager?.initialize(licenseConfig, licenseInfo: api_key)
         print(result1?.rawValue == 0 ? "Return Status1 :- FM_RETURN_OK":"Return Status1 :- \(result1?.rawValue ?? -1)")
         let result = licenseManager?.registerLicense()
-        print(result?.rawValue == 0 ? "Return Status2 :- FM_RETURN_OK":"Return Status2 :- \(result1?.rawValue ?? -1)")
+        print(result?.rawValue == 0 ? "Return Status2 :- FM_RETURN_OK":"Return Status2 :- \(result?.rawValue ?? -1)")
         
         self.getDataAndConvertToImage()
     }

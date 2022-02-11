@@ -6,7 +6,7 @@
 
 #import <FaceMeSDK/FMQualityDetector.h>
 #import <FaceMeSDK/FMRecognizer.h>
-#import <FaceMeSDK/FMLicenseManager.h>
+//#import <FaceMeSDK/FMLicenseManager.h>
 #import <FaceMeSDK/FMLivenessDetector.h>
 #import <FaceMeSDK/FMBaseEnum.h>
 
@@ -19,13 +19,13 @@
 #import <FaceMeSDK/FMLicenseManager.h>
 #import "AntiSpoofingContainerViewController.h"
 
-//#import "CaptureViewController.h"
+#import "CaptureViewController.h"
 #import "CaptureConfiguration.h"
-//#import "Constants.h"
-//#import "LicenseInfoHandler.h"
-//#import "UiSettings.h"
-//#import "PresentFacesHolder.h"
-//#import "DevTool.h"
+#import "Constants.h"
+#import "LicenseInfoHandler.h"
+#import "UiSettings.h"
+#import "PresentFacesHolder.h"
+#import "DevTool.h"
 
 #import "ResultMaskUIView.h"
 #import "UIView+Toast.h"

@@ -14,6 +14,13 @@ class CreateAccountStep4VC: MainStuffViewController {
     @IBOutlet weak var img_bioMatrick: UIImageView!
     @IBOutlet weak var line_top: NSLayoutConstraint!
     @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var view_id: UIView!
+    @IBOutlet weak var view_selfie: UIView!
+    @IBOutlet weak var lbl_id_scan: UILabel!
+    @IBOutlet weak var lbl_selfie: UILabel!
+    
+    @IBOutlet weak var img_id_scan: UIImageView!
+    @IBOutlet weak var img_selfie: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +28,18 @@ class CreateAccountStep4VC: MainStuffViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil
+        {
+            self.img_id_scan.tintColor = #colorLiteral(red: 0.05882352941, green: 0.631372549, blue: 0.2509803922, alpha: 1)
+        }else{
+            self.img_id_scan.tintColor = #colorLiteral(red: 0.8862745098, green: 0.8862745098, blue: 0.8862745098, alpha: 1)
+        }
+        if SignUpData.shared.selfieImageFaceMe != nil
+        {
+            self.img_selfie.tintColor = #colorLiteral(red: 0.05882352941, green: 0.631372549, blue: 0.2509803922, alpha: 1)
+        }else{
+            self.img_selfie.tintColor = #colorLiteral(red: 0.8862745098, green: 0.8862745098, blue: 0.8862745098, alpha: 1)
+        }
         if SignUpData.shared.backIDImg != nil && SignUpData.shared.frontIDImg != nil && SignUpData.shared.selfieImageFaceMe != nil
         {
             self.btn_next.backgroundColor = #colorLiteral(red: 0, green: 0.4588235294, blue: 1, alpha: 1)

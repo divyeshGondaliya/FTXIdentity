@@ -58,6 +58,8 @@
 		18475263276B55E200F9F739 /* CreateAccountStep3VC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18475262276B55E200F9F739 /* CreateAccountStep3VC+ApiCall.swift */; };
 		18475266276B656D00F9F739 /* CreateAccountStep4VC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18475265276B656D00F9F739 /* CreateAccountStep4VC+ApiCall.swift */; };
 		184B4D63276CB36800937C11 /* MainStuffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B4D62276CB36800937C11 /* MainStuffViewController.swift */; };
+		185571B527B629A4008EC354 /* FaceMeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185571B327B6299E008EC354 /* FaceMeSDK.framework */; platformFilter = ios; };
+		185571B627B629A4008EC354 /* FaceMeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 185571B327B6299E008EC354 /* FaceMeSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1863BB16276897D000CBCEDF /* ApicallClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863BB15276897D000CBCEDF /* ApicallClass.swift */; };
 		1863BB202768A58300CBCEDF /* CreateAccountStep1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863BB1F2768A58300CBCEDF /* CreateAccountStep1VC.swift */; };
 		1863BB252768AAE900CBCEDF /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863BB232768AAE900CBCEDF /* DashboardVC.swift */; };
@@ -136,8 +138,6 @@
 		18ECF1FF27758F5800FA36DF /* MobileNumberVC+ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */; };
 		18F7DF7E27A3C156007753CD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F7DF7D27A3C156007753CD /* art.scnassets */; };
 		18F9A2B4276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */; };
-		18FA6E4A27AD343600F46275 /* FaceMeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */; platformFilter = ios; };
-		18FA6E4B27AD343600F46275 /* FaceMeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18FA6F0C27AD35BD00F46275 /* UIFaceView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EA227AD35BD00F46275 /* UIFaceView+Refresh.m */; };
 		18FA6F0D27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FA6EA927AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.m */; };
 		18FA6F0E27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FA6EAA27AD35BD00F46275 /* FaceMeRecognizerSettingsDetailViewController.xib */; };
@@ -192,7 +192,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18FA6E4B27AD343600F46275 /* FaceMeSDK.framework in Embed Frameworks */,
+				185571B627B629A4008EC354 /* FaceMeSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +255,7 @@
 		18475262276B55E200F9F739 /* CreateAccountStep3VC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep3VC+ApiCall.swift"; sourceTree = "<group>"; };
 		18475265276B656D00F9F739 /* CreateAccountStep4VC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+ApiCall.swift"; sourceTree = "<group>"; };
 		184B4D62276CB36800937C11 /* MainStuffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStuffViewController.swift; sourceTree = "<group>"; };
+		185571B327B6299E008EC354 /* FaceMeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FaceMeSDK.framework; sourceTree = "<group>"; };
 		1863BB15276897D000CBCEDF /* ApicallClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApicallClass.swift; sourceTree = "<group>"; };
 		1863BB1F2768A58300CBCEDF /* CreateAccountStep1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountStep1VC.swift; sourceTree = "<group>"; };
 		1863BB232768AAE900CBCEDF /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
@@ -335,7 +336,6 @@
 		18ECF1FE27758F5800FA36DF /* MobileNumberVC+ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileNumberVC+ApiCall.swift"; sourceTree = "<group>"; };
 		18F7DF7D27A3C156007753CD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		18F9A2B3276B117F00D0F9AC /* CreateAccountStep4VC+NavigationToOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountStep4VC+NavigationToOtherView.swift"; sourceTree = "<group>"; };
-		18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FaceMeSDK.framework; sourceTree = "<group>"; };
 		18FA6E9E27AD35BD00F46275 /* UIFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFaceView.h; sourceTree = "<group>"; };
 		18FA6E9F27AD35BD00F46275 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		18FA6EA027AD35BD00F46275 /* UiSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiSettings.h; sourceTree = "<group>"; };
@@ -430,7 +430,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FA6E4A27AD343600F46275 /* FaceMeSDK.framework in Frameworks */,
+				185571B527B629A4008EC354 /* FaceMeSDK.framework in Frameworks */,
 				1879A13327B38E5F008455BE /* Pods_FTX_Identity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,7 +573,7 @@
 		184633CA27685FC3007229A3 /* Resorces */ = {
 			isa = PBXGroup;
 			children = (
-				18FA6E4827AD33F900F46275 /* FaceMeSDK.framework */,
+				185571B327B6299E008EC354 /* FaceMeSDK.framework */,
 				18FA6E9C27AD35BD00F46275 /* FacemeRequiredFiles */,
 				182D84E0278C105800D719FD /* Bioid-GmbH */,
 				180C63422771BEF1005D8669 /* OnlyDateAndMonthPickerVC */,
@@ -1707,6 +1707,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
 					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
 				);
 				INFOPLIST_FILE = "FTX Identity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1738,6 +1740,8 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
+					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
 					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
 					"$(PROJECT_DIR)/FTX\\ Identity/Resorces",
 				);

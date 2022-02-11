@@ -21,7 +21,7 @@ class CreateAccountStep1VC: MainStuffViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.txt_email.text = "yp3@yopmail.com"
+//        self.txt_email.text = "yp3@yopmail.com"
         self.designRelatedStuff()
         self.view_phone_number.alpha = 0
         self.btn_lbl.text = StringMsgToDisplay.instedMobile

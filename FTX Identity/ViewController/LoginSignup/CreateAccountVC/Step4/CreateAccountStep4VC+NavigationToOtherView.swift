@@ -48,6 +48,7 @@ extension CreateAccountStep4VC:MyClassDelegate
 {
     func myClassDelegateMethod(_ sender: UIImage) {
         SignUpData.shared.selfieImageFaceMe = sender
+        AppUtills.shared.deactivateLicence()
     }
     
     

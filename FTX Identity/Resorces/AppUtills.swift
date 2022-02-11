@@ -79,3 +79,21 @@ extension String
         return convertedImage
     }
 }
+
+
+class AppUtills
+{
+    static let shared = AppUtills()
+    
+    func deactivateLicence()
+    {
+        var licenseManager: FMLicenseManager? = nil
+        licenseManager = FMLicenseManager()
+        let licenseConfig = FMLicenseManagerConfig()
+        // License verification.
+        let result1 = licenseManager?.initialize(licenseConfig, licenseInfo: api_key)
+        print(result1?.rawValue == 0 ? "Return Status1 :- FM_RETURN_OK":"Return Status1 :- \(result1?.rawValue ?? -1)")
+        let rsultDeactivate = licenseManager?.deactivateLicense()
+        print(rsultDeactivate?.rawValue == 0 ? "rsultDeactivate Return Status1 :- FM_RETURN_OK":"Return rsultDeactivate :- \(rsultDeactivate?.rawValue ?? -1)")
+    }
+}
