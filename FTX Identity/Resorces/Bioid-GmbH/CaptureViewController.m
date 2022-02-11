@@ -1257,7 +1257,7 @@ NSString *const BIOID_FONT = @"HelveticaNeue";
     challengeStep = 0;
     challengeSCNActions = nil;
     challengeSCNActions = [[NSMutableArray alloc] init];
-    //Test
+    //Test  dsf
     // Create sequence for 3D Head
     for (id direction in currentChallenge) {
         if([direction isEqualToString:@"up"]) {
